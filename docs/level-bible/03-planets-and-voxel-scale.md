@@ -3,7 +3,7 @@
 
 Every planet in EXODUS PROTOCOL is a **voxel planet at traversal scale: 20–120 km in diameter**, starting with the starter planet, a 120 km gameplay-scale Earth. At this scale a planet is huge on foot or by rover and has a crust deep enough for extensive voxel mining, without thousands of kilometres of empty terrain. Curvature is visible from orbit, but the surface feels flat when you're standing on it.
 
-
+![Planet scale lineup](images/planet-scale.jpg)
 
 ## The voxel planet standard
 

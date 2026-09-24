@@ -614,7 +614,7 @@ Everything that moves a grid: thrusters, wheels, wings, drives, tanks and the Ac
 
 `block.propulsion.pulse_drive` · **Tier** T3 · **Art set** Kestrel Industrial · **Complexity** XL (Hero) · **Group** Drives
 
-> In-system cruise drive: planet to planet in minutes. Interrupted by gravity wells and events.
+> In-system cruise drive (No Man's Sky-style): 3 s spool, 30 km/s after 15 s, so planet to planet takes 30 s – 2.5 min. Blocked below half a planet's radius; drops out automatically at planets, 20 km from stations, and for encounters.
 
 **Gameplay (base variant)**
 
@@ -626,6 +626,8 @@ Everything that moves a grid: thrusters, wheels, wings, drives, tanks and the Ac
 | Integrity (HP) | 10,000 |
 | Power | −25 MW |
 | Recipe | 400 Steel Plate, 200 Superconductor, 200 Thruster Component, 80 Computer, 40 Large Steel Tube |
+
+**Stats:** top speed km s: 30 · spool s: 3 · min altitude: 0.5 × planet radius
 
 **Blender assets**
 

@@ -15484,7 +15484,7 @@
    "tier": "T3",
    "art_set": "IND",
    "complexity": "XL",
-   "function": "In-system cruise drive: planet to planet in minutes. Interrupted by gravity wells and events.",
+   "function": "In-system cruise drive (No Man's Sky-style): 3 s spool, 30 km/s after 15 s, so planet to planet takes 30 s – 2.5 min. Blocked below half a planet's radius; drops out automatically at planets, 20 km from stations, and for encounters.",
    "unlock": "",
    "grids": {
     "LG": [
@@ -15493,7 +15493,11 @@
      5
     ]
    },
-   "stats": {},
+   "stats": {
+    "top_speed_km_s": 30,
+    "spool_s": 3,
+    "min_altitude": "0.5 × planet radius"
+   },
    "mount_faces": [
     "front",
     "back",
@@ -28458,7 +28462,7 @@
    "tier": "T4",
    "art_set": "SOW",
    "complexity": "XL",
-   "function": "Jumps the grid along a Sower jump lane. Needs 50 MW to charge, cooling, and Resonance Crystal fuel. 5 min cooldown.",
+   "function": "Jumps the grid along a Sower jump lane: 10 s charge, an 8–12 s jump tunnel, and arrival 10–20 km from the destination system's station or beacon. Needs 50 MW to charge, cooling, and Resonance Crystal fuel. 5 min cooldown.",
    "unlock": "Recovered at the Styx Wreck (M2.07); a replica can be grown at T4.",
    "grids": {
     "LG": [

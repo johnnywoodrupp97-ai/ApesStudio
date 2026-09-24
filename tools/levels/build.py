@@ -118,6 +118,14 @@ def expand():
         for m in lv["markers"]:
             if not m.startswith(tuple(MARKER_PREFIXES)):
                 problems.append(f"{lv['id']}: marker {m} has no approved prefix")
+        for sp in lv["spaces"]:  # spaces must fit the level footprint (the Blender validator checks the 3D bounds)
+            w, d = sp["size"][0], sp["size"][1]
+            if sp["pos"]:
+                x, y = sp["pos"][0], sp["pos"][1]
+                if abs(x) + w / 2 > size["w"] / 2 + 1 or abs(y) + d / 2 > size["d"] / 2 + 1:
+                    problems.append(f"{lv['id']}: space '{sp['name']}' extends outside the {size['w']:g} × {size['d']:g} m footprint")
+            elif w > size["w"] + 1 or d > size["d"] + 1:
+                problems.append(f"{lv['id']}: space '{sp['name']}' is larger than the level")
         for c in lv["connections"]:
             names = {s["name"] for s in lv["spaces"]}
             if lv["type"] not in ("Open Region",) and (c[0] not in names or c[1] not in names):
@@ -134,6 +142,15 @@ def expand():
         op = e.get("on_planet")
         if op and op["planet"] not in ids:
             problems.append(f"{e['id']}: on_planet references unknown {op['planet']}")
+        elif op and e["type"] in ("Open Region", "Planet Region"):
+            span_km = max(e["size"]["w"], e["size"]["d"]) / 1000
+            limit = min(PLANET_STANDARD["region_max_km"], PLANET_STANDARD["region_max_frac_of_diameter"] * ids[op["planet"]]["planet"]["diameter_km"])
+            if span_km > limit + 1e-6:
+                problems.append(f"{e['id']}: region is {span_km:g} km across; the limit on {op['planet']} is {limit:g} km")
+    for k in KITS:
+        for piece in k["pieces"]:
+            if piece["pivot"] not in ("corner", "bottom-center", "center"):
+                problems.append(f"{k['code']}: piece '{piece['name']}' has unknown pivot rule '{piece['pivot']}'")
     return levels, problems
 
 
@@ -463,9 +480,11 @@ def travel_doc(levels):
           "3. **Station bays use the metrics above**; scripted approaches (Haven-9 docking in M2.01, the Seedship breach in M4.01) are drawn as `SPL_Approach_*` splines.",
           "4. **No hard ceilings.** The atmosphere top is a soft transition, never a wall; the only no-fly zones are story interiors and the Seedship.",
           "5. **Entry sequences are budgets.** Entry and jump sequences must cover the streaming they hide: designers never place a landing zone where the full-detail voxel radius (2 km) can't stream within the 8 s entry.", "",
-          "## Controls (adds to game bible 21)", "", "| Action | KB/M | Controller |", "|---|---|---|",
-          "| Launch (when landed) | Hold Space | Hold A |", "| Land (at the prompt) | E | X |", "| Pulse drive | Hold J | Hold Menu + A |",
-          "| Galaxy map / jump target | M (in the cockpit) | View (hold) |", "| Flight assist on / off (Newtonian mode) | Ctrl + Z | Hold B + Y |", "| Summon capital ship | Wrist pad → Fleet | Wrist pad → Fleet |", "",
+          "## Controls (same as game bible 21 §21.3, Ship flight)", "", "| Action | KB/M | Controller |", "|---|---|---|",
+          "| Launch (when landed) | Space (hold) | A (hold) |", "| Land (at the prompt) | F (hold) | X (hold) |", "| Boost | Left Alt (hold) | L3 |",
+          "| Pulse drive (in space) | J (hold) | Hold Menu + A |", "| Galaxy map | M | View |",
+          "| Sower jump | M, select a system, hold J | View, select, hold A |",
+          "| Flight assist ↔ Newtonian (per ship) | Z (hold) | B (hold) |", "| Summon capital ship | Wrist pad → Fleet | Wrist pad → Fleet |", "",
           "## Blender spec", "",
           "- Planet scaffolds (chapter 03) add transition shells: `REF_PulseDropout`, `REF_Atmosphere` (entry), `REF_CloudDeck`, `REF_StreamingStart` and `REF_CapitalParking`, so designers see every threshold at true scale.",
           "- Levels mark travel with `VOL_LandingZone_*`, `VOL_DockingBay_*`, `VOL_NoFly_*` and `SPL_Approach_*`; all are exported to the `.markers.json` sidecar.", ""]

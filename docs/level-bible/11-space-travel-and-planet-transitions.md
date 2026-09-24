@@ -85,15 +85,17 @@ Every Drift system has at least one dockable station (a Hauler waystation, a Dir
 4. **No hard ceilings.** The atmosphere top is a soft transition, never a wall; the only no-fly zones are story interiors and the Seedship.
 5. **Entry sequences are budgets.** Entry and jump sequences must cover the streaming they hide: designers never place a landing zone where the full-detail voxel radius (2 km) can't stream within the 8 s entry.
 
-## Controls (adds to game bible 21)
+## Controls (same as game bible 21 §21.3, Ship flight)
 
 | Action | KB/M | Controller |
 |---|---|---|
-| Launch (when landed) | Hold Space | Hold A |
-| Land (at the prompt) | E | X |
-| Pulse drive | Hold J | Hold Menu + A |
-| Galaxy map / jump target | M (in the cockpit) | View (hold) |
-| Flight assist on / off (Newtonian mode) | Ctrl + Z | Hold B + Y |
+| Launch (when landed) | Space (hold) | A (hold) |
+| Land (at the prompt) | F (hold) | X (hold) |
+| Boost | Left Alt (hold) | L3 |
+| Pulse drive (in space) | J (hold) | Hold Menu + A |
+| Galaxy map | M | View |
+| Sower jump | M, select a system, hold J | View, select, hold A |
+| Flight assist ↔ Newtonian (per ship) | Z (hold) | B (hold) |
 | Summon capital ship | Wrist pad → Fleet | Wrist pad → Fleet |
 
 ## Blender spec

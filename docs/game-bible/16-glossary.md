@@ -5,7 +5,9 @@
 | **Ada Okafor** | The Engineer's older sister; Directorate flight commander who leaves them on Pad 12 on Night Zero |
 | **Anchor** | A hand-crafted location placed into the procedural universe (e.g., Tycho, Veyra-4's Garden Engine) |
 | ***Anthesis*** | The Sower Seedship; final location of the campaign. (Botany: the flowering period of a plant.) |
+| **Assisted flight** | The default flight model (No Man's Sky-style): speed caps, auto-leveling and a landing assist; Newtonian flight is an option |
 | **Ark Directorate** | Military-corporate elite that fled to orbit on Night Zero; led by Director Halvard Crane |
+| **Atmosphere entry** | The 8 s sequence (heat, buffeting, clouds) when a ship dives into an atmosphere; speed eases from 1,200 to 250 m/s |
 | **Attraction** | A base's score (noise, light, power, gunfire, people) that sizes the hordes it draws |
 | **Bloom / the Green** | Survivor slang for the Verdance and its visible growths |
 | **Bloom Coverage** | 0–100% value per planet/system describing Verdance transformation; drives enemies, visuals, resources |
@@ -40,7 +42,7 @@
 | **Persephone** | The 2059–2071 sample-return mission to Styx that brought the Verdance to Earth |
 | **Point of no return** | The clearly marked start of Act IV; the galaxy stays open until you commit |
 | **Project Eden** | Crane's plan to wipe and resettle Earth with a chosen population |
-| **Pulse Drive** | In-system fast travel |
+| **Pulse Drive** | In-system cruise drive: 30 km/s, planet to planet in 30 s – 2.5 min; can't engage below half a planet's radius |
 | **Resonance Crystal** | Sower-derived resource; jump fuel and precursor research |
 | **Resonance Key** | Three Sower data artifacts needed to locate the Seedship |
 | **Room Quality** | Score for a room's size, beauty, comfort, environment; drives survivor mood |
@@ -52,6 +54,7 @@
 | **Tessari** | Gentle six-limbed megafauna native to Veyra-4 |
 | **Tortuga Drift** | Free Hauler ship-city inside a hollow asteroid |
 | **TWR** | Thrust-to-weight ratio (must exceed 1 in local gravity to lift off) |
+| **Voxel traversal scale** | The planet size standard: 20–120 km diameter cube-sphere voxel worlds (Earth is 120 km); curvature visible from orbit, flat underfoot |
 | **Verdance** | Canonical name of the pathogen: a designed biological terraforming agent. Lab name LZR-1 "Lazarus" |
 | **Weaver** | The mind who stays inside the Loom to hold the new instruction at the end of the game |
 | **Wrench** | The Engineer's nickname, given by Ada; used in all voice-over |

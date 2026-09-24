@@ -1,6 +1,6 @@
 # EXODUS PROTOCOL — Character Bible
 
-> Every person, Hollow, boss and creature in the game: story profile, visual design, wardrobe by act, and a **Blender production spec for every asset**, plus a Blender toolkit that builds rigged starter files. Companion to the [Game Bible](../game-bible/README.md) (story and characters: chapters 03, 04, 17) and the [Parts Bible](../parts-bible/README.md) (suits, weapons and props).
+> Every person, Hollow, boss and creature in the game: story profile, visual design, wardrobe by act, and a **Blender production spec for every asset**, plus a Blender toolkit that builds rigged starter files. Companion to the [Game Bible](../game-bible/README.md) (story and characters: chapters 03, 04, 17) the [Parts Bible](../parts-bible/README.md) (suits, weapons and props) and the [Level Design Bible](../level-bible/README.md) (where each character appears, navigation agents and encounter spaces).
 
 <!-- STATS:START -->
 | | Count |

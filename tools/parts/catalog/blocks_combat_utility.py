@@ -302,7 +302,7 @@ SOWER = ("Sower modeling rules (chapter 19): no straight edges longer than 0.5 m
 P("SOW", "Sower Jump Core", "Drives", {"LG": (3, 3, 5)}, tier="T4", art="SOW", cls="XL",
   mass=60000, hp=12000, power=-50000,
   recipe={"sower_filament": 60, "resonance_crystal": 40, "superconductor": 200, "steel_plate": 300},
-  function="Jumps the grid along a Sower jump lane. Needs 50 MW to charge, cooling, and Resonance Crystal fuel. 5 min cooldown.",
+  function="Jumps the grid along a Sower jump lane: 10 s charge, an 8–12 s jump tunnel, and arrival 10–20 km from the destination system's station or beacon. Needs 50 MW to charge, cooling, and Resonance Crystal fuel. 5 min cooldown.",
   stats={"range": "1 jump lane", "cooldown_s": 300, "charge_mw": 50},
   unlock="Recovered at the Styx Wreck (M2.07); a replica can be grown at T4.",
   mounts="all", airtight="all",

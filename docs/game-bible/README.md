@@ -73,7 +73,10 @@ From there, the world is yours. Survive an open desert valley full of the dead. 
 Every character, Hollow, boss and creature with story, visual design, wardrobe and a Blender spec per asset, plus a rigging toolkit: **[docs/character-bible](../character-bible/README.md)**.
 
 ### Companion: the Parts Bible
-Every buildable part, component, tool, weapon, suit and drone, with stats and a Blender spec for each of 601 assets, plus a Blender toolkit: **[docs/parts-bible](../parts-bible/README.md)**.
+Every buildable part, component, tool, weapon, suit and drone, with stats and a Blender spec for each of 601 assets, all built as validated greybox `.blend` files, plus a Blender toolkit: **[docs/parts-bible](../parts-bible/README.md)**.
+
+### Companion: the Level Design Bible
+Every level, region and planet, from Kestrel Valley to the Seedship: layouts, metrics, encounters, lighting and streaming. It also sets the voxel planet standard (20–120 km diameter; Earth, the starter planet, is 120 km) and No Man's Sky-style space travel and planet entry/exit, with a Blender level toolkit and blockouts of every level: **[docs/level-bible](../level-bible/README.md)**.
 
 ---
 

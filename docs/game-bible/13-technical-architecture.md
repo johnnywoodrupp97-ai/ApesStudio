@@ -52,7 +52,7 @@
 
 ### Universe & planets
 - **Deterministic seeds:** Galaxy seed → system seeds → planet seeds → chunk seeds. Only **deltas** (player changes) are saved.
-- **Voxel terrain** (dual contouring or transvoxel) streamed in chunks, with LOD for orbit views.
+- **Voxel terrain** (dual contouring or transvoxel) on cube-sphere planets of 20–120 km diameter: 1 m voxels, 32 m chunks, 8 level-of-detail rings, streamed from 6 planet radii away (an impostor before that). The planet standard and streaming thresholds are in the level bible, chapters 03 and 11.
 - **Floating origin / large world coordinates** to support planets and interplanetary distances.
 - **Anchor loader:** hand-authored levels are placed into generated worlds at fixed coordinates with terrain blending and exclusion zones.
 
@@ -154,7 +154,7 @@ Blocks · Components · Items · Recipes · Tech nodes · Enemies · Creatures (
 | Max blocks per grid (practical) | 50,000 | 25,000 |
 | Simulated survivors (full AI) | 40 | 30 |
 | Active Hollows (full AI / impostors) | 60 / 2,000 | 40 / 1,000 |
-| Planet streaming | No loading screens planet ↔ orbit | Same |
+| Planet streaming | No loading screens planet ↔ orbit; entry (8 s) and pulse dropout hide streaming | Same |
 
 ## 13.8 Co-op readiness (post-launch)
 - Deterministic sims (power, air, colony) designed to be **server-authoritative**.

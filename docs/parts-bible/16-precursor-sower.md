@@ -23,7 +23,7 @@ Precursor parts recovered or grown from Sower technology. Organic modeling rules
 
 `block.precursor.sower_jump_core` · **Tier** T4 · **Art set** Sower (grown) · **Complexity** XL (Hero) · **Group** Drives
 
-> Jumps the grid along a Sower jump lane. Needs 50 MW to charge, cooling, and Resonance Crystal fuel. 5 min cooldown.
+> Jumps the grid along a Sower jump lane: 10 s charge, an 8–12 s jump tunnel, and arrival 10–20 km from the destination system's station or beacon. Needs 50 MW to charge, cooling, and Resonance Crystal fuel. 5 min cooldown.
 
 **Gameplay (base variant)**
 

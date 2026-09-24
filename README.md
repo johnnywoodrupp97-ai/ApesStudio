@@ -10,4 +10,8 @@ An **open-world, open-exploration survival game** that begins with a zombie outb
 
 **Character Bible (every character and creature, with Blender specs and rigging toolkit):** [`docs/character-bible/`](docs/character-bible/README.md)
 
-**Tools:** `python3 tools/parts/build.py` regenerates the Parts Bible; `blender -b -P tools/blender/exodus_parts.py -- scaffold --asset <name>` builds a starter .blend (see [chapter 20](docs/parts-bible/20-blender-toolkit.md)); `python3 tools/characters/build.py` regenerates the Character Bible and `blender -b -P tools/blender/exodus_characters.py -- scaffold --character <ID>` builds rigged character files (see [chapter 12](docs/character-bible/12-blender-character-toolkit.md)).
+**Level Design Bible (every level and planet, voxel planet scale, No Man's Sky-style travel, with a Blender level toolkit):** [`docs/level-bible/`](docs/level-bible/README.md)
+
+**Built Blender assets:** `assets/parts/` and `assets/props/` (all 601 parts, props, weapons, suits and drones as validated greybox files) and `assets/levels/` (a blockout of every level and planet, the Metrics Gym and 13 modular kits).
+
+**Tools:** `python3 tools/parts/build.py` regenerates the Parts Bible; `blender -b -P tools/blender/exodus_parts.py -- build --all` builds every part as a complete greybox (see [chapter 20](docs/parts-bible/20-blender-toolkit.md)); `python3 tools/levels/build.py` regenerates the Level Design Bible and `blender -b -P tools/blender/exodus_levels.py -- scaffold --all` builds every level blockout (see [chapter 15](docs/level-bible/15-blender-level-toolkit.md)); `python3 tools/characters/build.py` regenerates the Character Bible and `blender -b -P tools/blender/exodus_characters.py -- scaffold --character <ID>` builds rigged character files (see [chapter 12](docs/character-bible/12-blender-character-toolkit.md)).

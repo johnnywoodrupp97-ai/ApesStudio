@@ -192,16 +192,28 @@ The sandbox has its own long-term goals, independent of the story: grow the colo
 | On foot / jetpack | Local | Start | Jetpack limited in gravity |
 | Rover & motorbike | Planet surface | Act I | Wheeled physics; carry survivors and cargo |
 | Aircraft | Planet | Late Act I (optional) / Act II | Atmospheric thrusters and wings; build from Jackrabbit Flats parts |
-| Orbital flight | Local space | Act II | Seamless planet ↔ space transitions |
-| **Pulse Drive** (cruise) | Planet to planet in a system | Act II | Minutes; can be interrupted by events |
-| **Sower Jump** | System to system | Act III | Jump Core + Resonance Crystal fuel + cooldown |
+| Orbital flight | Local space | Act II | Seamless planet ↔ space transitions; assisted flight at 1,200 m/s (boost 2,000) |
+| **Pulse Drive** (cruise) | Planet to planet in a system | Act II | 3 s spool, 30 km/s after 15 s; planet to planet in 30 s – 2.5 min; drops out automatically near planets and stations; can be interrupted by events |
+| **Sower Jump** | System to system | Act III | Jump Core + Resonance Crystal fuel; 10 s charge, 8–12 s jump tunnel, 5 min cooldown; you arrive 10–20 km from the system's station or beacon |
 | **Fast travel** | Between your own beacons | Act II | Optional; needs a Beacon Relay at both ends; off in Hardcore |
+
+### Space travel and planet entry, No Man's Sky style
+One continuous universe with no loading screens. Every transition is a short, readable sequence that also hides streaming:
+
+- **Launch:** press *Launch* on the ground. The ship lifts 30 m in 3 s (it needs a thrust-to-weight ratio of at least 1.2 in local gravity), then you fly. Climbing through the cloud deck and out of the atmosphere takes about a minute from Earth's surface.
+- **Leaving the atmosphere (5 s):** the sky fades to black, stars appear, the atmosphere's roar drops away and the speed cap rises from 250 to 1,200 m/s.
+- **Cruise:** the Pulse Drive can't engage below half a planet's radius. Above that, it takes you across a system in seconds and drops out automatically at the destination planet's approach distance or 20 km from a station.
+- **Entry (8 s):** dive toward a planet and the ship enters the atmosphere: heat glow, buffeting, clouds rushing past. Speed eases from 1,200 to 250 m/s over 4 s, so it's never a hard stop. On airless worlds a 400 m/s approach cap replaces the entry effects.
+- **Landing:** below 150 m over a slope of 20° or less, a *Land* prompt auto-lands the ship in 6 s. Manual landing is always possible, and pads and landing gear lock on contact.
+- **Capital ships** stay in orbit, parked just above the atmosphere. Smaller ships ferry crew and cargo to the surface.
+
+Exact per-planet altitudes, speeds and timings (orbit to landed takes about 74 s on Earth and 22 s on the Moon) are in the level bible: [11 — Space Travel & Planet Transitions](../level-bible/11-space-travel-and-planet-transitions.md).
 
 ## 8.12 Planet generation
 
 ### Parameters (per planet)
 - **Type:** Rocky, Ocean, Ice, Desert, Jungle, Volcanic, Toxic, Barren (airless), Gas giant (orbit only: moons and stations), **Bloomed** (overrun by the Verdance)
-- **Size:** 8–60 km radius (scaled for play; 30 km average)
+- **Size:** **20–120 km diameter**, the voxel traversal scale used by games like *Space Engineers*: small worlds (moons, barren, ice) 20–40 km (35%), medium 40–80 km (45%), large (jungle, ocean, Bloomed) 80–120 km (20%). Earth, the starter planet, is 120 km. At this scale a planet is huge on foot or by rover, the crust is deep enough for extensive voxel mining, and there are no thousands of kilometers of empty terrain. The curvature is visible from orbit, but the ground feels flat when you stand on it. Planets under 40 km never get oceans. The full standard (atmosphere height, crust depth, gravity falloff, horizon and landmark maths, face-map resolution) is in the level bible: [03 — Planets & Voxel Scale](../level-bible/03-planets-and-voxel-scale.md).
 - **Gravity:** 0.1–1.8 g
 - **Atmosphere:** None / Thin / Breathable / Toxic / Spore-laden
 - **Temperature band:** from star type, orbital distance and day/night
@@ -210,7 +222,8 @@ The sandbox has its own long-term goals, independent of the story: grow the colo
 - **Biomes:** 2–5 per planet from the type's pool
 
 ### Terrain
-- **Voxel-based**, fully diggable and minable: heightmap base, noise layers and approximate erosion.
+- **Voxel-based**, fully diggable and minable: a cube-sphere with six cube-face heightmaps (plus biome, ore and Bloom maps), noise layers and approximate erosion; 1 m voxels in 32 m chunks, streamed in 8 level-of-detail rings. The crust is minable to a depth of 3.5% of the radius (2.1 km on Earth).
+- Hand-authored **regions** (Kestrel Valley, Tycho, the Garden Engine) are built flat and stamped onto the cube faces. They're capped at 16 km and at a quarter of the planet's diameter.
 - Hand-authored **terrain stamps** (canyons, craters, mesas, Sower ruins) placed by rules.
 - Cave networks for ore, hideouts and Hollow nests.
 

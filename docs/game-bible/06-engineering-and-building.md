@@ -67,7 +67,7 @@
 
 ### Thrust & flight
 - Ships need thrust in each direction greater than mass × gravity to hover/manoeuvre. The **Ship Info panel** shows thrust-to-weight per axis, fuel/power endurance, and jump range.
-- Flight model: Newtonian with **inertial dampeners** (toggleable). Planetside atmosphere adds drag and lift for wing blocks (optional aerodynamics).
+- Flight model: **assisted flight by default**, like *No Man's Sky*: arcade handling that still scales with the ship's build (mass, thrust per direction, center of mass), auto-leveling in gravity, a speed cap of 250 m/s in atmosphere (400 boosting) and 1,200 m/s in space (2,000 boosting), plus a landing assist. **Newtonian flight with inertial dampeners** is an option for *Space Engineers* players (toggle per ship). Planetside atmosphere adds drag and lift for wing blocks (optional aerodynamics). A ship without enough thrust for local gravity still can't take off: the *Launch* action needs a thrust-to-weight ratio of at least 1.2.
 - **Gyroscopes** give rotation authority; heavy ships feel heavy.
 
 ### Logistics
@@ -95,7 +95,7 @@
 | *Wren* launch stack | M1.05–1.07 | Guidance, fuel, heat shield, life support installed | Subsystems, staging |
 | Haven-9 restoration | M2.02 | Power, O₂, pressure, heat | Pressurization, priorities |
 | Lunar lander | M2.04 | TWR ≥ 1.5 @ 0.16 g, O₂, landing gear | Thrust-to-weight, flight |
-| Styx runner | M2.07 | Range 400k km, rad shielding | Fuel, shielding |
+| Styx runner | M2.07 | Range 1,500 km (Earth → Styx, about a minute on the Pulse Drive), rad shielding | Fuel, shielding |
 | *Second Chance* (capital ship) | M3.01 | Large grid, jump core mount, power ≥ 50 MW, cooling | Large-grid design, heat |
 | Boarding craft | M4.01 | Breaching drill or ram, pressurized bay for 3 | Specialized design |
 

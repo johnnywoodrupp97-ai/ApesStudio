@@ -68,10 +68,17 @@
 | Rotate (pitch/yaw) | Mouse | Right stick |
 | Roll | Q / E | LT / RT (with modifier) |
 | Throttle (cruise) | Shift / Ctrl | D-pad Up / Down |
-| Inertial dampeners | Z | B |
+| Boost | Left Alt (hold) | L3 |
+| Launch (when landed) | Space (hold) | A (hold) |
+| Land (at the prompt) | F (hold) | X (hold) |
+| Flight assist ↔ Newtonian (per ship) | Z (hold) | B (hold) |
+| Inertial dampeners (Newtonian mode) | Z | B |
 | Landing gear lock | P | Y |
 | Weapons fire | LMB | RT |
-| Pulse / jump drive | J (hold) | Hold Menu + A |
+| Pulse drive (in space) | J (hold) | Hold Menu + A |
+| Sower jump (from the Galaxy map) | M, then select a system and hold J | View, select, hold A |
+| Galaxy map | M | View |
+| Summon capital ship | Wrist pad → Fleet | Wrist pad → Fleet |
 
 All bindings are remappable; hold/toggle is selectable per action. Mouse-and-keyboard and controller have full parity, including in the Colony Overlay (controller uses a snapping cursor).
 
@@ -86,6 +93,8 @@ All bindings are remappable; hold/toggle is selectable per action. Mouse-and-key
 | **Zero-G** | Weightless but controllable | Momentum preserved; subtle thruster audio; mag-boot *thunk* |
 | **Ship flight** | Heavy ships feel heavy | Physically driven; the camera shakes with the thrusters; creaks under high G |
 | **Landing** | Tense, rewarding | Proximity beeps; dust or regolith kick-up; gear-lock *clank* |
+| **Atmosphere entry** | Spectacular, never a hard stop | Heat glow and buffeting over 8 s; clouds rush past; the speed eases down over 4 s; the atmosphere's roar fades in |
+| **Pulse drive** | Speed and anticipation | 3 s spool with a rising tone; star streaks; a bass *thump* at dropout |
 | **Airlock cycling** | Relief | Hiss → silence → pressure → full sound rushes back in; the helmet visor clears |
 
 ## 21.5 Haptics & adaptive triggers
