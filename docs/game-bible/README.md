@@ -70,7 +70,7 @@ From there, the world is yours. Survive an open desert valley full of the dead. 
 | 16 | [Glossary](16-glossary.md) | Terms and names |
 
 ### Companion: the Character Bible
-Every character, Hollow, boss and creature with story, visual design, wardrobe and a Blender spec per asset, plus a rigging toolkit: **[docs/character-bible](../character-bible/README.md)**.
+Every character, Hollow, boss and creature with story, visual design, wardrobe and a Blender spec per asset, all built as rigged greybox `.blend` files, plus a rigging toolkit: **[docs/character-bible](../character-bible/README.md)**.
 
 ### Companion: the Parts Bible
 Every buildable part, component, tool, weapon, suit and drone, with stats and a Blender spec for each of 601 assets, all built as validated greybox `.blend` files, plus a Blender toolkit: **[docs/parts-bible](../parts-bible/README.md)**.

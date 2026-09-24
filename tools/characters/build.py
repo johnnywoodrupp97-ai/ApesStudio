@@ -440,6 +440,11 @@ def portraits_extra():
 
 
 # --------------------------------------------------------------------------- data
+def built(blend_path):
+    """'Greybox built' once `exodus_characters.py build` has produced the file."""
+    return "Greybox built" if (ROOT / blend_path).exists() else "Not started"
+
+
 def write_data(chars, kit_total):
     DATA.mkdir(parents=True, exist_ok=True)
     (DATA / "characters.json").write_text(json.dumps(OrderedDict(
@@ -457,11 +462,12 @@ def write_data(chars, kit_total):
             for a in c["assets"]:
                 w.writerow([a["asset"], a["count"], c["id"], c["name"], c["group"], a["kind"], a["label"], c["tier"], c["skeleton_label"],
                             c["size_label"], *a["lod_tris"], c["textures"], c["facial_set"], "yes" if c["facial_capture"] else "no",
-                            a["blend_path"], "Not started", "", a["notes"]])
+                            a["blend_path"], built(a["blend_path"]), "", a["notes"]])
         for name, age, pron, job, where, traits, look, preset in MORE_SURVIVORS:
             w.writerow([f"SK_NPC_{pascal(name)}_Signature", 1, "NOT-kit", name, "NOT", "Signature piece", look.split(",")[0], "Crowd",
                         "EXO_Humanoid", preset, 8000, 4000, 1600, 480, "1K", "crowd", "no",
-                        f"assets/characters/notable-survivors/SK_NPC_{pascal(name)}_Signature.blend", "Not started", "", job])
+                        f"assets/characters/notable-survivors/SK_NPC_{pascal(name)}_Signature.blend",
+                        built(f"assets/characters/notable-survivors/SK_NPC_{pascal(name)}_Signature.blend"), "", job])
 
 
 def update_readme(chars, kit_total):

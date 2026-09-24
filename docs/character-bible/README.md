@@ -1,6 +1,6 @@
 # EXODUS PROTOCOL — Character Bible
 
-> Every person, Hollow, boss and creature in the game: story profile, visual design, wardrobe by act, and a **Blender production spec for every asset**, plus a Blender toolkit that builds rigged starter files. Companion to the [Game Bible](../game-bible/README.md) (story and characters: chapters 03, 04, 17) the [Parts Bible](../parts-bible/README.md) (suits, weapons and props) and the [Level Design Bible](../level-bible/README.md) (where each character appears, navigation agents and encounter spaces).
+> Every person, Hollow, boss and creature in the game: story profile, visual design, wardrobe by act, and a **Blender production spec for every asset**, plus a Blender toolkit. **Every character asset is built** as a validated, rigged greybox in `assets/characters/` (267 files). Companion to the [Game Bible](../game-bible/README.md) (story and characters: chapters 03, 04, 17) the [Parts Bible](../parts-bible/README.md) (suits, weapons and props) and the [Level Design Bible](../level-bible/README.md) (where each character appears, navigation agents and encounter spaces).
 
 <!-- STATS:START -->
 | | Count |
@@ -21,7 +21,7 @@
 
 ## How to use this bible
 - **Writers & directors:** each story card carries the character's want, need, wound and lie, their arc, voice and acting notes, consistent with game bible chapter 04.
-- **Concept & 3D artists:** each card has silhouette, face, hair, body, marks, palette (hex), signature props and a wardrobe table with every outfit by act. Below that are the Blender assets with budgets for LOD0–3, skeleton, facial rig set, textures, weights, hair, cloth, sockets and notes. Start with [00 — Character Art & Blender Standards](00-character-art-standards.md), then scaffold your file with the [toolkit](12-blender-character-toolkit.md).
+- **Concept & 3D artists:** each card has silhouette, face, hair, body, marks, palette (hex), signature props and a wardrobe table with every outfit by act. Below that are the Blender assets with budgets for LOD0–3, skeleton, facial rig set, textures, weights, hair, cloth, sockets and notes. Start with [00 — Character Art & Blender Standards](00-character-art-standards.md), then open the asset's built greybox in `assets/characters/` and replace it with final art (see the [toolkit](12-blender-character-toolkit.md)).
 - **Riggers & animators:** [10 — Skeletons, Rigging & Facial](10-skeletons-rigging-and-facial.md) has every skeleton template, the full humanoid bone list, sockets and the exact shape-key names; [11](11-animation-and-performance-capture.md) covers animation sets and the capture plan.
 - **Producers:** `data/art_tracker_characters.csv` is the character art backlog (one row per asset).
 - **Engineers:** `data/characters.json` and `data/skeletons.json` are the machine-readable registry.
@@ -42,7 +42,7 @@
 | 09 | [Creatures & Fauna](09-creatures-and-fauna.md) | Tessari, Earth wildlife, Drift fauna kits, memory-garden creatures |
 | 10 | [Skeletons, Rigging & Facial](10-skeletons-rigging-and-facial.md) | Templates, proportion profiles, bone list, sockets, facial shape-key sets, infection shapes |
 | 11 | [Animation & Performance Capture](11-animation-and-performance-capture.md) | Shared and signature animation sets, Hollow motion, capture plan |
-| 12 | [Blender Character Toolkit](12-blender-character-toolkit.md) | Scaffold, validate and export; tracking; adding characters |
+| 12 | [Blender Character Toolkit](12-blender-character-toolkit.md) | Build (full greybox of every asset), scaffold, validate and export; tracking; adding characters |
 
 ## Source of truth
 Chapters 01–10 and `data/` are **generated** by `python3 tools/characters/build.py` from `tools/characters/catalog/` and `tools/characters/skeletons.py`. Chapters 00, 11 and 12 and this README are hand-written; the counts above refresh on each build.
