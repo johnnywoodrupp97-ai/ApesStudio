@@ -55,7 +55,7 @@ There is **no XP level for the player**. The Engineer grows through gear, tech a
 
 | Faction | Scale | Gains | Losses | Rewards |
 |---|---|---|---|---|
-| **Free Haulers** | −100…+100 | Contracts, fair trades, rescuing haulers | Theft, attacking traders | Blueprints, crew, cheaper fuel, allies in M3.07 |
+| **Free Haulers** | −100…+100 | Contracts, fair trades, rescuing haulers | Theft, attacking traders | Blueprints, crew, cheaper fuel, allies in M3.08 |
 | **Choir** | −100…+100 | Listening, sharing Bloom samples, non-violence at Hollowmere | Killing Choir, burning shrines | Spore tech, Hollow-calming items, Commune ending |
 | **Directorate** | −100…+100 | Handing over intel (morally grey), sparing officers | Raids, freeing prisoners | Access to Directorate tech, Crane talk-down, Eden ending |
 

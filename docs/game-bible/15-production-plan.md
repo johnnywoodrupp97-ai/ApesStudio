@@ -1,82 +1,103 @@
 # 15 — Production Plan
 
-> A realistic path from idea to a shippable 12-hour game. Timelines assume a focused indie team (see §15.4); scale accordingly.
+> A realistic path from this bible to a shippable game. The design is ambitious (open world, physical building, colony sim, procedural galaxy, performance-captured story), so the plan offers **two scope tiers**. Pick one before pre-production ends.
 
-## 15.1 Scope strategy
-The three inspirations are each huge games. We stay shippable by:
-1. **Launching with one hand-crafted solar system + ~60 procedural systems**, not an infinite galaxy.
-2. **Capping colony size at 40** and using LOD simulation for off-screen survivors.
-3. **~220 blocks, 24 weapons, 14 Hollow types, 48 traits, 80 events** at launch — enough variety, not bloat.
-4. **Single-player first**, co-op-ready architecture, co-op as a free update.
-5. **Reusing the block system everywhere** — bases, ships, turrets, furniture and even story set pieces are grids.
+## 15.1 Scope tiers
 
-## 15.2 Milestones
+| | **Tier A — "Focused AA"** | **Tier B — "Full AAA"** |
+|---|---|---|
+| **Core team** | ~40 | ~110 + outsourcing (art, animation, QA, localization) |
+| **Time to 1.0** | ~30 months | ~42 months |
+| **Kestrel Valley** | 32 km² | 64 km² |
+| **Drift systems** | 30 procedural + 5 anchors | 60 procedural + 5 anchors |
+| **Story delivery** | Performance capture for Ada, Crane and Lily only; others in-engine animation | Full performance capture for all story characters |
+| **Cinematics** | 10 (~12 min) | 18 (~24 min) |
+| **Voiced lines** | ~8,000 | ~15,000 |
+| **Full VO languages** | EN (+ subtitles in 12) | EN, FR, DE, ES, JA, PT-BR (+ subtitles in 7 more) |
+| **Launch blocks / weapons / Hollows** | 160 / 18 / 11 | 220 / 24 / 14 |
+| **Co-op** | Post-launch (+9 months) | Post-launch (+6 months) |
+| **Early Access** | Recommended (funds development) | Optional |
+
+The rest of this bible describes **Tier B**; §15.7 lists what Tier A cuts.
+
+## 15.2 Scope strategy (both tiers)
+1. **One hand-crafted solar system + a bounded procedural Drift**, not an infinite galaxy at launch.
+2. **Colony size capped at 40**, with LOD simulation for off-screen survivors.
+3. **Reuse the block system everywhere:** bases, ships, turrets, furniture and even story set pieces are grids.
+4. **Single-player first**, with a co-op-ready host/client architecture from day one.
+5. **Build the data registry first.** It's the backbone of both production speed and expansions.
+
+## 15.3 Milestones (Tier B)
 
 | # | Milestone | Duration | Exit criteria |
 |---|---|---|---|
-| **M0** | **Concept & Bible** | 1 month | This bible approved; pillars locked; engine chosen |
-| **M1** | **Core Prototypes** | 3 months | Gray-box: (a) block building + power + rooms, (b) 5 survivors with needs & utility AI, (c) Hollow horde vs. walls, (d) planet → orbit flight on one voxel planet |
-| **M2** | **Vertical Slice** | 4 months | Prologue + M1.01–M1.02 at near-final quality: Kestrel hangar, first horde, rescue Lily. Proves tone, horror, building and colony warmth together |
-| **M3** | **First Playable (Acts I–II)** | 6 months | Earth → Haven-9 → Moon playable end to end with placeholder art where needed |
-| **M4** | **Alpha (content complete)** | 8 months | All four acts playable, all systems in, all endings reachable |
-| **M5** | **Beta** | 4 months | Content final, balancing, performance, localization, accessibility, closed playtests |
-| **M6** | **Early Access (optional) / Launch** | — | Certification, launch marketing |
-| **Total** | | **~26 months** to 1.0 (+ optional Early Access after M3 or M4) | |
+| **M0** | Concept & bible | 2 months | Bible approved; pillars locked; engine spike done; scope tier chosen |
+| **M1** | Core prototypes | 4 months | Gray-box: (a) blocks + power + rooms, (b) 10 survivors with utility AI, (c) a 200-agent horde vs. walls, (d) seamless planet → orbit, (e) a 4 km² open-world streaming test |
+| **M2** | Vertical slice | 6 months | Cold Open → M1.02 at final quality in a 4 km² slice of Kestrel Valley (§15.4) |
+| **M3** | First playable (Acts I–II) | 8 months | Earth → Haven-9 → Moon end to end; the open valley at full size |
+| **M4** | Alpha (content complete) | 12 months | All four acts; all endings reachable; the Drift at full size |
+| **M5** | Beta | 7 months | Content final; balance; performance; localization; accessibility; certification prep |
+| **M6** | Launch | 3 months | Certification; launch marketing; day-one patch |
+| **Total** | | **~42 months** | |
 
-### Early Access option
-Ship **Acts I–II + Survival Sandbox** in Early Access after M3 (≈ 14 months in) to fund development and gather building/colony feedback. Acts III–IV and endings follow in 1.0.
-
-## 15.3 Vertical slice definition (M2)
-- **Length:** 45–60 minutes.
-- **Content:** M0.01–M0.03, M1.01, M1.02 (Township + school + Lily).
+## 15.4 Vertical slice definition (M2)
+- **Length:** 60–75 minutes.
+- **Content:** Cold Open, M0.01–M0.03, M1.01, M1.02, plus free exploration of a 4 km² slice of Kestrel Valley (Complex, Township, Route 93).
 - **Must prove:**
   - Horror atmosphere in the dark spaceport.
-  - Building a fortification that visibly holds (or fails) under a horde.
-  - Lily feels like a person within 10 minutes of meeting her (needs, barks, a small moment at the campfire).
-  - Infection meter creates tension without frustration.
-- **Success test:** 8/10 external playtesters want to keep playing; ≥ 6/10 remember Lily's name a week later.
+  - **The Ada gut-punch works:** playtesters feel betrayed at Pad 12 and want to see her again.
+  - The open world invites wandering: players leave the path within 20 minutes of the prologue ending.
+  - Building a fortification that visibly holds (or fails) against a horde.
+  - Lily feels like a person within 10 minutes of meeting her.
+  - The infection meter creates tension without frustration.
+- **Success test:** 8/10 external playtesters want to keep playing; ≥ 6/10 remember Lily's *and* Ada's names a week later.
 
-## 15.4 Team (core, for ~26-month plan)
+## 15.5 Team (Tier B core, ~110)
 
 | Discipline | Headcount | Notes |
 |---|---|---|
-| Creative / Game Director | 1 | Owns the bible |
-| Producer | 1 | |
-| Game Designers | 3 | Systems (building/survival), Colony sim, Missions/levels |
-| Narrative | 2 | Lead writer + writer/narrative designer |
-| Engineers | 6 | Engine/voxel, gameplay, AI (colony + hordes), tools, UI, platform/save |
-| Artists | 6 | Art director, environment ×2, character, props/blocks, VFX/tech art |
-| Animator | 1–2 | + mocap outsourcing |
-| Audio | 1 + outsourced | Sound design & music |
-| QA | 2 + outsourced | |
-| **Total core** | **~24** | Scale down (and cut scope per §15.6) for smaller teams |
+| Direction (creative, game, art, audio, narrative, technical) | 6 | The owners of the bible |
+| Production | 8 | Producers per pillar; release management |
+| Game design | 16 | Systems (building/survival), colony sim, open world, combat, missions/levels, economy/balance |
+| Narrative | 7 | Lead writer, 3 writers, 2 narrative designers, 1 cinematic designer |
+| Engineering | 34 | Engine/voxel/streaming, gameplay, AI (colony, crowds, raid planner), physics/grids, tools, UI, online/co-op, platform, save |
+| Art | 24 | Environment, characters, props/blocks, VFX, tech art, lighting, concept |
+| Animation | 8 | Plus mocap stage partner |
+| Audio | 5 | Sound design, music (plus composer), VO direction |
+| QA (internal) | 8 | Plus an outsourced QA partner for full passes |
+| User research & analytics | 3 | Playtests; telemetry |
+| Community & marketing | 4 | Plus publisher/agency support |
 
-## 15.5 Top risks & mitigations
+## 15.6 Top risks & mitigations
 
 | Risk | Impact | Mitigation |
 |---|---|---|
-| Scope creep from three big genres | High | Pillar tests on every feature; content caps (§15.1); cut list (§15.6) |
-| Physics/grid performance with large ships | High | Graph-based subsystems; chunked grids; early stress tests in M1 |
-| Colony sim feels shallow in first person | High | Vertical slice must prove it; invest in barks and ambient interactions |
-| Tonal whiplash (horror ↔ cozy) | Medium | Hearth rule (§11.1); strong audio transitions; station is always a safe place |
-| Procedural planets feel samey | Medium | Anchor set pieces, POI variety, Bloom coverage as a visual variable |
-| Story gated by player building skill | Medium | Functional requirements + story blueprints + projector welding |
-| Save compatibility breaking during expansions | Medium | Versioned schema + migrations from day one |
+| Scope from four big genres (open world, builder, life-sim, space) | Very high | Pillar tests on every feature; scope tiers; cut list (§15.7); content caps |
+| Open-world streaming + voxel planets + physics grids performance | High | Engine spike in M0; stress tests in M1; strict per-platform budgets ([13 §13.7](13-technical-architecture.md)) |
+| Story breaks under open-world sequence-breaking | High | State-based narrative ([17 §17.6](17-narrative-design.md)); fallback triggers; automated "story state" tests |
+| The Taking's procedural staging in any player base | High | Prototype in M1; fallback to comms-screen staging |
+| The colony sim feels shallow in first person | High | Vertical slice must prove it; barks and memory barks |
+| Tonal whiplash (horror ↔ cozy) | Medium | The hearth rule; strong audio transitions |
+| Procedural planets feel samey | Medium | Anchors, POI variety, Wonders, Bloom as a visual variable |
+| Story gated by building skill | Medium | Functional requirements, story blueprints, projector welding |
+| Save compatibility across expansions | Medium | Versioned schema and migrations from day one |
 
-## 15.6 Cut list (in order, if needed)
+## 15.7 Cut list (in order, if needed)
 1. Programmable Block scripting (keep event controllers).
-2. Aerodynamics (wings) — use thrusters only.
-3. Ship capture & repair of enemy ships.
-4. Secret EDEN ending.
-5. Drift size from 60 → 30 procedural systems.
-6. Council meetings → simple policy menu.
+2. Aerodynamics (wings); thrusters only.
+3. Ship capture and repair of enemy ships.
+4. The secret EDEN ending.
+5. Drift size 60 → 30 procedural systems.
+6. Council meetings → a simple policy menu.
 7. Mimic and Burrower enemies.
+8. The *Legacy* ending (play as adult Lily) → epilogue slides only.
+9. Kestrel Valley 64 → 32 km².
 
-**Never cut:** infection system, colony needs & relationships, block building with pressurization, the four acts, the three main endings.
+**Never cut:** the open world, the infection system, colony needs and relationships, block building with pressurization, Ada's storyline, the four acts, the CURE / COMMUNE / EXODUS endings, and at least three Weavers.
 
-## 15.7 Next steps
-1. Approve this bible and lock the pillars.
-2. Choose engine after a 2-week spike (voxel planet + 1,000-block grid + 200 crowd agents).
-3. Start M1 prototypes in parallel (building, colony, horde, flight).
-4. Write the full script for the vertical slice (Prologue + M1.01–M1.02).
-5. Build the content definition registry first — it's the backbone of expansion.
+## 15.8 Next steps
+1. Approve this bible; lock pillars and the scope tier.
+2. A 6-week engine spike: voxel planet + seamless orbit + a 1,000-block grid + 200 crowd agents + a 4 km² streamed region.
+3. Start M1 prototypes in parallel (building, colony, horde, flight, open-world streaming).
+4. Write the full vertical-slice script (Cold Open → M1.02) and cast Ada, Wrench and Lily for chemistry reads.
+5. Build the content data registry first.

@@ -2,6 +2,6 @@
 
 ## EXODUS PROTOCOL (working title)
 
-A zombie-apocalypse survival game that grows into a space colony epic. It mixes *Space Engineers*-style block building, *Sims*-style colony life and *No Man's Sky*-style procedural exploration, with a 12-hour campaign and a sandbox you can keep playing and expanding.
+An **open-world, open-exploration survival game** that begins with a zombie outbreak and grows into a space-colony epic. It mixes *Space Engineers*-style physical building, *Sims*-style colony life and *No Man's Sky*-style procedural exploration, with an AAA character-driven campaign (~12-hour critical path) and a sandbox you can keep playing and expanding.
 
-**Game Bible:** [`docs/game-bible/`](docs/game-bible/README.md)
+**Game Bible (Elite Edition):** [`docs/game-bible/`](docs/game-bible/README.md)

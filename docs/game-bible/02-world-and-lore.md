@@ -11,17 +11,20 @@
 
 | Date | Event |
 |---|---|
-| ~310 million years ago | The **Sowers**, a post-biological intelligence, seed thousands of worlds with the **Verdance** — a programmable biological agent that rewrites biospheres into a uniform "garden" suited to Sower life. |
-| ~300 million years ago | The Sowers vanish. Their dormant seed-vaults and Seedships drift, waiting for a signal that never comes. |
+| ~400–252 million years ago | The **Sowers**, a post-biological intelligence, seed thousands of worlds with the **Verdance**: a programmable biological agent that rewrites biospheres into a uniform "garden" suited to Sower life. |
+| **~252 million years ago** | The Sowers garden **Earth**. Their harvest triggers the **Great Dying**, the end-Permian extinction that kills about 90% of life. Organisms the Sowers tag as *tended* carry a "do not harvest" sequence in their mitochondria. |
+| ~252 million years ago | After harvesting a world whose people *sang* (the Drowned Choir), the Sowers realize some gardens held minds. Ashamed, they abandon the program mid-harvest and vanish. Earth's Seedship, ***Anthesis***, goes dormant in the Drift. A seed-pod scout, **Styx**, is left drifting between the stars as its beacon. |
 | 2059 | NASA/Kestrel **Project PERSEPHONE** launches: a sample-return probe to the anomalous interstellar object **2041 QX "Styx"**, famous for emitting faint, repeating radio pulses. |
-| 2068 | Persephone collects 4.2 kg of material from Styx's surface. Instruments note "organic lattice structures inconsistent with abiotic formation." The finding is classified. |
+| Nov 2068 | Persephone collects 4.2 kg of material from Styx's surface, remote-operated from Kestrel Mission Control by a junior engineer: **the player**. The surface visibly reacts. Instruments note "organic lattice structures inconsistent with abiotic formation." The finding is classified. Styx's beacon changes pattern: *answer received*. |
 | 2070 | The **Ark Directorate**, a joint military-corporate oversight body, takes control of Persephone. Director **Halvard Crane** sees a weapon and a cure for death. |
 | **Mar 3, 2071** | Persephone's return capsule lands at Kestrel. The sample is moved to the sub-level **BSL-4 lab "the Vault."** |
 | Mar 3–23 | Dr. Mara Voss's team discovers the sample can **re-animate dead tissue**. Crane pushes for accelerated testing on terminal volunteers. |
+| **Mar 22, 2071** | Crane signs **Contingency EDEN**: ark ships fueled and pre-positioned, Persephone cultures packed as "priority cargo." Nobody outside the Directorate is warned. |
 | **Mar 24, 2071 — "Night Zero"** | A containment breach in the Vault. Within hours Kestrel is overrun. Within days, the outbreak is global — spores ride the jet stream. **The game begins at 21:40 on Night Zero.** |
-| Mar 25 | Ark Directorate evacuates its leadership to orbit aboard pre-built ark vessels. Everyone else is left behind. |
+| Mar 24–25 | The Ark Directorate evacuates its leadership to orbit aboard pre-built ark vessels. **Commander Ada Okafor** flies the lead shuttle, *Seraph*, and leaves her sibling on the pad. Everyone else is left behind. The Bloom begins spreading across Earth in a pattern that, from orbit, forms a Sower glyph. |
 | Apr–May 2071 | Governments collapse. Orbital infrastructure goes dark. The Moon's Tycho mining outpost falls silent. |
-| (Act III) | The player discovers Styx was not a rock but a **dormant Sower seed-pod**, and its radio pulses were a beacon — now answered. |
+| (Act II) | The player learns Styx was not a rock but a **dormant Sower seed pod**, and its radio pulses were a beacon, now answered. |
+| (Act III) | The player learns Earth was a Sower garden, and *Anthesis* is coming back to finish the harvest. |
 
 ## 2.3 The pathogen: the Verdance
 
@@ -46,8 +49,10 @@ In-universe, survivors call it **"the Bloom"** or **"the Green."** Scientists ca
 3. **Bloom** — delirium, aggression, lichen-like growths. Only experimental treatment works.
 4. **Turning** — death and reanimation as a Hollow.
 
-### Why some people are immune (story hook)
-Roughly 1 in 3,000 humans carries a mitochondrial variant the Verdance cannot read — **"Null carriers."** Lily Chen is one. The player is *partially* resistant (explains how they survive bites early in Act I with Suppressant). This is the key to the Cure ending.
+### Why some people are immune (the central twist)
+Roughly 1 in 3,000 humans are **Null carriers**. They inherit, through an unbroken maternal line going back 252 million years to the survivors of the Great Dying, the Sowers' **"tended" mark**: a "do not harvest" sequence. The Verdance reads it and stands down. Lily Chen is one. The player has a *partial* match (infection progresses 3× slower), which is why they survive early bites with Suppressant.
+
+The Loom aboard the Seedship obeys **only** the mark. That makes Lily the key to every ending, and the reason Crane wants her.
 
 ### The Verdance is not evil
 It is a tool without its wielders — a gardener that never got told to stop. Late-game revelation: it can be **re-instructed** by the Sower "Loom" aboard the Seedship. This reframes the whole conflict and sets up the three endings.
@@ -56,7 +61,8 @@ It is a tool without its wielders — a gardener that never got told to stop. La
 - A civilization that uploaded itself into engineered biology and stellar-scale machinery. They did not see themselves as conquerors — they "gardened" worlds they believed were empty of minds.
 - **Architecture:** grown rather than built — ribbed, coral-like spires; bioluminescent teal glyphs; chambers that "breathe."
 - **Technology found in-game:** Jump Cores (FTL), Loom Nodes (genetic re-writers), Resonance Keys (data), Garden Engines (terraformers).
-- **Where they went:** Deliberately left unresolved — the central hook for future expansions (see [14 — Expansion Roadmap](14-expansion-roadmap.md)).
+- **Why they stopped:** they harvested a world of singing minds (the Drowned Choir) before they understood what they were. They abandoned every garden mid-cycle, but couldn't recall the seeds already sown.
+- **Where they went:** deliberately unresolved, and the central hook for future expansions (see [14 — Expansion Roadmap](14-expansion-roadmap.md)). Glyph 64 hints: *"We were not the first gardeners."*
 
 ## 2.5 Factions
 
@@ -65,7 +71,8 @@ Engineers, scientists, soldiers and civilians. Pragmatic, frightened, stubbornly
 
 ### The Ark Directorate
 - Military-corporate elite that escaped to orbit in armed ark ships on Night Zero.
-- Led by **Director Halvard Crane**. Holds the orbital high ground and the best technology.
+- Led by **Director Halvard Crane**; his flight wing is commanded by **Ada Okafor**, the player's sister. Holds the orbital high ground and the best technology.
+- **Doctrine:** "sterilization protocols": any transport, camp or station that might carry infection is destroyed from a distance.
 - Goal: control the Verdance, harvest immunity from Null carriers, and "reseed" Earth with a chosen population.
 - **Aesthetic:** clean white-and-gold hulls, drones, sterile propaganda.
 - **Role:** primary human antagonist; can be negotiated with in part.
@@ -89,9 +96,11 @@ All reanimated creatures, human and animal, directed by the Verdance's distribut
 
 | Location | Act | Description |
 |---|---|---|
-| **Kestrel Aerospace Complex** | I | Nevada spaceport: terminals, hangars, fuel farm, launch pads, the underground Vault lab. The "home" you have to leave. |
-| **Kestrel Township** | I | Company town outside the fences — diner, school, gas station, suburbs. Scavenging & rescue zone. |
-| **Pad 39-K** | I | Launch pad with a half-assembled crew vehicle, the *Wren*. Finale of Act I. |
+| **Kestrel Valley** | I | A 64 km² open region of Nevada high desert (see [08](08-open-world-and-exploration.md)). |
+| **Kestrel Aerospace Complex** | I | Spaceport: terminals, hangars, fuel farm, launch pads, Mission Control, and the underground Vault lab. |
+| **Kestrel Township** | I | Company town outside the fences: diner, school, gas station, suburbs. |
+| **Pad 12 / Pad 39-K** | Prologue / I | Where Ada leaves you; where the *Wren* launches. |
+| **Hollis Dam, Fort Calder, Silver Ridge, Red Mesa, Prospect** | I | Open-world districts of the valley. |
 | **Haven-9 Station** | II | Derelict 12-module research station in LEO. Becomes the player's orbital home and colony hub. |
 | **Tycho Outpost** | II | Lunar mining base overrun by infected miners. Source of helium-3, titanium, and the **Styx telemetry archive**. |
 | **The Styx Wreck** | II→III | The hollowed interstellar object, drifting beyond the Moon. Contains the first Sower Jump Core. |

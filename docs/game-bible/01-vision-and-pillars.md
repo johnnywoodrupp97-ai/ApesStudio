@@ -2,7 +2,7 @@
 
 ## 1.1 Vision statement
 
-EXODUS PROTOCOL is about **rebuilding civilization one bolt and one person at a time.** The player begins with nothing but a multitool during the collapse of human society. By the end they command a fleet of self-built ships, a thriving orbital colony, and the fate of a species.
+EXODUS PROTOCOL is an **open-world, open-exploration survival game** about **rebuilding civilization one bolt and one person at a time.** The player begins with nothing but a multitool during the collapse of human society. By the end they command a fleet of self-built ships, a thriving orbital colony, and the fate of a species.
 
 The game fuses three proven fantasies:
 
@@ -11,8 +11,15 @@ The game fuses three proven fantasies:
 | **Space Engineers** | "I designed and built this machine, and physics says it works." | Building is survival-critical: a badly braced wall *will* fall to a Brute. |
 | **The Sims** | "These little people have lives, and I care about them." | Survivors are traumatized, can be infected, and remember how you treated them. |
 | **No Man's Sky** | "Every planet is a new place nobody has seen." | The galaxy is scarred by an ancient plague; exploration is also investigation. |
+| **Open-world survival** (*7 Days to Die*, *Subnautica*, *DayZ*) | "The world is dangerous, and I decide where to go and how to live." | The open world grows from one valley to a galaxy, and your survival kit grows from a wrench to a starship. |
 
 ## 1.2 Design pillars
+
+### Pillar 0 — Go Anywhere, Survive Anything *(the foundation)*
+- An open world from the end of the prologue: Kestrel Valley, then orbit and the Moon, then ~60 star systems. All seamless.
+- **Capability gates, not walls:** the world is limited only by what you can survive and what you can build to get there.
+- The story waits for you. Surviving, building and exploring are complete ways to play on their own.
+- **Test:** *Can the player point at the horizon, go there, and find something worth the trip?*
 
 ### Pillar 1 — Build What Saves You
 - All player structures (bases, ships, rovers, turrets) are assembled from blocks on grids.
@@ -78,16 +85,18 @@ Move → scan → gather/fight → build/place → manage vitals.
 Story mission reveals a new region → region introduces a new resource/tech tier → new tech enables the next region and the next story mission.
 
 ## 1.5 Unique selling points
-1. **Horror-to-hope arc:** starts as tense zombie survival, grows into a hopeful space-colony epic.
-2. **Physical engineering with social consequence:** your station's layout shapes your survivors' happiness and relationships.
-3. **Infection as a systemic threat:** the plague can spread *inside* your colony through air vents, wounds and water — it's not just enemies at the door.
-4. **Seamless ground-to-orbit:** walk off a burning Earth, fly to orbit, land on alien worlds, no loading screens (target).
-5. **Hand-authored mystery inside a procedural galaxy.**
+1. **An open world that grows from a valley to a galaxy:** start in a 64 km² open region of Earth and end up charting star systems — seamlessly, with no invisible walls.
+2. **Horror-to-hope arc:** starts as tense zombie survival, grows into a hopeful space-colony epic.
+3. **Physical engineering with social consequence:** your station's layout shapes your survivors' happiness and relationships.
+4. **Infection as a systemic threat:** the plague can spread *inside* your colony through air vents, wounds and water — it's not just enemies at the door.
+5. **Seamless ground-to-orbit:** walk off a burning Earth, fly to orbit, land on alien worlds, no loading screens (target).
+6. **An AAA, hand-authored story inside an open procedural galaxy**, with a personal core: your sister is on the other side.
 
 ## 1.6 What EXODUS PROTOCOL is *not*
 - Not a competitive PvP game.
 - Not a twitch shooter — combat is weighty, resource-constrained and tactical.
-- Not a pure sandbox — the campaign has direction, stakes and an ending.
+- Not a theme park on rails: after the prologue there are no corridors, and the story never forces you off the path you choose.
+- Not *only* a sandbox either: the campaign has direction, stakes and an ending (and a full sandbox mode exists for those who want no story).
 - Not a micro-managing god game — the player is a person in the world, not a floating cursor (though a colony management overlay exists).
 - Not endless grind — the 12-hour path is tuned to keep moving.
 

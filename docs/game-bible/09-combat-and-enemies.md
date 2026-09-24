@@ -43,16 +43,17 @@
 | **Stalker** | M3.03 | Bloom-mutated native predator (varies per planet) | Planet-specific |
 | **Hive Swarm** | M3.03 | Flying spore-insects; drain O₂ and clog vents | Flame, air filters |
 | **Mimic** | M3.04 | Mimics survivor voices/radio calls to lure the player | Scanner; trust but verify |
-| **Husk Titan** | M3.07 | Colossal walking Bloom-mass (planet event boss) | Ship weapons, orbital strike |
+| **Husk Titan** | M3.08 | Colossal walking Bloom-mass (planet event boss) | Ship weapons, orbital strike |
 | **Sower Warden** | M4.02 | Precursor construct — ancient guardian, resonance shield | Electric + Resonance damage |
-| **Crane (Ascendant)** | M4.03 | Final boss (3 phases) | See [03 — Storyline](03-storyline.md) |
+| **Ada (Seraph exo-frame)** | M4.03 | Sibling boss (if Ada stayed loyal); 2 phases; can be talked down | Dodge, EMP her frame, or play her recording |
+| **Crane (Ascendant)** | M4.04 | Final boss (3 phases) | See [03 — Storyline](03-storyline.md) |
 
 ### Bloom Hearts
 - Pulsing organic nests that anchor Hollow activity and spread Bloom in a radius.
 - Destroying a Heart: sustained damage to its **3–5 root nodes** while waves spawn. Rewards: Bloom samples (research), Resonance crystals, reduced local Bloom.
 
 ## 9.4 Horde Nights & base defense
-- **Earth (Act I):** Every in-game night (~20 real minutes per day) brings a horde; every 3rd night is a **Blood Moon** style big wave.
+- **Earth:** a 60-minute day (40 min day / 20 min night). Every night brings roaming hordes sized by your base's Attraction; every 3rd night is a **Green Moon**, a big wave aimed at your largest base. See [22 — Balance & Tuning](22-balance-and-tuning.md).
 - **Noise/heat attraction model:** generators, refineries, gunfire and lights raise a base's **Attraction** score, which increases horde size. Engineering trade-off: power vs. stealth.
 - **Hollows path-find to weak points**; Brutes and Burrowers target structure specifically.
 - **Defense tools:** walls, gates, spikes, trap corridors, flame traps, floodlights (Hollows avoid bright light briefly), turrets (need ammo via conveyors), guard survivors (need Combat skill and weapons).

@@ -40,6 +40,16 @@
 - **Diegetic music:** survivors play instruments; radios play pre-outbreak songs.
 - **Adaptive system:** layered stems react to threat level, location and colony morale.
 
+### Leitmotifs
+| Theme | Instrumentation | Where it lives |
+|---|---|---|
+| **Main theme — "Build Your Way Out"** | Low brass, taiko, rising strings | Title card, Liftoff, Convergence |
+| **"Sunday"** (the Okafor family) | Solo kora and acoustic guitar | Ada's calls, Sunday dinners, M4.03, the final scene |
+| **The Verdance motif** | Five notes; first heard in Hollow clicks, later full choir | Hollows, Sower ruins, the Loom |
+| **"The Director"** | Cold, perfect string quartet | Crane's broadcasts; inverted and distorted in the boss fight |
+| **"Lily"** | Music box and celesta | Lily's scenes; it gains an orchestra as she grows |
+| **"The Drift"** | Analog synth arpeggios and choir | Free exploration in space |
+
 ### Voice
 - ~15,000 lines at launch (companions, antagonists, KESTREL, 12 notable survivors, barks for procedural survivors).
 - Procedural survivors use **bark sets** (8 voice types × 3 moods).

@@ -119,7 +119,7 @@ Everything content is a **definition file** loaded into a central registry. Desi
 ```json
 {
   "id": "M2.04",
-  "title": "Signal from Tycho",
+  "title": "The Far Side",
   "act": 2,
   "prerequisites": ["flag:M2.03.complete"],
   "objectives": [
