@@ -1,0 +1,336 @@
+{
+ "exodus_level_version": "1.0",
+ "kind": "level",
+ "level_id": "KES-002",
+ "level_name": "Hangar 4",
+ "type": "Hub",
+ "size": {
+  "w": 60,
+  "d": 40,
+  "h": 20
+ },
+ "budget": {
+  "blockout_tris": 300000,
+  "per": "level",
+  "memory_mb": 600,
+  "draw_calls": 4000,
+  "shadow_lights": 24
+ },
+ "required_markers": [
+  "PS_M0_01",
+  "TRG_M0_03_WeldDoors",
+  "CAM_C03_Roof",
+  "HS_M1_06_North",
+  "HS_M1_06_East"
+ ],
+ "spaces": [
+  "Hangar floor",
+  "Wren launch stack",
+  "Parts cage",
+  "Office mezzanine",
+  "Hangar doors",
+  "Roof"
+ ],
+ "bounds_min": [
+  -30.0,
+  -20.0,
+  0.0
+ ],
+ "bounds_max": [
+  30.0,
+  20.0,
+  21.0
+ ],
+ "markers": [
+  {
+   "name": "CAM_C03_Roof",
+   "type": "CAMERA",
+   "location": [
+    -12.0,
+    -12.0,
+    26.0
+   ],
+   "rotation_euler": [
+    1.3393189907073975,
+    7.960284165164921e-08,
+    -0.7853982448577881
+   ],
+   "props": {}
+  },
+  {
+   "name": "DOOR_HangarFloor_HangarDoors",
+   "type": "EMPTY",
+   "location": [
+    0.0,
+    -10.0,
+    0.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "connection": "hangar door"
+   }
+  },
+  {
+   "name": "DOOR_HangarFloor_OfficeMezzanine",
+   "type": "EMPTY",
+   "location": [
+    -9.0,
+    8.0,
+    3.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "connection": "stairs"
+   }
+  },
+  {
+   "name": "DOOR_HangarFloor_PartsCage",
+   "type": "EMPTY",
+   "location": [
+    -10.0,
+    4.0,
+    0.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "connection": "door"
+   }
+  },
+  {
+   "name": "DOOR_OfficeMezzanine_Roof",
+   "type": "EMPTY",
+   "location": [
+    -9.0,
+    8.0,
+    13.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "connection": "ladder"
+   }
+  },
+  {
+   "name": "HS_M1_06_East",
+   "type": "MESH",
+   "location": [
+    20.0,
+    0.0,
+    2.5
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {},
+   "size": [
+    20.0,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "name": "HS_M1_06_North",
+   "type": "MESH",
+   "location": [
+    0.0,
+    10.0,
+    2.5
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {},
+   "size": [
+    20.0,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "name": "PS_M0_01",
+   "type": "EMPTY",
+   "location": [
+    0.0,
+    0.0,
+    0.10000000149011612
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {}
+  },
+  {
+   "name": "TRG_M0_03_WeldDoors",
+   "type": "MESH",
+   "location": [
+    0.0,
+    2.0,
+    1.5
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {},
+   "size": [
+    4.0,
+    4.0,
+    3.0
+   ]
+  },
+  {
+   "name": "VOL_Room_HangarDoors",
+   "type": "MESH",
+   "location": [
+    0.0,
+    -20.0,
+    7.5
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "Welded shut in M0.03"
+   },
+   "size": [
+    30.0,
+    1.0,
+    15.0
+   ]
+  },
+  {
+   "name": "VOL_Room_HangarFloor",
+   "type": "MESH",
+   "location": [
+    0.0,
+    0.0,
+    10.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "Open build space"
+   },
+   "size": [
+    60.0,
+    40.0,
+    20.0
+   ]
+  },
+  {
+   "name": "VOL_Room_OfficeMezzanine",
+   "type": "MESH",
+   "location": [
+    -18.0,
+    16.0,
+    7.5
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "Overlooks the floor"
+   },
+   "size": [
+    20.0,
+    8.0,
+    3.0
+   ]
+  },
+  {
+   "name": "VOL_Room_PartsCage",
+   "type": "MESH",
+   "location": [
+    -20.0,
+    8.0,
+    2.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "Where Tug is pinned (M0.02)"
+   },
+   "size": [
+    10.0,
+    8.0,
+    4.0
+   ]
+  },
+  {
+   "name": "VOL_Room_Roof",
+   "type": "MESH",
+   "location": [
+    0.0,
+    0.0,
+    20.5
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "Watch the arks leave"
+   },
+   "size": [
+    60.0,
+    40.0,
+    1.0
+   ]
+  },
+  {
+   "name": "VOL_Room_WrenLaunchStack",
+   "type": "MESH",
+   "location": [
+    0.0,
+    2.0,
+    9.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "Crew vehicle under assembly"
+   },
+   "size": [
+    8.0,
+    8.0,
+    18.0
+   ]
+  }
+ ]
+}

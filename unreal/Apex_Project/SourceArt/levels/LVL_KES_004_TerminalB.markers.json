@@ -1,0 +1,292 @@
+{
+ "exodus_level_version": "1.0",
+ "kind": "level",
+ "level_id": "KES-004",
+ "level_name": "Terminal B",
+ "type": "Set Piece",
+ "size": {
+  "w": 180,
+  "d": 60,
+  "h": 18
+ },
+ "budget": {
+  "blockout_tris": 150000,
+  "per": "level",
+  "memory_mb": 350,
+  "draw_calls": 2500,
+  "shadow_lights": 16
+ },
+ "required_markers": [
+  "PS_M0_03",
+  "TRG_M0_03_Skywalk",
+  "TRG_M0_03_FuelTruck",
+  "CAM_M0_03_Skywalk"
+ ],
+ "spaces": [
+  "Concourse",
+  "Gate hall",
+  "Baggage handling",
+  "Skywalk",
+  "Drop-off lane"
+ ],
+ "bounds_min": [
+  -90.0,
+  -30.0,
+  -6.0
+ ],
+ "bounds_max": [
+  90.0,
+  30.0,
+  18.0
+ ],
+ "markers": [
+  {
+   "name": "CAM_M0_03_Skywalk",
+   "type": "CAMERA",
+   "location": [
+    23.0,
+    -12.0,
+    14.0
+   ],
+   "rotation_euler": [
+    1.3393189907073975,
+    7.960284165164921e-08,
+    -0.7853982448577881
+   ],
+   "props": {}
+  },
+  {
+   "name": "DOOR_BaggageHandling_Skywalk",
+   "type": "EMPTY",
+   "location": [
+    25.0,
+    -9.0,
+    1.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "connection": "stairs"
+   }
+  },
+  {
+   "name": "DOOR_Concourse_GateHall",
+   "type": "EMPTY",
+   "location": [
+    -35.0,
+    0.0,
+    0.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "connection": "open"
+   }
+  },
+  {
+   "name": "DOOR_GateHall_BaggageHandling",
+   "type": "EMPTY",
+   "location": [
+    2.5,
+    -9.0,
+    -3.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "connection": "door"
+   }
+  },
+  {
+   "name": "DOOR_Skywalk_DropOffLane",
+   "type": "EMPTY",
+   "location": [
+    51.5,
+    -5.0,
+    4.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "connection": "open"
+   }
+  },
+  {
+   "name": "PS_M0_03",
+   "type": "EMPTY",
+   "location": [
+    -60.0,
+    0.0,
+    0.10000000149011612
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {}
+  },
+  {
+   "name": "TRG_M0_03_FuelTruck",
+   "type": "MESH",
+   "location": [
+    15.0,
+    -18.0,
+    -4.5
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {},
+   "size": [
+    4.0,
+    4.0,
+    3.0
+   ]
+  },
+  {
+   "name": "TRG_M0_03_Skywalk",
+   "type": "MESH",
+   "location": [
+    35.0,
+    0.0,
+    9.5
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {},
+   "size": [
+    4.0,
+    4.0,
+    3.0
+   ]
+  },
+  {
+   "name": "VOL_Room_BaggageHandling",
+   "type": "MESH",
+   "location": [
+    15.0,
+    -18.0,
+    -3.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "Stealth detour"
+   },
+   "size": [
+    30.0,
+    20.0,
+    6.0
+   ]
+  },
+  {
+   "name": "VOL_Room_Concourse",
+   "type": "MESH",
+   "location": [
+    -60.0,
+    0.0,
+    6.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "Crowd crush (80 civilians, 12 Hollows)"
+   },
+   "size": [
+    60.0,
+    30.0,
+    12.0
+   ]
+  },
+  {
+   "name": "VOL_Room_DropOffLane",
+   "type": "MESH",
+   "location": [
+    68.0,
+    -10.0,
+    4.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "Fuel-truck explosion; exits onto the apron"
+   },
+   "size": [
+    40.0,
+    20.0,
+    8.0
+   ]
+  },
+  {
+   "name": "VOL_Room_GateHall",
+   "type": "MESH",
+   "location": [
+    -10.0,
+    0.0,
+    5.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "Directorate barricade"
+   },
+   "size": [
+    40.0,
+    30.0,
+    10.0
+   ]
+  },
+  {
+   "name": "VOL_Room_Skywalk",
+   "type": "MESH",
+   "location": [
+    35.0,
+    0.0,
+    10.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "Scripted collapse into baggage hall"
+   },
+   "size": [
+    40.0,
+    6.0,
+    4.0
+   ]
+  }
+ ]
+}

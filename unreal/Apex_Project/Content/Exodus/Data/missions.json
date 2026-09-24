@@ -1,0 +1,500 @@
+{
+  "_about": "Vertical slice missions: Cold Open -> M1.02 (game bible 03 §3.5-3.7, 18.1-18.2, 20.1-20.3). Each step runs its on_start actions, shows its objective, and completes on its event. Jump to any step with the console command 'ExoJump <step id>' or the launch option -ExoStep=<step id>.",
+  "missions": [
+    {
+      "id": "C0",
+      "title": "Cold Open: Contact",
+      "steps": [
+        {
+          "id": "c0_intro",
+          "objective": "Take the Persephone arm console",
+          "on_start": [
+            {"do": "survival", "on": false},
+            {"do": "time", "hour": 23.0, "scale": 0.0},
+            {"do": "activate", "group": "COLD"},
+            {"do": "checkpoint", "marker": "PS_ColdOpen"},
+            {"do": "title", "text": "KESTREL MISSION CONTROL - NOVEMBER 2068", "seconds": 5},
+            {"do": "say", "lines": [
+              ["KESTREL", "Signal delay: nineteen minutes, forty seconds. Arm control is yours."],
+              ["Flight Director", "Easy. We get one shot at this."]
+            ]}
+          ],
+          "complete": {"event": "dialogue_done"}
+        },
+        {
+          "id": "c0_drill",
+          "objective": "Guide the drill arm (E at the console)",
+          "complete": {"event": "interact", "target": "Console_Drill"}
+        },
+        {
+          "id": "c0_contact",
+          "objective": "",
+          "on_start": [
+            {"do": "say", "lines": [
+              ["Flight Director", "...Sample chamber?"],
+              ["KESTREL", "Sealed. Four point two kilograms."],
+              ["Mara Voss", "...Did it just move?"],
+              ["Halvard Crane", "Congratulations. You just touched history."]
+            ]}
+          ],
+          "complete": {"event": "dialogue_done"}
+        },
+        {
+          "id": "c0_cut",
+          "objective": "",
+          "on_start": [
+            {"do": "input", "on": false},
+            {"do": "title", "text": "THREE YEARS LATER", "seconds": 4}
+          ],
+          "complete": {"event": "time", "seconds": 4}
+        }
+      ]
+    },
+    {
+      "id": "M0.01",
+      "title": "M0.01 Last Shift",
+      "steps": [
+        {
+          "id": "m001_panel",
+          "objective": "Weld the Wren's guidance panel (E)",
+          "on_start": [
+            {"do": "hide", "group": "COLD"},
+            {"do": "teleport", "marker": "PS_M0_01"},
+            {"do": "checkpoint", "marker": "PS_M0_01"},
+            {"do": "input", "on": true},
+            {"do": "survival", "on": true},
+            {"do": "time", "hour": 21.67, "scale": 0.0},
+            {"do": "title", "text": "KESTREL AEROSPACE COMPLEX - MARCH 24, 2071, 21:40", "seconds": 5}
+          ],
+          "complete": {"event": "interact", "target": "WrenPanel"}
+        },
+        {
+          "id": "m001_call",
+          "objective": "Take Ada's call",
+          "on_start": [
+            {"do": "say", "lines": [
+              ["Ada", "You're still at work."],
+              ["Wrench", "So are you."],
+              ["Ada", "I'm on standby. That's different. They've had us fueling everything all week. Don't ask."],
+              ["Ada", "Sunday. Mom's jollof. You're cooking."],
+              ["Wrench", "I burned it last time."],
+              ["Ada", "You burned it every time. That's the tradition, Wrench. Go home. Sleep. Fix things tomorrow."]
+            ]}
+          ],
+          "complete": {"event": "dialogue_done"}
+        },
+        {
+          "id": "m001_tug",
+          "objective": "",
+          "on_start": [
+            {"do": "activate", "group": "M0_01"},
+            {"do": "say", "lines": [
+              ["Tug", "Coffee's terrible. Drink it anyway."],
+              ["Dana Marsh", "Night, Wrench."],
+              ["Tug", "Your sister's gonna owe me a steak dinner when that bird flies."]
+            ]}
+          ],
+          "complete": {"event": "dialogue_done"}
+        },
+        {
+          "id": "m001_codeblack",
+          "objective": "",
+          "on_start": [
+            {"do": "say", "lines": [
+              ["KESTREL", "Code Black. Biological. All personnel shelter in place."],
+              ["Tug", "That's no drill. Stay put, kid. I'm grabbing the spare radio from the parts cage."]
+            ]}
+          ],
+          "complete": {"event": "dialogue_done"}
+        }
+      ]
+    },
+    {
+      "id": "M0.02",
+      "title": "M0.02 Code Black",
+      "steps": [
+        {
+          "id": "m002_dark",
+          "objective": "Find Tug. Crouch (Ctrl) to stay quiet; your wrench (LMB) is all you have",
+          "on_start": [
+            {"do": "place", "companion": "Tug", "marker": "PS_TugPinned", "follow": false},
+            {"do": "teleport", "marker": "PS_M0_02"},
+            {"do": "checkpoint", "marker": "PS_M0_02"},
+            {"do": "activate", "group": "M0_02"},
+            {"do": "say", "lines": [
+              ["Tug (radio)", "Kid-- they're in the cage-- they're--"],
+              ["KESTREL", "Emergency lighting only. Movement detected in the service corridors."]
+            ]}
+          ],
+          "complete": {"event": "killed", "target": "Dana"}
+        },
+        {
+          "id": "m002_scratch",
+          "objective": "Take a Suppressant from the med cabinet (E), then use it (H)",
+          "on_start": [
+            {"do": "infect", "percent": 6},
+            {"do": "say", "lines": [
+              ["KESTREL", "You have been scratched. Infection detected. There is a medical cabinet on the corridor wall."]
+            ]}
+          ],
+          "complete": {"event": "interact", "target": "MedCabinet"}
+        },
+        {
+          "id": "m002_cage",
+          "objective": "Reach the parts cage",
+          "on_start": [
+            {"do": "activate", "group": "M0_02_corridor"},
+            {"do": "activate", "group": "M0_02_cage"},
+            {"do": "say", "lines": [
+              ["KESTREL", "One Suppressant halts the infection for twenty minutes. Press H to use it."]
+            ]}
+          ],
+          "complete": {"event": "trigger", "target": "TRG_M0_02_Forklift"}
+        },
+        {
+          "id": "m002_rescue",
+          "objective": "Drive the forklift to lift the rack off Tug (E)",
+          "on_start": [
+            {"do": "say", "lines": [["Tug", "Wrench! The forklift! Get this thing off me!"]]}
+          ],
+          "complete": {"event": "interact", "target": "Forklift"}
+        },
+        {
+          "id": "m002_free",
+          "objective": "",
+          "on_start": [
+            {"do": "follow", "companion": "Tug", "on": true},
+            {"do": "say", "lines": [
+              ["Tug", "Took you long enough."],
+              ["Tug", "Ankle's shot. You're gonna have to be my legs tonight, kid."]
+            ]}
+          ],
+          "complete": {"event": "dialogue_done"}
+        }
+      ]
+    },
+    {
+      "id": "M0.03",
+      "title": "M0.03 The Promise",
+      "steps": [
+        {
+          "id": "m003_call",
+          "objective": "",
+          "on_start": [
+            {"do": "say", "lines": [
+              ["Ada (radio)", "Wrench. Pad 12. I'm holding a seat for you. Run."],
+              ["Tug", "Terminal B's the only way through to the pads. Move."]
+            ]}
+          ],
+          "complete": {"event": "dialogue_done"}
+        },
+        {
+          "id": "m003_concourse",
+          "objective": "Get Tug through the Terminal B concourse to the gates",
+          "on_start": [
+            {"do": "teleport", "marker": "PS_M0_03"},
+            {"do": "place", "companion": "Tug", "marker": "PS_M0_03", "follow": true},
+            {"do": "checkpoint", "marker": "PS_M0_03"},
+            {"do": "activate", "group": "M0_03_terminal"},
+            {"do": "title", "text": "SERAPH DEPARTURE: 6:00", "seconds": 4},
+            {"do": "say", "lines": [["PA", "Evacuation in progress. Proceed calmly to your assigned gate."]]}
+          ],
+          "complete": {"event": "trigger", "target": "TRG_M0_03_Gates"}
+        },
+        {
+          "id": "m003_gates",
+          "objective": "The gates are barricaded: go down through baggage handling and up to the skywalk",
+          "on_start": [
+            {"do": "say", "lines": [
+              ["Trooper", "Gate's closed. No unscreened personnel. Turn around."],
+              ["Tug", "Baggage handling. Under the gates, up the service stairs to the skywalk."]
+            ]}
+          ],
+          "complete": {"event": "trigger", "target": "TRG_M0_03_Skywalk"}
+        },
+        {
+          "id": "m003_collapse",
+          "objective": "The skywalk gave way. Climb out to the drop-off lane and the apron",
+          "on_start": [
+            {"do": "say", "lines": [["KESTREL", "Structural failure, Terminal B skywalk."]]},
+            {"do": "teleport", "marker": "PS_M0_03_Fall"},
+            {"do": "place", "companion": "Tug", "marker": "PS_M0_03_Fall", "follow": true},
+            {"do": "checkpoint", "marker": "PS_M0_03_Fall"},
+            {"do": "hide", "group": "M0_03_terminal"},
+            {"do": "activate", "group": "M0_03_apron"},
+            {"do": "say", "lines": [["Tug", "Still breathing? Good. Up the stairs, kid."]]}
+          ],
+          "complete": {"event": "trigger", "target": "TRG_M0_03_Apron"}
+        },
+        {
+          "id": "m003_pad",
+          "objective": "Reach the Pad 12 fence",
+          "on_start": [
+            {"do": "say", "lines": [["Tug", "Fuel truck's gone up. Across the apron, don't stop!"]]},
+            {"do": "teleport", "marker": "PS_Pad12_Approach"},
+            {"do": "place", "companion": "Tug", "marker": "PS_Pad12_Approach", "follow": true},
+            {"do": "checkpoint", "marker": "PS_Pad12_Approach"},
+            {"do": "activate", "group": "M0_03_pad"}
+          ],
+          "complete": {"event": "trigger", "target": "TRG_M0_03_Fence"}
+        },
+        {
+          "id": "m003_standoff",
+          "objective": "",
+          "on_start": [
+            {"do": "say", "lines": [
+              ["Trooper (PA)", "No unscreened personnel. Step back from the fence."],
+              ["Ada (radio)", "I see you. Wrench, I see you. Hold on."],
+              ["Ada (radio)", "Director, I have one passenger, ONE, they work here, they're--"],
+              ["Crane (radio)", "Commander Okafor. You have your orders. Lift off, or I will find someone who will."],
+              ["Ada (radio)", "Wrench-- I'll come back for you. I swear it."]
+            ]},
+            {"do": "flag", "name": "pad12_choice", "value": "silent"}
+          ],
+          "complete": {"event": "dialogue_done"}
+        },
+        {
+          "id": "m003_thrown",
+          "objective": "",
+          "on_start": [
+            {"do": "hide", "group": "M0_03_pad"},
+            {"do": "input", "on": false},
+            {"do": "say", "lines": [["Tug", "Up. Up, kid. She's gone. We're not."]]}
+          ],
+          "complete": {"event": "dialogue_done"}
+        },
+        {
+          "id": "m003_weld",
+          "objective": "Weld steel plates over the hangar doors: B to build, wheel to Armor Block, LMB to place, hold LMB to weld (2)",
+          "on_start": [
+            {"do": "teleport", "marker": "PS_M0_03_Hangar"},
+            {"do": "place", "companion": "Tug", "marker": "PS_M1_01", "follow": false},
+            {"do": "checkpoint", "marker": "PS_M0_03_Hangar"},
+            {"do": "input", "on": true},
+            {"do": "give", "item": "components", "count": 50},
+            {"do": "say", "lines": [["Tug", "They followed us home. Doors, kid! Steel over the doors, now!"]]},
+            {"do": "horde", "count": 10}
+          ],
+          "complete": {"event": "built", "target": "STR-001", "count": 2}
+        },
+        {
+          "id": "m003_roof",
+          "objective": "Climb to the hangar roof (ladders by the office mezzanine)",
+          "on_start": [
+            {"do": "say", "lines": [["Tug", "That'll hold. Roof. There's something you need to see."]]}
+          ],
+          "complete": {"event": "trigger", "target": "TRG_M0_03_Roof"}
+        },
+        {
+          "id": "m003_arks",
+          "objective": "",
+          "on_start": [
+            {"do": "place", "companion": "Tug", "marker": "TRG_M0_03_Roof", "follow": false},
+            {"do": "say", "lines": [
+              ["Tug", "Look at 'em. Dozens. All the way to the mountains."],
+              ["Tug", "They had rockets fueled and waiting, kid. They knew."]
+            ]}
+          ],
+          "complete": {"event": "dialogue_done"}
+        },
+        {
+          "id": "m003_title",
+          "objective": "",
+          "on_start": [
+            {"do": "title", "text": "EXODUS PROTOCOL", "seconds": 7}
+          ],
+          "complete": {"event": "time", "seconds": 7}
+        }
+      ]
+    },
+    {
+      "id": "M1.01",
+      "title": "M1.01 Four Walls",
+      "steps": [
+        {
+          "id": "m101_workbench",
+          "objective": "Salvage components (E) and build a Workbench",
+          "on_start": [
+            {"do": "teleport", "marker": "PS_M1_01"},
+            {"do": "place", "companion": "Tug", "marker": "PS_M0_03_Hangar", "follow": false},
+            {"do": "checkpoint", "marker": "PS_M1_01"},
+            {"do": "time", "hour": 6.5, "scale": 1.0},
+            {"do": "title", "text": "DAWN", "seconds": 3},
+            {"do": "say", "lines": [
+              ["KESTREL", "Backup power online. Good morning. I think."],
+              ["Broadcast", "Remain indoors. Help is coming. Remain indoors. Help is coming."],
+              ["Tug", "Nobody's coming. So we build. Workbench first, then power, then light."]
+            ]}
+          ],
+          "complete": {"event": "built", "target": "PRD-001"}
+        },
+        {
+          "id": "m101_generator",
+          "objective": "Build a Diesel Generator",
+          "on_start": [
+            {"do": "say", "lines": [["Tug", "Generator next. It's loud. They'll hear it. Can't be helped."]]}
+          ],
+          "complete": {"event": "built", "target": "PWR-001"}
+        },
+        {
+          "id": "m101_floodlight",
+          "objective": "Build a Floodlight",
+          "on_start": [
+            {"do": "say", "lines": [["Tug", "Now light. I want to see them coming."]]}
+          ],
+          "complete": {"event": "built", "target": "UTL-001"}
+        },
+        {
+          "id": "m101_night",
+          "objective": "Survive the night. In build mode (B), hold LMB on damaged blocks to weld them back",
+          "on_start": [
+            {"do": "say", "lines": [["Tug", "Sun's going. Whatever's out there heard that generator. Keep the walls standing."]]},
+            {"do": "time", "hour": 19.67, "scale": 4.0},
+            {"do": "hordes", "on": true}
+          ],
+          "complete": {"event": "night_survived"}
+        },
+        {
+          "id": "m101_radio",
+          "objective": "Check the radio",
+          "on_start": [
+            {"do": "hordes", "on": false},
+            {"do": "time", "scale": 1.0},
+            {"do": "activate", "group": "M1_01_radio"},
+            {"do": "say", "lines": [
+              ["Tug", "Still standing. Both of us."],
+              ["Tug", "She'll call, kid. Give her time. Radio's picking something up."]
+            ]}
+          ],
+          "complete": {"event": "interact", "target": "DistressRadio"}
+        }
+      ]
+    },
+    {
+      "id": "M1.02",
+      "title": "M1.02 The Girl in the Walls",
+      "steps": [
+        {
+          "id": "m102_call",
+          "objective": "",
+          "on_start": [
+            {"do": "say", "lines": [
+              ["Ms. Alvarez (radio)", "This is Rosa Alvarez at Kestrel Elementary. I have children with me. We're safe for now. Please, anyone--"],
+              ["Ms. Alvarez (radio)", "We are brave. Help is coming."],
+              ["Tug", "Kids. Go. I'll hold the hangar."]
+            ]}
+          ],
+          "complete": {"event": "dialogue_done"}
+        },
+        {
+          "id": "m102_school",
+          "objective": "Enter Kestrel Elementary",
+          "on_start": [
+            {"do": "teleport", "marker": "PS_M1_02"},
+            {"do": "checkpoint", "marker": "PS_M1_02"},
+            {"do": "title", "text": "KESTREL TOWNSHIP", "seconds": 4},
+            {"do": "activate", "group": "M1_02"}
+          ],
+          "complete": {"event": "trigger", "target": "TRG_M1_02_School"}
+        },
+        {
+          "id": "m102_search",
+          "objective": "Search the school",
+          "complete": {"event": "interact", "target": "Whiteboard"}
+        },
+        {
+          "id": "m102_board",
+          "objective": "",
+          "on_start": [
+            {"do": "say", "lines": [["Whiteboard", "\"We are brave. Help is coming.\""]]}
+          ],
+          "complete": {"event": "dialogue_done"}
+        },
+        {
+          "id": "m102_voice",
+          "objective": "Find the vent grille",
+          "complete": {"event": "trigger", "target": "TRG_M1_02_Vents"}
+        },
+        {
+          "id": "m102_vents",
+          "objective": "Follow Lily's directions to the gym",
+          "on_start": [
+            {"do": "activate", "group": "M1_02_gym"},
+            {"do": "say", "lines": [
+              ["Lily (vents)", "Are you real?"],
+              ["Lily (vents)", "I'm not coming out. They hear everything. Follow the spirals, I'll tell you where."],
+              ["Lily (vents)", "Left at the lockers. Stay low. The gym is full of them."]
+            ]}
+          ],
+          "complete": {"event": "trigger", "target": "TRG_M1_02_FireAlarm"}
+        },
+        {
+          "id": "m102_alarm",
+          "objective": "Pull the fire alarm (E) to split the horde",
+          "on_start": [
+            {"do": "say", "lines": [["Lily (vents)", "The fire alarm! Pull it!"]]}
+          ],
+          "complete": {"event": "interact", "target": "FireAlarm"}
+        },
+        {
+          "id": "m102_escape",
+          "objective": "Escape through the equipment room",
+          "on_start": [
+            {"do": "say", "lines": [["Lily (vents)", "Now! The equipment room, past the bleachers!"]]}
+          ],
+          "complete": {"event": "trigger", "target": "TRG_M1_02_Exit"}
+        },
+        {
+          "id": "m102_runners",
+          "objective": "Protect Lily from the Runners",
+          "on_start": [
+            {"do": "activate", "group": "M1_02_lily"},
+            {"do": "follow", "companion": "Lily", "on": true},
+            {"do": "activate", "group": "M1_02_exit"},
+            {"do": "checkpoint", "marker": "TRG_M1_02_Exit"},
+            {"do": "say", "lines": [["Lily", "Runners! They're fast, don't let them get behind you!"]]}
+          ],
+          "complete": {"event": "killed", "target": "Runner", "count": 3}
+        },
+        {
+          "id": "m102_bite",
+          "objective": "",
+          "on_start": [
+            {"do": "say", "lines": [
+              ["Lily", "It happened five days ago. It doesn't hurt anymore."],
+              ["Lily", "I drew the spiral so I wouldn't forget the way. It helps."],
+              ["Wrench", "Come on. There's a fire and a grumpy old man waiting for us."]
+            ]}
+          ],
+          "complete": {"event": "dialogue_done"}
+        },
+        {
+          "id": "m102_campfire",
+          "objective": "Build a Campfire for Lily",
+          "on_start": [
+            {"do": "teleport", "marker": "PS_M1_01"},
+            {"do": "place", "companion": "Lily", "marker": "PS_M0_03_Hangar", "follow": true},
+            {"do": "checkpoint", "marker": "PS_M1_01"},
+            {"do": "time", "hour": 20.5, "scale": 0.0},
+            {"do": "give", "item": "components", "count": 20},
+            {"do": "title", "text": "HANGAR 4 - THAT NIGHT", "seconds": 4},
+            {"do": "say", "lines": [["Tug", "Well. Who's this, then?"]]}
+          ],
+          "complete": {"event": "built", "target": "COL-001"}
+        },
+        {
+          "id": "m102_sad",
+          "objective": "",
+          "on_start": [
+            {"do": "say", "lines": [
+              ["Lily", "Tug? Are they sad? The dead ones?"],
+              ["Tug", "..."],
+              ["Lily", "I think they're sad."]
+            ]}
+          ],
+          "complete": {"event": "dialogue_done"}
+        }
+      ]
+    }
+  ]
+}

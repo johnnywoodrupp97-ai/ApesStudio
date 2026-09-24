@@ -1,0 +1,180 @@
+{
+ "exodus_level_version": "1.0",
+ "kind": "level",
+ "level_id": "KES-001",
+ "level_name": "Mission Control 2068",
+ "type": "Set Piece",
+ "size": {
+  "w": 30,
+  "d": 20,
+  "h": 6
+ },
+ "budget": {
+  "blockout_tris": 150000,
+  "per": "level",
+  "memory_mb": 350,
+  "draw_calls": 2500,
+  "shadow_lights": 16
+ },
+ "required_markers": [
+  "PS_ColdOpen",
+  "CAM_C01_Flinch",
+  "TRG_ColdOpen_Drill"
+ ],
+ "spaces": [
+  "Control floor",
+  "Arm console",
+  "Back row",
+  "Main screen wall"
+ ],
+ "bounds_min": [
+  -15.0,
+  -10.0,
+  0.0
+ ],
+ "bounds_max": [
+  15.0,
+  10.0,
+  6.5
+ ],
+ "markers": [
+  {
+   "name": "CAM_C01_Flinch",
+   "type": "CAMERA",
+   "location": [
+    -16.0,
+    -14.0,
+    6.5
+   ],
+   "rotation_euler": [
+    1.3393189907073975,
+    7.960284165164921e-08,
+    -0.7853982448577881
+   ],
+   "props": {}
+  },
+  {
+   "name": "PS_ColdOpen",
+   "type": "EMPTY",
+   "location": [
+    0.0,
+    0.0,
+    0.10000000149011612
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {}
+  },
+  {
+   "name": "TRG_ColdOpen_Drill",
+   "type": "MESH",
+   "location": [
+    0.0,
+    7.0,
+    2.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {},
+   "size": [
+    4.0,
+    4.0,
+    3.0
+   ]
+  },
+  {
+   "name": "VOL_Room_ArmConsole",
+   "type": "MESH",
+   "location": [
+    -4.0,
+    -2.0,
+    1.100000023841858
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "Player position (two joysticks)"
+   },
+   "size": [
+    3.0,
+    2.0,
+    1.2000000476837158
+   ]
+  },
+  {
+   "name": "VOL_Room_BackRow",
+   "type": "MESH",
+   "location": [
+    0.0,
+    7.0,
+    3.5
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "Mara stands here"
+   },
+   "size": [
+    30.0,
+    3.0,
+    6.0
+   ]
+  },
+  {
+   "name": "VOL_Room_ControlFloor",
+   "type": "MESH",
+   "location": [
+    0.0,
+    0.0,
+    3.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "Four tiered console rows"
+   },
+   "size": [
+    30.0,
+    14.0,
+    6.0
+   ]
+  },
+  {
+   "name": "VOL_Room_MainScreenWall",
+   "type": "MESH",
+   "location": [
+    0.0,
+    -9.5,
+    3.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "Styx feed"
+   },
+   "size": [
+    20.0,
+    1.0,
+    6.0
+   ]
+  }
+ ]
+}

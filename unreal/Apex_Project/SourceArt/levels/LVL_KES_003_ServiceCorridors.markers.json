@@ -1,0 +1,275 @@
+{
+ "exodus_level_version": "1.0",
+ "kind": "level",
+ "level_id": "KES-003",
+ "level_name": "Service Corridors",
+ "type": "Interior",
+ "size": {
+  "w": 120,
+  "d": 40,
+  "h": 6
+ },
+ "budget": {
+  "blockout_tris": 200000,
+  "per": "level",
+  "memory_mb": 400,
+  "draw_calls": 3000,
+  "shadow_lights": 16
+ },
+ "required_markers": [
+  "PS_M0_02",
+  "SP_DanaMarsh",
+  "TRG_M0_02_Scratch",
+  "TRG_M0_02_Forklift"
+ ],
+ "spaces": [
+  "Corridor loop",
+  "Security station",
+  "Med cabinet alcove",
+  "Parts cage B",
+  "Blast doors"
+ ],
+ "bounds_min": [
+  -60.0,
+  -20.0,
+  0.0
+ ],
+ "bounds_max": [
+  60.0,
+  20.0,
+  6.0
+ ],
+ "markers": [
+  {
+   "name": "DOOR_CorridorLoop_MedCabinetAlcove",
+   "type": "EMPTY",
+   "location": [
+    5.0,
+    -2.0,
+    0.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "connection": "open"
+   }
+  },
+  {
+   "name": "DOOR_CorridorLoop_PartsCageB",
+   "type": "EMPTY",
+   "location": [
+    22.5,
+    5.0,
+    0.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "connection": "door"
+   }
+  },
+  {
+   "name": "DOOR_CorridorLoop_SecurityStation",
+   "type": "EMPTY",
+   "location": [
+    -15.0,
+    3.0,
+    0.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "connection": "door"
+   }
+  },
+  {
+   "name": "PS_M0_02",
+   "type": "EMPTY",
+   "location": [
+    0.0,
+    0.0,
+    0.10000000149011612
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {}
+  },
+  {
+   "name": "SP_DanaMarsh",
+   "type": "EMPTY",
+   "location": [
+    -27.0,
+    9.0,
+    0.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {}
+  },
+  {
+   "name": "TRG_M0_02_Forklift",
+   "type": "MESH",
+   "location": [
+    45.0,
+    10.0,
+    1.5
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {},
+   "size": [
+    4.0,
+    4.0,
+    3.0
+   ]
+  },
+  {
+   "name": "TRG_M0_02_Scratch",
+   "type": "MESH",
+   "location": [
+    10.0,
+    -4.0,
+    1.5
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {},
+   "size": [
+    4.0,
+    4.0,
+    3.0
+   ]
+  },
+  {
+   "name": "VOL_Room_BlastDoors",
+   "type": "MESH",
+   "location": [
+    -50.0,
+    0.0,
+    1.5
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "Sealed on Code Black"
+   },
+   "size": [
+    6.0,
+    1.0,
+    3.0
+   ]
+  },
+  {
+   "name": "VOL_Room_CorridorLoop",
+   "type": "MESH",
+   "location": [
+    0.0,
+    0.0,
+    1.75
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "Main path with side rooms"
+   },
+   "size": [
+    100.0,
+    3.0,
+    3.5
+   ]
+  },
+  {
+   "name": "VOL_Room_MedCabinetAlcove",
+   "type": "MESH",
+   "location": [
+    10.0,
+    -4.0,
+    1.75
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "First Suppressant"
+   },
+   "size": [
+    4.0,
+    3.0,
+    3.5
+   ]
+  },
+  {
+   "name": "VOL_Room_PartsCageB",
+   "type": "MESH",
+   "location": [
+    45.0,
+    10.0,
+    2.5
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "Tug and the forklift"
+   },
+   "size": [
+    14.0,
+    10.0,
+    5.0
+   ]
+  },
+  {
+   "name": "VOL_Room_SecurityStation",
+   "type": "MESH",
+   "location": [
+    -30.0,
+    6.0,
+    1.75
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "Dana's post; glass window"
+   },
+   "size": [
+    8.0,
+    6.0,
+    3.5
+   ]
+  }
+ ]
+}

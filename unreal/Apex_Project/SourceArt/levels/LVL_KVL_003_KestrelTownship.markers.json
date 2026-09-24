@@ -1,0 +1,182 @@
+{
+ "exodus_level_version": "1.0",
+ "kind": "level",
+ "level_id": "KVL-003",
+ "level_name": "Kestrel Township",
+ "type": "District",
+ "size": {
+  "w": 1400.0,
+  "d": 1400.0,
+  "h": 150
+ },
+ "budget": {
+  "blockout_tris": 400000,
+  "per": "level",
+  "memory_mb": 350,
+  "draw_calls": 2500,
+  "shadow_lights": 12
+ },
+ "required_markers": [
+  "LM_Kestrel",
+  "POI_Kestrel_Main"
+ ],
+ "spaces": [
+  "Main Street",
+  "Kestrel Elementary",
+  "Suburbs (3 blocks)",
+  "Warehouse district",
+  "Skate park & library"
+ ],
+ "bounds_min": [
+  -700.0,
+  -700.0,
+  -7.405103859403122
+ ],
+ "bounds_max": [
+  700.0,
+  700.0,
+  150.0
+ ],
+ "markers": [
+  {
+   "name": "LM_Kestrel",
+   "type": "EMPTY",
+   "location": [
+    -247.0,
+    203.0,
+    0.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {}
+  },
+  {
+   "name": "POI_Kestrel_Main",
+   "type": "EMPTY",
+   "location": [
+    3.0,
+    3.0,
+    0.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {}
+  },
+  {
+   "name": "VOL_Room_KestrelElementary",
+   "type": "MESH",
+   "location": [
+    -250.0,
+    200.0,
+    5.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "M1.02"
+   },
+   "size": [
+    70.0,
+    50.0,
+    10.0
+   ]
+  },
+  {
+   "name": "VOL_Room_MainStreet",
+   "type": "MESH",
+   "location": [
+    0.0,
+    0.0,
+    6.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "Diner, hardware store, pharmacy, clinic"
+   },
+   "size": [
+    400.0,
+    40.0,
+    12.0
+   ]
+  },
+  {
+   "name": "VOL_Room_SkateParkAndLibrary",
+   "type": "MESH",
+   "location": [
+    -300.0,
+    -150.0,
+    4.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "Theo; the Webbs"
+   },
+   "size": [
+    120.0,
+    80.0,
+    8.0
+   ]
+  },
+  {
+   "name": "VOL_Room_Suburbs3Blocks",
+   "type": "MESH",
+   "location": [
+    100.0,
+    -300.0,
+    5.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "Lootable houses, backyards"
+   },
+   "size": [
+    500.0,
+    400.0,
+    10.0
+   ]
+  },
+  {
+   "name": "VOL_Room_WarehouseDistrict",
+   "type": "MESH",
+   "location": [
+    300.0,
+    250.0,
+    6.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "M1.05 heat-shield tiles"
+   },
+   "size": [
+    200.0,
+    150.0,
+    12.0
+   ]
+  }
+ ]
+}

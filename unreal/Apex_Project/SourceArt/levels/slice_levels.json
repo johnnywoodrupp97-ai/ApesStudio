@@ -1,0 +1,1027 @@
+{
+ "source": "docs/level-bible/data/levels.json (slice subset)",
+ "levels": [
+  {
+   "id": "KVL-001",
+   "name": "Kestrel Valley",
+   "type": "Open Region",
+   "size": {
+    "w": 8000,
+    "d": 8000,
+    "h": 700,
+    "area_km2": 64
+   },
+   "pos": null,
+   "spaces": [
+    {
+     "name": "Valley floor",
+     "size": [
+      6000,
+      6000,
+      50
+     ],
+     "purpose": "High-desert basin, dry washes, sagebrush",
+     "pos": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "Mountain rim",
+     "size": [
+      8000,
+      8000,
+      700
+     ],
+     "purpose": "Impassable ring (visual boundary); flyable over from Act II",
+     "pos": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "Route 93",
+     "size": [
+      8,
+      8000,
+      0
+     ],
+     "purpose": "North\u2013south highway along x = \u22122 km, with spurs to the Township and Complex",
+     "pos": [
+      -2000,
+      0,
+      0
+     ]
+    }
+   ],
+   "connections": [
+    [
+     "Route 93",
+     "Kestrel Township",
+     "road"
+    ],
+    [
+     "Route 93",
+     "Prospect",
+     "road"
+    ],
+    [
+     "Kestrel Township",
+     "Kestrel Aerospace Complex",
+     "road"
+    ],
+    [
+     "Hollis Dam",
+     "Silver Ridge Mines",
+     "dirt track"
+    ],
+    [
+     "Fort Calder",
+     "Red Mesa Observatory",
+     "dirt track"
+    ]
+   ],
+   "terrain": {
+    "kind": "valley",
+    "rim_height": 650,
+    "floor_noise": 25,
+    "features": [
+     [
+      "mesa",
+      2.7,
+      -2.1,
+      0.55,
+      120
+     ],
+     [
+      "hills",
+      2.8,
+      2.6,
+      1.0,
+      180
+     ],
+     [
+      "basin",
+      0.3,
+      3.1,
+      0.7,
+      -25
+     ],
+     [
+      "flat",
+      -2.4,
+      -2.4,
+      1.0,
+      0
+     ],
+     [
+      "hills",
+      0.2,
+      -3.0,
+      0.6,
+      30
+     ]
+    ]
+   },
+   "markers": [
+    "PS_Main",
+    "SPL_Route93",
+    "VOL_NoBuild_Complex",
+    "VOL_Weather_Global",
+    "VOL_LandingZone_JackrabbitFlats"
+   ],
+   "asset": "LVL_KVL_001_KestrelValley"
+  },
+  {
+   "id": "KVL-002",
+   "name": "Kestrel Aerospace Complex",
+   "type": "District",
+   "size": {
+    "w": 2200.0,
+    "d": 2200.0,
+    "h": 150
+   },
+   "pos": [
+    1.0,
+    0.3,
+    1.1
+   ],
+   "spaces": [
+    {
+     "name": "Hangar row (Hangars 1\u20136)",
+     "size": [
+      600,
+      120,
+      25
+     ],
+     "purpose": "Hangar 4 is the player's first base",
+     "pos": [
+      -300,
+      200,
+      0
+     ]
+    },
+    {
+     "name": "Terminal B & drop-off",
+     "size": [
+      180,
+      60,
+      18
+     ],
+     "purpose": "M0.03 interior",
+     "pos": [
+      250,
+      300,
+      0
+     ]
+    },
+    {
+     "name": "Launch pads 12 and 39-K",
+     "size": [
+      900,
+      500,
+      110
+     ],
+     "purpose": "Pad 12 (Seraph) west, 39-K (Wren) east",
+     "pos": [
+      300,
+      -300,
+      0
+     ]
+    },
+    {
+     "name": "Mission Control tower",
+     "size": [
+      40,
+      40,
+      60
+     ],
+     "purpose": "M1.05 guidance computer",
+     "pos": [
+      300,
+      600,
+      0
+     ]
+    },
+    {
+     "name": "Fuel Farm",
+     "size": [
+      300,
+      200,
+      25
+     ],
+     "purpose": "M1.05 fuel",
+     "pos": [
+      -600,
+      -500,
+      0
+     ]
+    },
+    {
+     "name": "Vault entrance (BSL-4 block)",
+     "size": [
+      60,
+      60,
+      12
+     ],
+     "purpose": "Lift to the Vault (M1.04)",
+     "pos": [
+      -100,
+      600,
+      0
+     ]
+    },
+    {
+     "name": "Substations \u00d73",
+     "size": [
+      30,
+      30,
+      8
+     ],
+     "purpose": "Power-grid puzzle for Mission Control",
+     "pos": [
+      700,
+      100,
+      0
+     ]
+    }
+   ],
+   "connections": [],
+   "terrain": null,
+   "markers": [
+    "LM_Kestrel",
+    "POI_Kestrel_Main"
+   ],
+   "asset": "LVL_KVL_002_KestrelAerospaceComplex"
+  },
+  {
+   "id": "KVL-003",
+   "name": "Kestrel Township",
+   "type": "District",
+   "size": {
+    "w": 1400.0,
+    "d": 1400.0,
+    "h": 150
+   },
+   "pos": [
+    -0.9,
+    0.1,
+    0.7
+   ],
+   "spaces": [
+    {
+     "name": "Main Street",
+     "size": [
+      400,
+      40,
+      12
+     ],
+     "purpose": "Diner, hardware store, pharmacy, clinic",
+     "pos": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "Kestrel Elementary",
+     "size": [
+      70,
+      50,
+      10
+     ],
+     "purpose": "M1.02",
+     "pos": [
+      -250,
+      200,
+      0
+     ]
+    },
+    {
+     "name": "Suburbs (3 blocks)",
+     "size": [
+      500,
+      400,
+      10
+     ],
+     "purpose": "Lootable houses, backyards",
+     "pos": [
+      100,
+      -300,
+      0
+     ]
+    },
+    {
+     "name": "Warehouse district",
+     "size": [
+      200,
+      150,
+      12
+     ],
+     "purpose": "M1.05 heat-shield tiles",
+     "pos": [
+      300,
+      250,
+      0
+     ]
+    },
+    {
+     "name": "Skate park & library",
+     "size": [
+      120,
+      80,
+      8
+     ],
+     "purpose": "Theo; the Webbs",
+     "pos": [
+      -300,
+      -150,
+      0
+     ]
+    }
+   ],
+   "connections": [],
+   "terrain": null,
+   "markers": [
+    "LM_Kestrel",
+    "POI_Kestrel_Main"
+   ],
+   "asset": "LVL_KVL_003_KestrelTownship"
+  },
+  {
+   "id": "KES-001",
+   "name": "Mission Control 2068",
+   "type": "Set Piece",
+   "size": {
+    "w": 30,
+    "d": 20,
+    "h": 6
+   },
+   "pos": [
+    1.3,
+    0.9
+   ],
+   "spaces": [
+    {
+     "name": "Control floor",
+     "size": [
+      30,
+      14,
+      6
+     ],
+     "purpose": "Four tiered console rows",
+     "pos": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "Arm console",
+     "size": [
+      3,
+      2,
+      1.2
+     ],
+     "purpose": "Player position (two joysticks)",
+     "pos": [
+      -4,
+      -2,
+      0.5
+     ]
+    },
+    {
+     "name": "Back row",
+     "size": [
+      30,
+      3,
+      6
+     ],
+     "purpose": "Mara stands here",
+     "pos": [
+      0,
+      7,
+      0.5
+     ]
+    },
+    {
+     "name": "Main screen wall",
+     "size": [
+      20,
+      1,
+      6
+     ],
+     "purpose": "Styx feed",
+     "pos": [
+      0,
+      -9.5,
+      0
+     ]
+    }
+   ],
+   "connections": [],
+   "terrain": null,
+   "markers": [
+    "PS_ColdOpen",
+    "CAM_C01_Flinch",
+    "TRG_ColdOpen_Drill"
+   ],
+   "asset": "LVL_KES_001_MissionControl2068"
+  },
+  {
+   "id": "KES-002",
+   "name": "Hangar 4",
+   "type": "Hub",
+   "size": {
+    "w": 60,
+    "d": 40,
+    "h": 20
+   },
+   "pos": [
+    0.7,
+    0.5
+   ],
+   "spaces": [
+    {
+     "name": "Hangar floor",
+     "size": [
+      60,
+      40,
+      20
+     ],
+     "purpose": "Open build space",
+     "pos": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "Wren launch stack",
+     "size": [
+      8,
+      8,
+      18
+     ],
+     "purpose": "Crew vehicle under assembly",
+     "pos": [
+      0,
+      2,
+      0
+     ]
+    },
+    {
+     "name": "Parts cage",
+     "size": [
+      10,
+      8,
+      4
+     ],
+     "purpose": "Where Tug is pinned (M0.02)",
+     "pos": [
+      -20,
+      8,
+      0
+     ]
+    },
+    {
+     "name": "Office mezzanine",
+     "size": [
+      20,
+      8,
+      3
+     ],
+     "purpose": "Overlooks the floor",
+     "pos": [
+      -18,
+      16,
+      6
+     ]
+    },
+    {
+     "name": "Hangar doors",
+     "size": [
+      30,
+      1,
+      15
+     ],
+     "purpose": "Welded shut in M0.03",
+     "pos": [
+      0,
+      -20,
+      0
+     ]
+    },
+    {
+     "name": "Roof",
+     "size": [
+      60,
+      40,
+      1
+     ],
+     "purpose": "Watch the arks leave",
+     "pos": [
+      0,
+      0,
+      20
+     ]
+    }
+   ],
+   "connections": [
+    [
+     "Hangar floor",
+     "Parts cage",
+     "door"
+    ],
+    [
+     "Hangar floor",
+     "Office mezzanine",
+     "stairs"
+    ],
+    [
+     "Office mezzanine",
+     "Roof",
+     "ladder"
+    ],
+    [
+     "Hangar floor",
+     "Hangar doors",
+     "hangar door"
+    ]
+   ],
+   "terrain": null,
+   "markers": [
+    "PS_M0_01",
+    "TRG_M0_03_WeldDoors",
+    "CAM_C03_Roof",
+    "HS_M1_06_North",
+    "HS_M1_06_East"
+   ],
+   "asset": "LVL_KES_002_Hangar4"
+  },
+  {
+   "id": "KES-003",
+   "name": "Service Corridors",
+   "type": "Interior",
+   "size": {
+    "w": 120,
+    "d": 40,
+    "h": 6
+   },
+   "pos": [
+    0.6,
+    0.6
+   ],
+   "spaces": [
+    {
+     "name": "Corridor loop",
+     "size": [
+      100,
+      3,
+      3.5
+     ],
+     "purpose": "Main path with side rooms",
+     "pos": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "Security station",
+     "size": [
+      8,
+      6,
+      3.5
+     ],
+     "purpose": "Dana's post; glass window",
+     "pos": [
+      -30,
+      6,
+      0
+     ]
+    },
+    {
+     "name": "Med cabinet alcove",
+     "size": [
+      4,
+      3,
+      3.5
+     ],
+     "purpose": "First Suppressant",
+     "pos": [
+      10,
+      -4,
+      0
+     ]
+    },
+    {
+     "name": "Parts cage B",
+     "size": [
+      14,
+      10,
+      5
+     ],
+     "purpose": "Tug and the forklift",
+     "pos": [
+      45,
+      10,
+      0
+     ]
+    },
+    {
+     "name": "Blast doors",
+     "size": [
+      6,
+      1,
+      3
+     ],
+     "purpose": "Sealed on Code Black",
+     "pos": [
+      -50,
+      0,
+      0
+     ]
+    }
+   ],
+   "connections": [
+    [
+     "Corridor loop",
+     "Security station",
+     "door"
+    ],
+    [
+     "Corridor loop",
+     "Med cabinet alcove",
+     "open"
+    ],
+    [
+     "Corridor loop",
+     "Parts cage B",
+     "door"
+    ]
+   ],
+   "terrain": null,
+   "markers": [
+    "PS_M0_02",
+    "SP_DanaMarsh",
+    "TRG_M0_02_Scratch",
+    "TRG_M0_02_Forklift"
+   ],
+   "asset": "LVL_KES_003_ServiceCorridors"
+  },
+  {
+   "id": "KES-004",
+   "name": "Terminal B",
+   "type": "Set Piece",
+   "size": {
+    "w": 180,
+    "d": 60,
+    "h": 18
+   },
+   "pos": [
+    1.25,
+    0.6
+   ],
+   "spaces": [
+    {
+     "name": "Concourse",
+     "size": [
+      60,
+      30,
+      12
+     ],
+     "purpose": "Crowd crush (80 civilians, 12 Hollows)",
+     "pos": [
+      -60,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "Gate hall",
+     "size": [
+      40,
+      30,
+      10
+     ],
+     "purpose": "Directorate barricade",
+     "pos": [
+      -10,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "Baggage handling",
+     "size": [
+      30,
+      20,
+      6
+     ],
+     "purpose": "Stealth detour",
+     "pos": [
+      15,
+      -18,
+      -6
+     ]
+    },
+    {
+     "name": "Skywalk",
+     "size": [
+      40,
+      6,
+      4
+     ],
+     "purpose": "Scripted collapse into baggage hall",
+     "pos": [
+      35,
+      0,
+      8
+     ]
+    },
+    {
+     "name": "Drop-off lane",
+     "size": [
+      40,
+      20,
+      8
+     ],
+     "purpose": "Fuel-truck explosion; exits onto the apron",
+     "pos": [
+      68,
+      -10,
+      0
+     ]
+    }
+   ],
+   "connections": [
+    [
+     "Concourse",
+     "Gate hall",
+     "open"
+    ],
+    [
+     "Gate hall",
+     "Baggage handling",
+     "door"
+    ],
+    [
+     "Baggage handling",
+     "Skywalk",
+     "stairs"
+    ],
+    [
+     "Skywalk",
+     "Drop-off lane",
+     "open"
+    ]
+   ],
+   "terrain": null,
+   "markers": [
+    "PS_M0_03",
+    "TRG_M0_03_Skywalk",
+    "TRG_M0_03_FuelTruck",
+    "CAM_M0_03_Skywalk"
+   ],
+   "asset": "LVL_KES_004_TerminalB"
+  },
+  {
+   "id": "KES-005",
+   "name": "Pad 12",
+   "type": "Set Piece",
+   "size": {
+    "w": 200,
+    "d": 150,
+    "h": 40
+   },
+   "pos": [
+    0.9,
+    -0.3
+   ],
+   "spaces": [
+    {
+     "name": "Crowd fence line",
+     "size": [
+      120,
+      10,
+      4
+     ],
+     "purpose": "200 civilians",
+     "pos": [
+      0,
+      -40,
+      0
+     ]
+    },
+    {
+     "name": "Trooper gate",
+     "size": [
+      12,
+      6,
+      4
+     ],
+     "purpose": "Directorate troopers",
+     "pos": [
+      0,
+      -35,
+      0
+     ]
+    },
+    {
+     "name": "Seraph pad",
+     "size": [
+      50,
+      50,
+      20
+     ],
+     "purpose": "Shuttle with ramp down",
+     "pos": [
+      0,
+      20,
+      0
+     ]
+    },
+    {
+     "name": "Retreat road",
+     "size": [
+      8,
+      60,
+      0
+     ],
+     "purpose": "Back to Hangar 4 (leaves the level at the south edge)",
+     "pos": [
+      -80,
+      -44,
+      0
+     ]
+    }
+   ],
+   "connections": [],
+   "terrain": null,
+   "markers": [
+    "PS_M0_03_Fence",
+    "CAM_C02_Ramp",
+    "TRG_M0_03_Standoff"
+   ],
+   "asset": "LVL_KES_005_Pad12"
+  },
+  {
+   "id": "KES-006",
+   "name": "Kestrel Elementary",
+   "type": "Interior",
+   "size": {
+    "w": 70,
+    "d": 50,
+    "h": 10
+   },
+   "pos": [
+    -1.15,
+    0.3
+   ],
+   "spaces": [
+    {
+     "name": "Classroom wing (1F)",
+     "size": [
+      40,
+      12,
+      4
+     ],
+     "purpose": "Barricaded classes, drawings",
+     "pos": [
+      -15,
+      15,
+      0
+     ]
+    },
+    {
+     "name": "Library",
+     "size": [
+      16,
+      12,
+      4
+     ],
+     "purpose": "Juice-box trail",
+     "pos": [
+      18,
+      15,
+      0
+     ]
+    },
+    {
+     "name": "Office",
+     "size": [
+      12,
+      10,
+      4
+     ],
+     "purpose": "Ms. Alvarez's radio",
+     "pos": [
+      28,
+      5,
+      0
+     ]
+    },
+    {
+     "name": "Hallways",
+     "size": [
+      60,
+      4,
+      4
+     ],
+     "purpose": "Main route",
+     "pos": [
+      0,
+      5,
+      0
+     ]
+    },
+    {
+     "name": "Cafeteria",
+     "size": [
+      24,
+      16,
+      4.5
+     ],
+     "purpose": "Fortified by the teacher",
+     "pos": [
+      15,
+      -8,
+      0
+     ]
+    },
+    {
+     "name": "Gym",
+     "size": [
+      30,
+      20,
+      9
+     ],
+     "purpose": "The horde set piece",
+     "pos": [
+      -15,
+      -12,
+      0
+     ]
+    },
+    {
+     "name": "Vent network",
+     "size": [
+      60,
+      40,
+      1.2
+     ],
+     "purpose": "Crawl ducts above everything (Lily's route)",
+     "pos": [
+      0,
+      0,
+      4.2
+     ]
+    }
+   ],
+   "connections": [
+    [
+     "Hallways",
+     "Classroom wing (1F)",
+     "door"
+    ],
+    [
+     "Hallways",
+     "Library",
+     "door"
+    ],
+    [
+     "Hallways",
+     "Office",
+     "door"
+    ],
+    [
+     "Hallways",
+     "Cafeteria",
+     "double door"
+    ],
+    [
+     "Cafeteria",
+     "Gym",
+     "double door"
+    ],
+    [
+     "Hallways",
+     "Vent network",
+     "vent grille"
+    ]
+   ],
+   "terrain": null,
+   "markers": [
+    "PS_M1_02",
+    "SP_MsAlvarez",
+    "TRG_M1_02_Vents",
+    "TRG_M1_02_FireAlarm",
+    "CAM_M1_02_Gym"
+   ],
+   "asset": "LVL_KES_006_KestrelElementary"
+  }
+ ]
+}

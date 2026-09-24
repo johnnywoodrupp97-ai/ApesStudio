@@ -1,0 +1,228 @@
+{
+ "exodus_level_version": "1.0",
+ "kind": "level",
+ "level_id": "KVL-002",
+ "level_name": "Kestrel Aerospace Complex",
+ "type": "District",
+ "size": {
+  "w": 2200.0,
+  "d": 2200.0,
+  "h": 150
+ },
+ "budget": {
+  "blockout_tris": 400000,
+  "per": "level",
+  "memory_mb": 350,
+  "draw_calls": 2500,
+  "shadow_lights": 12
+ },
+ "required_markers": [
+  "LM_Kestrel",
+  "POI_Kestrel_Main"
+ ],
+ "spaces": [
+  "Hangar row (Hangars 1\u20136)",
+  "Terminal B & drop-off",
+  "Launch pads 12 and 39-K",
+  "Mission Control tower",
+  "Fuel Farm",
+  "Vault entrance (BSL-4 block)",
+  "Substations \u00d73"
+ ],
+ "bounds_min": [
+  -1100.0,
+  -1100.0,
+  -7.402041327348445
+ ],
+ "bounds_max": [
+  1100.0,
+  1100.0,
+  150.0
+ ],
+ "markers": [
+  {
+   "name": "LM_Kestrel",
+   "type": "EMPTY",
+   "location": [
+    -297.0,
+    203.0,
+    0.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {}
+  },
+  {
+   "name": "POI_Kestrel_Main",
+   "type": "EMPTY",
+   "location": [
+    253.0,
+    303.0,
+    0.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {}
+  },
+  {
+   "name": "VOL_Room_FuelFarm",
+   "type": "MESH",
+   "location": [
+    -600.0,
+    -500.0,
+    12.5
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "M1.05 fuel"
+   },
+   "size": [
+    300.0,
+    200.0,
+    25.0
+   ]
+  },
+  {
+   "name": "VOL_Room_HangarRowHangars16",
+   "type": "MESH",
+   "location": [
+    -300.0,
+    200.0,
+    12.5
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "Hangar 4 is the player's first base"
+   },
+   "size": [
+    600.0,
+    120.0,
+    25.0
+   ]
+  },
+  {
+   "name": "VOL_Room_LaunchPads12And39K",
+   "type": "MESH",
+   "location": [
+    300.0,
+    -300.0,
+    55.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "Pad 12 (Seraph) west, 39-K (Wren) east"
+   },
+   "size": [
+    900.0,
+    500.0,
+    110.0
+   ]
+  },
+  {
+   "name": "VOL_Room_MissionControlTower",
+   "type": "MESH",
+   "location": [
+    300.0,
+    600.0,
+    30.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "M1.05 guidance computer"
+   },
+   "size": [
+    40.0,
+    40.0,
+    60.0
+   ]
+  },
+  {
+   "name": "VOL_Room_SubstationsX3",
+   "type": "MESH",
+   "location": [
+    700.0,
+    100.0,
+    4.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "Power-grid puzzle for Mission Control"
+   },
+   "size": [
+    30.0,
+    30.0,
+    8.0
+   ]
+  },
+  {
+   "name": "VOL_Room_TerminalBAndDropOff",
+   "type": "MESH",
+   "location": [
+    250.0,
+    300.0,
+    9.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "M0.03 interior"
+   },
+   "size": [
+    180.0,
+    60.0,
+    18.0
+   ]
+  },
+  {
+   "name": "VOL_Room_VaultEntranceBSL4Block",
+   "type": "MESH",
+   "location": [
+    -100.0,
+    600.0,
+    6.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "Lift to the Vault (M1.04)"
+   },
+   "size": [
+    60.0,
+    60.0,
+    12.0
+   ]
+  }
+ ]
+}
