@@ -8,4 +8,6 @@ An **open-world, open-exploration survival game** that begins with a zombie outb
 
 **Parts Bible (every part, with a Blender spec per asset):** [`docs/parts-bible/`](docs/parts-bible/README.md)
 
-**Tools:** `python3 tools/parts/build.py` regenerates the Parts Bible; `blender -b -P tools/blender/exodus_parts.py -- scaffold --asset <name>` builds a starter .blend (see [chapter 20](docs/parts-bible/20-blender-toolkit.md)).
+**Character Bible (every character and creature, with Blender specs and rigging toolkit):** [`docs/character-bible/`](docs/character-bible/README.md)
+
+**Tools:** `python3 tools/parts/build.py` regenerates the Parts Bible; `blender -b -P tools/blender/exodus_parts.py -- scaffold --asset <name>` builds a starter .blend (see [chapter 20](docs/parts-bible/20-blender-toolkit.md)); `python3 tools/characters/build.py` regenerates the Character Bible and `blender -b -P tools/blender/exodus_characters.py -- scaffold --character <ID>` builds rigged character files (see [chapter 12](docs/character-bible/12-blender-character-toolkit.md)).

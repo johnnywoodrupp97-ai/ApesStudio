@@ -1,5 +1,7 @@
 # 04 — Characters
 
+> Visual design, wardrobe by act and Blender production specs for every character are in the **[Character Bible](../character-bible/README.md)**.
+
 ## 4.1 Character writing principles
 1. **Everyone is tired.** Nobody has slept properly in weeks. Humor is gallows humor.
 2. **Nobody is purely right.** Crane has a logic, Sable has a truth, Ada has a debt, Mara has a guilt.

@@ -1,6 +1,6 @@
 # EXODUS PROTOCOL — Parts Bible
 
-> Every buildable part, component, tool, weapon, suit and drone in the game, with gameplay stats and a **Blender production spec for each asset**. Companion to the [Game Bible](../game-bible/README.md) (see its chapters 06 Engineering & Building and 22 Balance & Tuning).
+> Every buildable part, component, tool, weapon, suit and drone in the game, with gameplay stats and a **Blender production spec for each asset**. Companion to the [Game Bible](../game-bible/README.md) (see its chapters 06 Engineering & Building and 22 Balance & Tuning). Characters, creatures and enemies are in the [Character Bible](../character-bible/README.md).
 
 <!-- STATS:START -->
 | | Count |
