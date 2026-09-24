@@ -1,5 +1,6 @@
 #include "ExoHollow.h"
 #include "ExoHollowAI.h"
+#include "ExoAnimComponent.h"
 #include "ExoBlock.h"
 #include "ExoPlayerCharacter.h"
 #include "ExoVitalsComponent.h"
@@ -33,6 +34,7 @@ AExoHollow::AExoHollow()
 	Stand->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> Cylinder(TEXT("/Engine/BasicShapes/Cylinder.Cylinder"));
 	if (Cylinder.Succeeded()) Stand->SetStaticMesh(Cylinder.Object);
+	Anim = CreateDefaultSubobject<UExoAnimComponent>(TEXT("Anim"));
 
 	GetCharacterMovement()->bOrientRotationToMovement = true;
 	GetCharacterMovement()->RotationRate = FRotator(0.f, 240.f, 0.f);
@@ -67,6 +69,7 @@ void AExoHollow::ApplyType()
 			bHasMesh = true;
 		}
 	}
+	if (bHasMesh) Anim->Setup(GetMesh(), MeshAsset);
 	Stand->SetVisibility(!bHasMesh);
 	const float H = Stats.CapsuleHalfHeightCm * 2.f;
 	Stand->SetRelativeScale3D(FVector(Stats.CapsuleRadiusCm * 2.f / 100.f, Stats.CapsuleRadiusCm * 2.f / 100.f, H / 100.f));
@@ -78,6 +81,7 @@ bool AExoHollow::TryAttack(AActor* Target)
 	const float Reach = Stats.CapsuleRadiusCm + 120.f;
 	if (FVector::Dist2D(GetActorLocation(), Target->GetActorLocation()) > Reach + 125.f) return false;
 	AttackCooldown = HollowType == EExoHollowType::Runner ? 0.9f : 1.6f;
+	Anim->PlayOnce(TEXT("Attack"));
 	if (AExoPlayerCharacter* Player = Cast<AExoPlayerCharacter>(Target))
 	{
 		UGameplayStatics::ApplyDamage(Player, Stats.Damage, GetController(), this, nullptr);
@@ -115,6 +119,7 @@ float AExoHollow::TakeDamage(float Damage, const FDamageEvent& DamageEvent, ACon
 		if (EventInstigator && EventInstigator->GetPawn()) AI->Alert(EventInstigator->GetPawn()->GetActorLocation());
 	}
 	if (Health <= 0.f) Die();
+	else Anim->PlayOnce(TEXT("HitReact"));
 	return Final;
 }
 
@@ -123,7 +128,11 @@ void AExoHollow::Die()
 	bDead = true;
 	GetCharacterMovement()->DisableMovement();
 	GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
-	if (GetMesh()->GetSkeletalMeshAsset())
+	if (Anim->PlayDeath())
+	{
+		// The Death clip ends on the ground and holds its last frame.
+	}
+	else if (GetMesh()->GetSkeletalMeshAsset())
 	{
 		GetMesh()->SetCollisionProfileName(TEXT("Ragdoll"));
 		GetMesh()->SetSimulatePhysics(true);

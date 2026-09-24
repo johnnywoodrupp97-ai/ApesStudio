@@ -1,4 +1,6 @@
 #include "ExoCompanion.h"
+#include "ExoAnimComponent.h"
+#include "ExoMissionSubsystem.h"
 #include "AIController.h"
 #include "Components/CapsuleComponent.h"
 #include "Components/SkeletalMeshComponent.h"
@@ -27,6 +29,7 @@ AExoCompanion::AExoCompanion()
 	Stand->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> Cylinder(TEXT("/Engine/BasicShapes/Cylinder.Cylinder"));
 	if (Cylinder.Succeeded()) Stand->SetStaticMesh(Cylinder.Object);
+	Anim = CreateDefaultSubobject<UExoAnimComponent>(TEXT("Anim"));
 }
 
 void AExoCompanion::BeginPlay()
@@ -43,6 +46,7 @@ void AExoCompanion::BeginPlay()
 		{
 			GetMesh()->SetSkeletalMesh(SK);
 			Stand->SetVisibility(false);
+			Anim->Setup(GetMesh(), MeshAsset);
 		}
 	}
 	// Companions in a mission group stay hidden until the mission brings them in.
@@ -93,6 +97,10 @@ void AExoCompanion::Tick(float DeltaSeconds)
 		Safety = FMath::Clamp(Safety + (FVector::Dist(Player->GetActorLocation(), GetActorLocation()) < 600.f ? 2.f : -1.f) * Hours * 10.f, 0.f, 100.f);
 	}
 
+	const UExoMissionSubsystem* Missions = GetWorld()->GetSubsystem<UExoMissionSubsystem>();
+	const FExoLine* Line = Missions ? Missions->GetCurrentLine() : nullptr;
+	Anim->bTalking = BarkTime > 0.f || (Line && IsSpeaking(Line->Speaker));
+
 	BarkTime = FMath::Max(0.f, BarkTime - DeltaSeconds);
 	BarkClock -= DeltaSeconds;
 	if (BarkClock <= 0.f && Player && FVector::Dist(Player->GetActorLocation(), GetActorLocation()) < 1200.f)
@@ -103,4 +111,18 @@ void AExoCompanion::Tick(float DeltaSeconds)
 		else CurrentBark.Reset();
 		BarkTime = CurrentBark.IsEmpty() ? 0.f : 4.f;
 	}
+}
+
+bool AExoCompanion::IsSpeaking(const FString& Speaker) const
+{
+	// "Tug", "Mara Voss", "Halvard Crane" and "Trooper" speak in person; "Ada (radio)" or "Lily (vents)" do not.
+	if (CompanionId.IsNone() || Speaker.Contains(TEXT("("))) return false;
+	const FString Id = CompanionId.ToString();
+	TArray<FString> Words;
+	Speaker.ParseIntoArrayWS(Words);
+	for (const FString& W : Words)
+	{
+		if (W.Equals(Id, ESearchCase::IgnoreCase)) return true;
+	}
+	return Words.Num() == 1 && Id.StartsWith(Words[0], ESearchCase::IgnoreCase); // "Trooper" -> TrooperGate1
 }

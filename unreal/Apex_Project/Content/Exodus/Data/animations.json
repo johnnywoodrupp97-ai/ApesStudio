@@ -1,0 +1,824 @@
+{
+ "_about": "Animation clips per slice character, written by SourceArt/export_slice_art.py. speed_cm_s is the ground speed of an in-place locomotion cycle: the game scales the play rate to the actual speed.",
+ "characters": {
+  "SK_CHR_TugBrennan": {
+   "template": "humanoid",
+   "fps": 30,
+   "anims": {
+    "Idle": {
+     "asset": "A_CHR_TugBrennan_Idle",
+     "loop": true,
+     "frames": 184,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "Walk": {
+     "asset": "A_CHR_TugBrennan_Walk",
+     "loop": true,
+     "frames": 34,
+     "speed_cm_s": 146.48,
+     "locomotion": true
+    },
+    "Jog": {
+     "asset": "A_CHR_TugBrennan_Jog",
+     "loop": true,
+     "frames": 22,
+     "speed_cm_s": 327.14,
+     "locomotion": true
+    },
+    "Sprint": {
+     "asset": "A_CHR_TugBrennan_Sprint",
+     "loop": true,
+     "frames": 18,
+     "speed_cm_s": 489.33,
+     "locomotion": true
+    },
+    "CrouchWalk": {
+     "asset": "A_CHR_TugBrennan_CrouchWalk",
+     "loop": true,
+     "frames": 38,
+     "speed_cm_s": 120.71,
+     "locomotion": true
+    },
+    "Talk": {
+     "asset": "A_CHR_TugBrennan_Talk",
+     "loop": true,
+     "frames": 120,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "Wave": {
+     "asset": "A_CHR_TugBrennan_Wave",
+     "loop": true,
+     "frames": 60,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "HitReact": {
+     "asset": "A_CHR_TugBrennan_HitReact",
+     "loop": false,
+     "frames": 18,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "Death": {
+     "asset": "A_CHR_TugBrennan_Death",
+     "loop": false,
+     "frames": 55,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    }
+   }
+  },
+  "SK_CHR_AdaOkafor": {
+   "template": "humanoid",
+   "fps": 30,
+   "anims": {
+    "Idle": {
+     "asset": "A_CHR_AdaOkafor_Idle",
+     "loop": true,
+     "frames": 177,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "Walk": {
+     "asset": "A_CHR_AdaOkafor_Walk",
+     "loop": true,
+     "frames": 32,
+     "speed_cm_s": 144.49,
+     "locomotion": true
+    },
+    "Jog": {
+     "asset": "A_CHR_AdaOkafor_Jog",
+     "loop": true,
+     "frames": 21,
+     "speed_cm_s": 318.19,
+     "locomotion": true
+    },
+    "Sprint": {
+     "asset": "A_CHR_AdaOkafor_Sprint",
+     "loop": true,
+     "frames": 18,
+     "speed_cm_s": 454.3,
+     "locomotion": true
+    },
+    "CrouchWalk": {
+     "asset": "A_CHR_AdaOkafor_CrouchWalk",
+     "loop": true,
+     "frames": 37,
+     "speed_cm_s": 115.09,
+     "locomotion": true
+    },
+    "Talk": {
+     "asset": "A_CHR_AdaOkafor_Talk",
+     "loop": true,
+     "frames": 120,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "Wave": {
+     "asset": "A_CHR_AdaOkafor_Wave",
+     "loop": true,
+     "frames": 60,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "HitReact": {
+     "asset": "A_CHR_AdaOkafor_HitReact",
+     "loop": false,
+     "frames": 18,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "Death": {
+     "asset": "A_CHR_AdaOkafor_Death",
+     "loop": false,
+     "frames": 53,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    }
+   }
+  },
+  "SK_CHR_LilyChen": {
+   "template": "humanoid",
+   "fps": 30,
+   "anims": {
+    "Idle": {
+     "asset": "A_CHR_LilyChen_Idle",
+     "loop": true,
+     "frames": 162,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "Walk": {
+     "asset": "A_CHR_LilyChen_Walk",
+     "loop": true,
+     "frames": 27,
+     "speed_cm_s": 135.94,
+     "locomotion": true
+    },
+    "Jog": {
+     "asset": "A_CHR_LilyChen_Jog",
+     "loop": true,
+     "frames": 17,
+     "speed_cm_s": 312.01,
+     "locomotion": true
+    },
+    "Sprint": {
+     "asset": "A_CHR_LilyChen_Sprint",
+     "loop": true,
+     "frames": 15,
+     "speed_cm_s": 432.76,
+     "locomotion": true
+    },
+    "CrouchWalk": {
+     "asset": "A_CHR_LilyChen_CrouchWalk",
+     "loop": true,
+     "frames": 30,
+     "speed_cm_s": 112.68,
+     "locomotion": true
+    },
+    "Talk": {
+     "asset": "A_CHR_LilyChen_Talk",
+     "loop": true,
+     "frames": 120,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "Wave": {
+     "asset": "A_CHR_LilyChen_Wave",
+     "loop": true,
+     "frames": 60,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "HitReact": {
+     "asset": "A_CHR_LilyChen_HitReact",
+     "loop": false,
+     "frames": 16,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "Death": {
+     "asset": "A_CHR_LilyChen_Death",
+     "loop": false,
+     "frames": 48,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    }
+   }
+  },
+  "SK_CHR_HalvardCrane": {
+   "template": "humanoid",
+   "fps": 30,
+   "anims": {
+    "Idle": {
+     "asset": "A_CHR_HalvardCrane_Idle",
+     "loop": true,
+     "frames": 183,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "Walk": {
+     "asset": "A_CHR_HalvardCrane_Walk",
+     "loop": true,
+     "frames": 34,
+     "speed_cm_s": 145.37,
+     "locomotion": true
+    },
+    "Jog": {
+     "asset": "A_CHR_HalvardCrane_Jog",
+     "loop": true,
+     "frames": 22,
+     "speed_cm_s": 324.67,
+     "locomotion": true
+    },
+    "Sprint": {
+     "asset": "A_CHR_HalvardCrane_Sprint",
+     "loop": true,
+     "frames": 18,
+     "speed_cm_s": 485.64,
+     "locomotion": true
+    },
+    "CrouchWalk": {
+     "asset": "A_CHR_HalvardCrane_CrouchWalk",
+     "loop": true,
+     "frames": 38,
+     "speed_cm_s": 119.8,
+     "locomotion": true
+    },
+    "Talk": {
+     "asset": "A_CHR_HalvardCrane_Talk",
+     "loop": true,
+     "frames": 120,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "Wave": {
+     "asset": "A_CHR_HalvardCrane_Wave",
+     "loop": true,
+     "frames": 60,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "HitReact": {
+     "asset": "A_CHR_HalvardCrane_HitReact",
+     "loop": false,
+     "frames": 18,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "Death": {
+     "asset": "A_CHR_HalvardCrane_Death",
+     "loop": false,
+     "frames": 55,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    }
+   }
+  },
+  "SK_CHR_MaraVoss": {
+   "template": "humanoid",
+   "fps": 30,
+   "anims": {
+    "Idle": {
+     "asset": "A_CHR_MaraVoss_Idle",
+     "loop": true,
+     "frames": 174,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "Walk": {
+     "asset": "A_CHR_MaraVoss_Walk",
+     "loop": true,
+     "frames": 32,
+     "speed_cm_s": 139.51,
+     "locomotion": true
+    },
+    "Jog": {
+     "asset": "A_CHR_MaraVoss_Jog",
+     "loop": true,
+     "frames": 21,
+     "speed_cm_s": 307.22,
+     "locomotion": true
+    },
+    "Sprint": {
+     "asset": "A_CHR_MaraVoss_Sprint",
+     "loop": true,
+     "frames": 17,
+     "speed_cm_s": 464.44,
+     "locomotion": true
+    },
+    "CrouchWalk": {
+     "asset": "A_CHR_MaraVoss_CrouchWalk",
+     "loop": true,
+     "frames": 36,
+     "speed_cm_s": 114.21,
+     "locomotion": true
+    },
+    "Talk": {
+     "asset": "A_CHR_MaraVoss_Talk",
+     "loop": true,
+     "frames": 120,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "Wave": {
+     "asset": "A_CHR_MaraVoss_Wave",
+     "loop": true,
+     "frames": 60,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "HitReact": {
+     "asset": "A_CHR_MaraVoss_HitReact",
+     "loop": false,
+     "frames": 17,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "Death": {
+     "asset": "A_CHR_MaraVoss_Death",
+     "loop": false,
+     "frames": 52,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    }
+   }
+  },
+  "SK_CHR_DanaMarsh_Hollow": {
+   "template": "humanoid",
+   "fps": 30,
+   "anims": {
+    "Idle": {
+     "asset": "A_CHR_DanaMarsh_Hollow_Idle",
+     "loop": true,
+     "frames": 176,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "Walk": {
+     "asset": "A_CHR_DanaMarsh_Hollow_Walk",
+     "loop": true,
+     "frames": 40,
+     "speed_cm_s": 96.08,
+     "locomotion": true
+    },
+    "Run": {
+     "asset": "A_CHR_DanaMarsh_Hollow_Run",
+     "loop": true,
+     "frames": 26,
+     "speed_cm_s": 216.1,
+     "locomotion": true
+    },
+    "Attack": {
+     "asset": "A_CHR_DanaMarsh_Hollow_Attack",
+     "loop": false,
+     "frames": 32,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "HitReact": {
+     "asset": "A_CHR_DanaMarsh_Hollow_HitReact",
+     "loop": false,
+     "frames": 18,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "Death": {
+     "asset": "A_CHR_DanaMarsh_Hollow_Death",
+     "loop": false,
+     "frames": 53,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    }
+   }
+  },
+  "SK_CHR_RosaAlvarez_Hollow": {
+   "template": "humanoid",
+   "fps": 30,
+   "anims": {
+    "Idle": {
+     "asset": "A_CHR_RosaAlvarez_Hollow_Idle",
+     "loop": true,
+     "frames": 172,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "Walk": {
+     "asset": "A_CHR_RosaAlvarez_Hollow_Walk",
+     "loop": true,
+     "frames": 39,
+     "speed_cm_s": 94.54,
+     "locomotion": true
+    },
+    "Run": {
+     "asset": "A_CHR_RosaAlvarez_Hollow_Run",
+     "loop": true,
+     "frames": 26,
+     "speed_cm_s": 207.31,
+     "locomotion": true
+    },
+    "Attack": {
+     "asset": "A_CHR_RosaAlvarez_Hollow_Attack",
+     "loop": false,
+     "frames": 32,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "HitReact": {
+     "asset": "A_CHR_RosaAlvarez_Hollow_HitReact",
+     "loop": false,
+     "frames": 17,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "Death": {
+     "asset": "A_CHR_RosaAlvarez_Hollow_Death",
+     "loop": false,
+     "frames": 52,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    }
+   }
+  },
+  "SK_ENM_Shambler": {
+   "template": "humanoid",
+   "fps": 30,
+   "anims": {
+    "Idle": {
+     "asset": "A_ENM_Shambler_Idle",
+     "loop": true,
+     "frames": 177,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "Walk": {
+     "asset": "A_ENM_Shambler_Walk",
+     "loop": true,
+     "frames": 40,
+     "speed_cm_s": 97.76,
+     "locomotion": true
+    },
+    "Run": {
+     "asset": "A_ENM_Shambler_Run",
+     "loop": true,
+     "frames": 27,
+     "speed_cm_s": 211.73,
+     "locomotion": true
+    },
+    "Attack": {
+     "asset": "A_ENM_Shambler_Attack",
+     "loop": false,
+     "frames": 33,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "HitReact": {
+     "asset": "A_ENM_Shambler_HitReact",
+     "loop": false,
+     "frames": 18,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "Death": {
+     "asset": "A_ENM_Shambler_Death",
+     "loop": false,
+     "frames": 53,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    }
+   }
+  },
+  "SK_ENM_Shambler_KestrelCrew": {
+   "template": "humanoid",
+   "fps": 30,
+   "anims": {
+    "Idle": {
+     "asset": "A_ENM_Shambler_KestrelCrew_Idle",
+     "loop": true,
+     "frames": 177,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "Walk": {
+     "asset": "A_ENM_Shambler_KestrelCrew_Walk",
+     "loop": true,
+     "frames": 40,
+     "speed_cm_s": 97.76,
+     "locomotion": true
+    },
+    "Run": {
+     "asset": "A_ENM_Shambler_KestrelCrew_Run",
+     "loop": true,
+     "frames": 27,
+     "speed_cm_s": 211.73,
+     "locomotion": true
+    },
+    "Attack": {
+     "asset": "A_ENM_Shambler_KestrelCrew_Attack",
+     "loop": false,
+     "frames": 33,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "HitReact": {
+     "asset": "A_ENM_Shambler_KestrelCrew_HitReact",
+     "loop": false,
+     "frames": 18,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "Death": {
+     "asset": "A_ENM_Shambler_KestrelCrew_Death",
+     "loop": false,
+     "frames": 53,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    }
+   }
+  },
+  "SK_ENM_Shambler_Civilian": {
+   "template": "humanoid",
+   "fps": 30,
+   "anims": {
+    "Idle": {
+     "asset": "A_ENM_Shambler_Civilian_Idle",
+     "loop": true,
+     "frames": 177,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "Walk": {
+     "asset": "A_ENM_Shambler_Civilian_Walk",
+     "loop": true,
+     "frames": 40,
+     "speed_cm_s": 97.76,
+     "locomotion": true
+    },
+    "Run": {
+     "asset": "A_ENM_Shambler_Civilian_Run",
+     "loop": true,
+     "frames": 27,
+     "speed_cm_s": 211.73,
+     "locomotion": true
+    },
+    "Attack": {
+     "asset": "A_ENM_Shambler_Civilian_Attack",
+     "loop": false,
+     "frames": 33,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "HitReact": {
+     "asset": "A_ENM_Shambler_Civilian_HitReact",
+     "loop": false,
+     "frames": 18,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "Death": {
+     "asset": "A_ENM_Shambler_Civilian_Death",
+     "loop": false,
+     "frames": 53,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    }
+   }
+  },
+  "SK_ENM_Runner": {
+   "template": "humanoid",
+   "fps": 30,
+   "anims": {
+    "Idle": {
+     "asset": "A_ENM_Runner_Idle",
+     "loop": true,
+     "frames": 179,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "Walk": {
+     "asset": "A_ENM_Runner_Walk",
+     "loop": true,
+     "frames": 40,
+     "speed_cm_s": 99.44,
+     "locomotion": true
+    },
+    "Run": {
+     "asset": "A_ENM_Runner_Run",
+     "loop": true,
+     "frames": 18,
+     "speed_cm_s": 464.75,
+     "locomotion": true
+    },
+    "Attack": {
+     "asset": "A_ENM_Runner_Attack",
+     "loop": false,
+     "frames": 33,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "HitReact": {
+     "asset": "A_ENM_Runner_HitReact",
+     "loop": false,
+     "frames": 18,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "Death": {
+     "asset": "A_ENM_Runner_Death",
+     "loop": false,
+     "frames": 54,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    }
+   }
+  },
+  "SK_ENM_Crawler": {
+   "template": "humanoid",
+   "fps": 30,
+   "anims": {
+    "Idle": {
+     "asset": "A_ENM_Crawler_Idle",
+     "loop": true,
+     "frames": 175,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "Walk": {
+     "asset": "A_ENM_Crawler_Walk",
+     "loop": true,
+     "frames": 38,
+     "speed_cm_s": 66.72,
+     "locomotion": true
+    },
+    "Run": {
+     "asset": "A_ENM_Crawler_Run",
+     "loop": true,
+     "frames": 23,
+     "speed_cm_s": 135.51,
+     "locomotion": true
+    },
+    "Attack": {
+     "asset": "A_ENM_Crawler_Attack",
+     "loop": false,
+     "frames": 32,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "HitReact": {
+     "asset": "A_ENM_Crawler_HitReact",
+     "loop": false,
+     "frames": 17,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "Death": {
+     "asset": "A_ENM_Crawler_Death",
+     "loop": false,
+     "frames": 52,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    }
+   }
+  },
+  "SK_NPC_DirectorateTrooper": {
+   "template": "humanoid",
+   "fps": 30,
+   "anims": {
+    "Idle": {
+     "asset": "A_NPC_DirectorateTrooper_Idle",
+     "loop": true,
+     "frames": 181,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "Walk": {
+     "asset": "A_NPC_DirectorateTrooper_Walk",
+     "loop": true,
+     "frames": 33,
+     "speed_cm_s": 146.56,
+     "locomotion": true
+    },
+    "Jog": {
+     "asset": "A_NPC_DirectorateTrooper_Jog",
+     "loop": true,
+     "frames": 22,
+     "speed_cm_s": 317.69,
+     "locomotion": true
+    },
+    "Sprint": {
+     "asset": "A_NPC_DirectorateTrooper_Sprint",
+     "loop": true,
+     "frames": 18,
+     "speed_cm_s": 475.19,
+     "locomotion": true
+    },
+    "CrouchWalk": {
+     "asset": "A_NPC_DirectorateTrooper_CrouchWalk",
+     "loop": true,
+     "frames": 38,
+     "speed_cm_s": 117.22,
+     "locomotion": true
+    },
+    "Talk": {
+     "asset": "A_NPC_DirectorateTrooper_Talk",
+     "loop": true,
+     "frames": 120,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "Wave": {
+     "asset": "A_NPC_DirectorateTrooper_Wave",
+     "loop": true,
+     "frames": 60,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "HitReact": {
+     "asset": "A_NPC_DirectorateTrooper_HitReact",
+     "loop": false,
+     "frames": 18,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "Death": {
+     "asset": "A_NPC_DirectorateTrooper_Death",
+     "loop": false,
+     "frames": 54,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    }
+   }
+  },
+  "SK_NPC_DirectorateTrooper_Female": {
+   "template": "humanoid",
+   "fps": 30,
+   "anims": {
+    "Idle": {
+     "asset": "A_NPC_DirectorateTrooper_Female_Idle",
+     "loop": true,
+     "frames": 181,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "Walk": {
+     "asset": "A_NPC_DirectorateTrooper_Female_Walk",
+     "loop": true,
+     "frames": 33,
+     "speed_cm_s": 146.56,
+     "locomotion": true
+    },
+    "Jog": {
+     "asset": "A_NPC_DirectorateTrooper_Female_Jog",
+     "loop": true,
+     "frames": 22,
+     "speed_cm_s": 317.69,
+     "locomotion": true
+    },
+    "Sprint": {
+     "asset": "A_NPC_DirectorateTrooper_Female_Sprint",
+     "loop": true,
+     "frames": 18,
+     "speed_cm_s": 475.19,
+     "locomotion": true
+    },
+    "CrouchWalk": {
+     "asset": "A_NPC_DirectorateTrooper_Female_CrouchWalk",
+     "loop": true,
+     "frames": 38,
+     "speed_cm_s": 117.22,
+     "locomotion": true
+    },
+    "Talk": {
+     "asset": "A_NPC_DirectorateTrooper_Female_Talk",
+     "loop": true,
+     "frames": 120,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "Wave": {
+     "asset": "A_NPC_DirectorateTrooper_Female_Wave",
+     "loop": true,
+     "frames": 60,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "HitReact": {
+     "asset": "A_NPC_DirectorateTrooper_Female_HitReact",
+     "loop": false,
+     "frames": 18,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    },
+    "Death": {
+     "asset": "A_NPC_DirectorateTrooper_Female_Death",
+     "loop": false,
+     "frames": 54,
+     "speed_cm_s": 0.0,
+     "locomotion": false
+    }
+   }
+  }
+ }
+}
