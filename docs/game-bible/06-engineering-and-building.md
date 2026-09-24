@@ -21,7 +21,10 @@
 
 **Build modes:** First-person (default), Build Camera (free-fly, planetside only when safe), Symmetry mode (mirror planes), Copy/Paste (Creative & unlocked Blueprint Tech).
 
-## 6.3 Block categories (launch set ≈ 220 blocks)
+## 6.3 Block categories (launch set: 237 parts, 446 grid/variant assets)
+
+> The complete catalog, with stats and a Blender production spec for every part, is the **[Parts Bible](../parts-bible/README.md)**.
+
 
 | Category | Examples |
 |---|---|

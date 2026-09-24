@@ -87,6 +87,9 @@ The Engineer's partial resistance means infection **progresses 3× slower** once
 | **Sower Loom Node** | T4 | Precursor tech, Loom Serum |
 
 ### Components (building materials)
+
+Full list with recipes and prop specs: [Parts Bible, chapter 17](../parts-bible/17-components-and-resources.md).
+
 Steel Plate · Interior Plate · Construction Component · Metal Grid · Motor · Computer · Display · Glass Panel · Thruster Component · Power Cell · Reactor Component · Medical Component · Radio Component · Superconductor · **Sower Filament** (T4) · **Living Alloy** (post-game)
 
 ## 5.5 Food & water

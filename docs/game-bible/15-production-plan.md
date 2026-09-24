@@ -14,7 +14,7 @@
 | **Cinematics** | 10 (~12 min) | 18 (~24 min) |
 | **Voiced lines** | ~8,000 | ~15,000 |
 | **Full VO languages** | EN (+ subtitles in 12) | EN, FR, DE, ES, JA, PT-BR (+ subtitles in 7 more) |
-| **Launch blocks / weapons / Hollows** | 160 / 18 / 11 | 220 / 24 / 14 |
+| **Launch parts / weapons / Hollows** | ~160 parts / 18 / 11 | 237 parts (446 assets, see the [Parts Bible](../parts-bible/README.md)) / 24 / 14 |
 | **Co-op** | Post-launch (+9 months) | Post-launch (+6 months) |
 | **Early Access** | Recommended (funds development) | Optional |
 

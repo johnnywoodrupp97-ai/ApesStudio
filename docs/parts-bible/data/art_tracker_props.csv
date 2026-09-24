@@ -1,0 +1,115 @@
+asset,item_id,name,type,tier,dims_m,tris_lod0_or_1p,tris_3p,textures,status,owner,notes
+SM_CMP_ScrapMetal,scrap_metal,Scrap Metal,Component,T0,0.50x0.10x0.40,300,,512 / prop atlas,Not started,,Bent sheet with bolts and flaking paint; 4 random shape variants.
+SM_CMP_SalvagedWood,salvaged_wood,Salvaged Wood,Component,T0,1.00x0.10x0.15,200,,512 / prop atlas,Not started,,Bundle of planks tied with twine; nail holes.
+SM_CMP_DuctTape,duct_tape,Duct Tape,Component,T0,0.12x0.05x0.12,250,,512 / prop atlas,Not started,,"Silver roll, half used, torn edge."
+SM_CMP_WiringBundle,wiring_bundle,Wiring Bundle,Component,T0,0.30x0.10x0.30,400,,512 / prop atlas,Not started,,Coiled mixed-color wires with zip ties.
+SM_CMP_Fabric,fabric,Fabric,Component,T0,0.40x0.15x0.30,250,,512 / prop atlas,Not started,,Folded canvas-and-cloth bundle.
+SM_CMP_SteelPlate,steel_plate,Steel Plate,Component,T1,0.60x0.05x0.60,150,,512 / prop atlas,Not started,,Square plate with chamfered corners and a stamped part number.
+SM_CMP_InteriorPlate,interior_plate,Interior Plate,Component,T1,0.60x0.02x0.60,120,,512 / prop atlas,Not started,,Thin light-grey panel with a perforated edge.
+SM_CMP_ConstructionComponent,construction_component,Construction Component,Component,T1,0.30x0.20x0.30,400,,512 / prop atlas,Not started,,Bracket-and-bolt kit in a small bundle.
+SM_CMP_MetalGrid,metal_grid,Metal Grid,Component,T2,0.60x0.05x0.60,500,,512 / prop atlas,Not started,,Lattice panel of cobalt-steel.
+SM_CMP_Girder,girder,Girder,Component,T1,1.20x0.15x0.15,200,,512 / prop atlas,Not started,,Short I-beam section.
+SM_CMP_SmallSteelTube,small_tube,Small Steel Tube,Component,T1,0.80x0.06x0.06,150,,512 / prop atlas,Not started,,Thin pipe with threaded ends.
+SM_CMP_LargeSteelTube,large_tube,Large Steel Tube,Component,T1,1.20x0.25x0.25,300,,512 / prop atlas,Not started,,Heavy pipe section with flanges.
+SM_CMP_GlassPanel,glass_panel,Glass Panel,Component,T1,0.60x0.03x0.60,100,,512 / prop atlas,Not started,,Bulletproof glass sheet with a protective film half peeled.
+SM_CMP_Motor,motor,Motor,Component,T1,0.30x0.30x0.40,800,,512 / prop atlas,Not started,,Electric motor with a cooling-fin housing and shaft.
+SM_CMP_Computer,computer,Computer,Component,T1,0.20x0.03x0.15,200,,512 / prop atlas,Not started,,Circuit board module with a heat spreader.
+SM_CMP_Display,display,Display,Component,T1,0.30x0.03x0.20,150,,512 / prop atlas,Not started,,Screen module; emissive test pattern when dropped.
+SM_CMP_PowerCell,power_cell,Power Cell,Component,T1,0.15x0.30x0.15,300,,512 / prop atlas,Not started,,Cylindrical cell with a charge LED.
+SM_CMP_SolarCell,solar_cell,Solar Cell,Component,T1,0.30x0.02x0.30,100,,512 / prop atlas,Not started,,Dark-blue cell wafer with a grid pattern.
+SM_CMP_RadioComponent,radio_component,Radio Component,Component,T1,0.20x0.10x0.15,350,,512 / prop atlas,Not started,,Transceiver board with a stubby antenna.
+SM_CMP_DetectorComponent,detector_component,Detector Component,Component,T2,0.20x0.15x0.20,450,,512 / prop atlas,Not started,,Sensor head with a lens.
+SM_CMP_MedicalComponent,medical_component,Medical Component,Component,T2,0.30x0.15x0.20,450,,512 / prop atlas,Not started,,Sealed white med-tech module with a red cross.
+SM_CMP_FilterMesh,filter_mesh,Filter Mesh,Component,T2,0.40x0.05x0.40,250,,512 / prop atlas,Not started,,Pleated filter cartridge; clean white.
+SM_CMP_BioPlastic,bio_plastic,Bio-Plastic,Component,T2,0.30x0.10x0.30,150,,512 / prop atlas,Not started,,Stack of translucent amber sheets.
+SM_CMP_ThrusterComponent,thruster_component,Thruster Component,Component,T2,0.30x0.30x0.40,700,,512 / prop atlas,Not started,,Nozzle-and-injector assembly.
+SM_CMP_ReactorComponent,reactor_component,Reactor Component,Component,T2,0.40x0.40x0.40,600,,512 / prop atlas,Not started,,Shielded canister with radiation stencils.
+SM_CMP_Superconductor,superconductor,Superconductor,Component,T3,0.40x0.10x0.10,300,,512 / prop atlas,Not started,,Coiled bar in a frosted sleeve (emissive blue edge).
+SM_CMP_Explosives,explosives,Explosives,Component,T2,0.20x0.15x0.20,250,,512 / prop atlas,Not started,,Taped brick with a detonator port.
+SM_CMP_HeatShieldTile,heat_shield_tile,Heat Shield Tile,Component,T1,0.20x0.05x0.20,60,,512 / prop atlas,Not started,,Black hexagonal ablative tile.
+SM_CMP_SowerFilament,sower_filament,Sower Filament,Component,T4,0.60x0.05x0.05,400,,512 / prop atlas,Not started,,Glowing teal fiber coil that slowly breathes (emissive pulse).
+SM_CMP_LivingAlloy,living_alloy,Living Alloy,Component,T5,0.40x0.10x0.40,500,,512 / prop atlas,Not started,,Metal plate with pulsing organic veins.
+SM_RES_IronOre,iron_ore,Iron Ore,Ore,T0,0.30x0.30x0.30,200,,512 / prop atlas,Not started,,Rust-red rock chunk.
+SM_RES_NickelOre,nickel_ore,Nickel Ore,Ore,T1,0.30x0.30x0.30,200,,512 / prop atlas,Not started,,Silver-green rock chunk.
+SM_RES_SiliconOre,silicon_ore,Silicon Ore,Ore,T1,0.30x0.30x0.30,200,,512 / prop atlas,Not started,,Grey crystalline chunk.
+SM_RES_CobaltOre,cobalt_ore,Cobalt Ore,Ore,T1,0.30x0.30x0.30,200,,512 / prop atlas,Not started,,Deep-blue veined rock.
+SM_RES_TitaniumOre,titanium_ore,Titanium Ore,Ore,T2,0.30x0.30x0.30,200,,512 / prop atlas,Not started,,Pale grey metallic rock.
+SM_RES_SilverOre,silver_ore,Silver Ore,Ore,T2,0.30x0.30x0.30,200,,512 / prop atlas,Not started,,Bright-flecked rock.
+SM_RES_GoldOre,gold_ore,Gold Ore,Ore,T2,0.30x0.30x0.30,200,,512 / prop atlas,Not started,,Gold-flecked quartz.
+SM_RES_MagnesiumOre,magnesium_ore,Magnesium Ore,Ore,T2,0.30x0.30x0.30,200,,512 / prop atlas,Not started,,White chalky rock.
+SM_RES_UraniumOre,uranium_ore,Uranium Ore,Ore,T2,0.30x0.30x0.30,200,,512 / prop atlas,Not started,,Dark rock with a faint green glow.
+SM_RES_PlatinumOre,platinum_ore,Platinum Ore,Ore,T3,0.30x0.30x0.30,200,,512 / prop atlas,Not started,,Heavy silver-white nugget.
+SM_RES_Ice,ice,Ice,Ore,T0,0.30x0.30x0.30,150,,512 / prop atlas,Not started,,Translucent blue chunk (refraction material).
+SM_RES_Stone,stone,Stone,Ore,T0,0.30x0.30x0.30,150,,512 / prop atlas,Not started,,Grey gravel chunk.
+SM_RES_Organics,organics,Organics,Resource,T0,0.30x0.20x0.30,200,,512 / prop atlas,Not started,,Bundle of plant matter.
+SM_RES_BloomSample,bloom_sample,Bloom Sample,Resource,T1,0.15x0.20x0.15,250,,512 / prop atlas,Not started,,Sealed specimen jar with green growth (pulsing emissive). Handling without gloves adds infection.
+SM_RES_ResonanceCrystal,resonance_crystal,Resonance Crystal,Resource,T3,0.20x0.35x0.20,300,,512 / prop atlas,Not started,,Teal crystal with inner glyph light.
+SM_RES_He3Canister,he3_canister,He-3 Canister,Fuel,T3,0.30x0.50x0.30,400,,512 / prop atlas,Not started,,Insulated canister with a magenta band.
+SM_RES_UraniumFuelRod,uranium_rod,Uranium Fuel Rod,Fuel,T2,0.10x1.00x0.10,150,,512 / prop atlas,Not started,,Sealed rod with a hazard band.
+SM_RES_FuelCanister,diesel_canister,Fuel Canister,Fuel,T0,0.30x0.45x0.15,300,,512 / prop atlas,Not started,,Red jerrycan.
+SM_RES_IronIngot,iron_ingot,Iron Ingot,Ingot,T0,0.30x0.08x0.10,60,,512 / prop atlas,Not started,,Stamped ingot.
+SM_RES_NickelIngot,nickel_ingot,Nickel Ingot,Ingot,T1,0.30x0.08x0.10,60,,512 / prop atlas,Not started,,Stamped ingot.
+SM_RES_SiliconWafer,silicon_wafer,Silicon Wafer,Ingot,T1,0.20x0.01x0.20,60,,512 / prop atlas,Not started,,Round wafer.
+SM_RES_CobaltIngot,cobalt_ingot,Cobalt Ingot,Ingot,T1,0.30x0.08x0.10,60,,512 / prop atlas,Not started,,Blue-tinted ingot.
+SM_RES_TitaniumIngot,titanium_ingot,Titanium Ingot,Ingot,T2,0.30x0.08x0.10,60,,512 / prop atlas,Not started,,Matte ingot.
+SM_RES_SilverIngot,silver_ingot,Silver Ingot,Ingot,T2,0.30x0.08x0.10,60,,512 / prop atlas,Not started,,Bright ingot.
+SM_RES_GoldIngot,gold_ingot,Gold Ingot,Ingot,T2,0.30x0.08x0.10,60,,512 / prop atlas,Not started,,Gold ingot.
+SM_RES_PlatinumIngot,platinum_ingot,Platinum Ingot,Ingot,T3,0.30x0.08x0.10,60,,512 / prop atlas,Not started,,White-silver ingot.
+SM_RES_MagnesiumPowder,magnesium_powder,Magnesium Powder,Ingot,T2,0.20x0.15x0.20,120,,512 / prop atlas,Not started,,Sealed powder pouch.
+SK_EQP_Multitool_1P + SM_EQP_Multitool_3P,multitool,Multitool,Tool,T0,0.45x0.25x0.12,35000,8000,2K set,Not started,,"The player's signature object: visible 95% of play. Four tier variants (Mk1–Mk4) share the skeleton; each tier adds parts (heat sinks, lens rings). Wear decals accumulate with play time."
+SK_EQP_HandDrill_1P + SM_EQP_HandDrill_3P,hand_drill,Hand Drill,Tool,T1,0.60x0.30x0.20,25000,6000,2K set,Not started,,Chunky two-handed drill; the bit has 4 upgrade variants.
+SK_EQP_Harvester_1P + SM_EQP_Harvester_3P,harvester,Harvester,Tool,T1,0.50x0.20x0.12,18000,5000,2K set,Not started,,Sample canister on the side fills visibly (Bloom samples glow green).
+SK_EQP_Binoculars_1P + SM_EQP_Binoculars_3P,binoculars,Binoculars,Tool,T0,0.18x0.08x0.14,8000,2000,2K set,Not started,,Open-world scouting tool: tag points of interest from distance. Scratched lenses (overlay when looking through).
+SK_EQP_AdasWrench_1P + SM_EQP_AdasWrench_3P,adas_wrench,Ada's Wrench,Melee,T0,0.45x0.04x0.10,6000,1500,1K set,Not started,,Story item; never breaks. Engraving on the handle: 'For the kid who fixes everything.' The engraving must be legible in the inspect animation.
+SK_EQP_FireAxe_1P + SM_EQP_FireAxe_3P,fire_axe,Fire Axe,Melee,T0,0.90x0.05x0.30,6000,1500,1K set,Not started,,Red head with chipped paint; blood/Bloom grime overlay.
+SK_EQP_Crowbar_1P + SM_EQP_Crowbar_3P,crowbar,Crowbar,Melee,T0,0.75x0.03x0.08,4000,1000,1K set,Not started,,
+SK_EQP_RiotBaton_1P + SM_EQP_RiotBaton_3P,riot_baton,Riot Baton,Melee,T1,0.60x0.04x0.04,5000,1200,1K set,Not started,,Directorate issue; non-lethal option vs humans.
+SK_EQP_SowerBlade_1P + SM_EQP_SowerBlade_3P,sower_blade,Sower Blade,Melee,T4,0.90x0.03x0.12,15000,3000,2K set,Not started,,Grown blade of shell and crystal; the grip adapts to the hand (subtle shape key).
+SK_EQP_NailGunRifle_1P + SM_EQP_NailGunRifle_3P,nailgun_rifle,Nail-Gun Rifle,Improvised,T0,0.80x0.25x0.08,28000,6000,2K set,Not started,,Framing nailer bolted to a rifle stock and an air canister; duct-taped grip.
+SK_EQP_FlareGun_1P + SM_EQP_FlareGun_3P,flare_gun,Flare Gun,Improvised,T0,0.25x0.15x0.05,12000,2500,2K set,Not started,,Orange marine flare pistol.
+SK_EQP_PipeShotgun_1P + SM_EQP_PipeShotgun_3P,pipe_shotgun,Pipe Shotgun,Improvised,T0,0.70x0.15x0.06,18000,4000,2K set,Not started,,"Plumbing pipe, hinge and a wood stock."
+SK_EQP_RivetLauncher_1P + SM_EQP_RivetLauncher_3P,rivet_launcher,Rivet Launcher,Improvised,T1,0.90x0.25x0.10,30000,6500,2K set,Not started,,Industrial riveter turned rifle.
+SK_EQP_Pistol_1P + SM_EQP_Pistol_3P,pistol,Pistol,Firearm,T1,0.20x0.14x0.04,25000,5000,2K set,Not started,,
+SK_EQP_SMG_1P + SM_EQP_SMG_3P,smg,SMG,Firearm,T1,0.50x0.20x0.05,30000,6000,2K set,Not started,,
+SK_EQP_AssaultRifle_1P + SM_EQP_AssaultRifle_3P,assault_rifle,Assault Rifle,Firearm,T2,0.90x0.25x0.06,35000,7000,2K set,Not started,,"Civilian and Directorate (white-gold, DIR) variants share the skeleton."
+SK_EQP_PumpShotgun_1P + SM_EQP_PumpShotgun_3P,pump_shotgun,Pump Shotgun,Firearm,T1,1.00x0.20x0.06,30000,6000,2K set,Not started,,
+SK_EQP_MarksmanRifle_1P + SM_EQP_MarksmanRifle_3P,marksman_rifle,Marksman Rifle,Firearm,T2,1.15x0.25x0.07,38000,7000,2K set,Not started,,Picture-in-picture scope render target.
+SK_EQP_Flamethrower_1P + SM_EQP_Flamethrower_3P,flamethrower,Flamethrower,Heavy,T2,1.00x0.30x0.15,35000,7000,2K set,Not started,,Back-tank is part of the 3P character attachment (SK_ back slot).
+SK_EQP_GrenadeLauncher_1P + SM_EQP_GrenadeLauncher_3P,grenade_launcher,Grenade Launcher,Heavy,T2,0.80x0.25x0.12,32000,6500,2K set,Not started,,
+SK_EQP_RocketLauncher_1P + SM_EQP_RocketLauncher_3P,rocket_launcher,Rocket Launcher,Heavy,T3,1.20x0.30x0.15,30000,6000,2K set,Not started,,
+SK_EQP_ArcRifle_1P + SM_EQP_ArcRifle_3P,arc_rifle,Arc Rifle,Energy,T3,0.90x0.25x0.10,38000,7500,2K set,Not started,,
+SK_EQP_CoilGun_1P + SM_EQP_CoilGun_3P,coil_gun,Coil Gun,Energy,T3,1.10x0.20x0.08,36000,7000,2K set,Not started,,
+SK_EQP_LaserCutter_1P + SM_EQP_LaserCutter_3P,laser_cutter,Laser Cutter,Energy,T3,0.70x0.20x0.10,30000,6000,2K set,Not started,,
+SK_EQP_ResonanceLance_1P + SM_EQP_ResonanceLance_3P,resonance_lance,Resonance Lance,Sower,T4,1.30x0.20x0.12,40000,8000,2K set,Not started,,
+SK_EQP_SeedSpitter_1P + SM_EQP_SeedSpitter_3P,seed_spitter,Seed-Spitter,Sower,T4,0.80x0.25x0.12,36000,7000,2K set,Not started,,
+SK_EQP_NoiseMaker_1P + SM_EQP_NoiseMaker_3P,noise_maker,Noise Maker,Throwable,T0,0.10x0.10x0.10,3000,800,512 set,Not started,,Wind-up alarm clock taped to a can.
+SK_EQP_FragGrenade_1P + SM_EQP_FragGrenade_3P,frag_grenade,Frag Grenade,Throwable,T1,0.07x0.11x0.07,3000,800,512 set,Not started,,
+SK_EQP_Molotov_1P + SM_EQP_Molotov_3P,molotov,Molotov,Throwable,T0,0.08x0.30x0.08,3000,800,512 set,Not started,,
+SK_EQP_EMPGrenade_1P + SM_EQP_EMPGrenade_3P,emp_grenade,EMP Grenade,Throwable,T2,0.08x0.10x0.08,3500,900,512 set,Not started,,
+SK_EQP_SporeBomb_1P + SM_EQP_SporeBomb_3P,spore_bomb,Spore Bomb,Throwable,T2,0.10x0.12x0.10,4000,900,512 set,Not started,,Choir-made: a stitched cloth pouch around a glass bulb.
+SK_EQP_Bandage_1P + SM_EQP_Bandage_3P,bandage,Bandage,Consumable,T0,0.08x0.05x0.08,2000,400,512 set,Not started,,
+SK_EQP_Medkit_1P + SM_EQP_Medkit_3P,medkit,Medkit,Consumable,T1,0.30x0.10x0.20,5000,1000,512 set,Not started,,
+SK_EQP_SuppressantInjector_1P + SM_EQP_SuppressantInjector_3P,suppressant,Suppressant Injector,Consumable,T0,0.15x0.03x0.03,3000,500,512 set,Not started,,Auto-injector pen; the injection animation into the forearm is iconic (first seen M0.02).
+SK_EQP_AntiviralCocktail_1P + SM_EQP_AntiviralCocktail_3P,antiviral,Antiviral Cocktail,Consumable,T2,0.15x0.03x0.03,3000,500,512 set,Not started,,
+SK_EQP_NullSerum_1P + SM_EQP_NullSerum_3P,null_serum,Null Serum,Consumable,T3,0.15x0.03x0.03,3000,500,512 set,Not started,,Made with Lily's consent; label hand-written by Mara.
+SK_EQP_LoomSerum_1P + SM_EQP_LoomSerum_3P,loom_serum,Loom Serum,Consumable,T4,0.15x0.03x0.03,4000,600,512 set,Not started,,
+SK_EQP_RationCan_1P + SM_EQP_RationCan_3P,ration_can,Ration Can,Consumable,T0,0.08x0.11x0.08,1500,300,512 set,Not started,,
+SK_EQP_WaterBottle_1P + SM_EQP_WaterBottle_3P,water_bottle,Water Bottle,Consumable,T0,0.07x0.22x0.07,1500,300,512 set,Not started,,Refillable; clean/dirty fill states.
+SK_EQP_O2Bottle_1P + SM_EQP_O2Bottle_3P,o2_bottle,O₂ Bottle,Consumable,T1,0.12x0.45x0.12,3000,600,512 set,Not started,,
+SK_EQP_H2Bottle_1P + SM_EQP_H2Bottle_3P,h2_bottle,H₂ Bottle,Consumable,T2,0.12x0.45x0.12,3000,600,512 set,Not started,,
+SK_SUIT_WorkCoveralls,suit_coveralls,Work Coveralls,Suit,T0,0.60x1.80x0.35,,30000,2K body set,Not started,,Kestrel ground-crew coveralls with name tape 'WRENCH'. Unisex body with morph targets.
+SK_SUIT_HazmatSuit,suit_hazmat,Hazmat Suit,Suit,T1,0.65x1.85x0.40,,40000,2K body set,Not started,,Yellow CBRN suit with a clear hood (refraction + condensation).
+SK_SUIT_EVASuit,suit_eva,EVA Suit,Suit,T2,0.75x1.90x0.50,,55000,4K body set,Not started,,Kestrel white-and-orange; mag-boots integrated.
+SK_SUIT_EngineerHardsuit,suit_hardsuit,Engineer Hardsuit,Suit,T3,0.80x1.95x0.55,,65000,4K body set,Not started,,Armored plates over the EVA undersuit; tool-mount shoulder.
+SK_SUIT_SowerWovenSuit,suit_sower,Sower-Woven Suit,Suit,T4,0.75x1.95x0.50,,60000,4K body set,Not started,,Grown over the Hardsuit: shell plates and filament weave.
+SM_EQP_JetpackModule,mod_jetpack,Jetpack Module,Suit Module,T2,0.45x0.60x0.25,,12000,2K set,Not started,,
+SM_EQP_ExtendedO2Tank,mod_o2_tank,Extended O₂ Tank,Suit Module,T2,0.30x0.50x0.20,,4000,1K set,Not started,,
+SM_EQP_ArmorPlates,mod_armor,Armor Plates,Suit Module,T2,0.50x0.60x0.30,,8000,1K set,Not started,,
+SM_EQP_SporeFilter,mod_spore_filter,Spore Filter,Suit Module,T1,0.20x0.15x0.15,,3000,1K set,Not started,,
+SM_EQP_ThermalLining,mod_thermal,Thermal Lining,Suit Module,T2,0.10x0.10x0.10,,500,512 set,Not started,,Mostly a material swap on the undersuit (emissive heating lines).
+SM_EQP_ScannerBooster,mod_scanner,Scanner Booster,Suit Module,T2,0.15x0.25x0.10,,3000,1K set,Not started,,
+SM_EQP_StealthDampers,mod_stealth,Stealth Dampers,Suit Module,T3,0.20x0.20x0.15,,3000,1K set,Not started,,
+SK_EQP_ConstructionDrone,drone_construction,Construction Drone,Drone,T2,0.80x0.40x0.80,,12000,2K set,Not started,,
+SK_EQP_MiningDrone,drone_mining,Mining Drone,Drone,T2,1.00x0.50x1.00,,12000,2K set,Not started,,
+SK_EQP_DefenseDrone,drone_defense,Defense Drone,Drone,T3,0.70x0.35x0.70,,12000,2K set,Not started,,
+SK_EQP_ScoutDrone,drone_scout,Scout Drone,Drone,T2,0.40x0.15x0.40,,8000,1K set,Not started,,
