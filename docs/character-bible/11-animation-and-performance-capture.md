@@ -1,5 +1,7 @@
 # 11 — Animation & Performance Capture
 
+> This chapter is the target: captured and hand-keyed sets. Until they exist, every character body has a generated **greybox set** (idle, gaits, talk, wave, attack, hit and death), built from its rig by the [Procedural Animation Toolkit](13-procedural-animation-toolkit.md). The engine looks clips up by name (`Idle`, `Walk`, `Jog`, `Attack` …, see [13.3](13-procedural-animation-toolkit.md#133-animation-sets)), so captured clips exported under those names replace the greybox ones without code changes.
+
 ## 11.1 Principles
 1. **Weight and exhaustion.** People are tired, carrying too much and scared. Locomotion has weight shift and breath; nobody moves like an action hero until they have to.
 2. **Hands tell the story.** Wrench fidgets with tools, Ada touches her wrist, Tug grips his thermos, Lily draws. Every story character has at least three signature idle "fidgets."

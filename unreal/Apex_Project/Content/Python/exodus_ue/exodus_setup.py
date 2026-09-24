@@ -2,6 +2,7 @@
 
     1. Import SourceArt/Parts/*.fbx      -> /Game/Exodus/Imported/Parts/<name>        (static meshes, UCX collision)
        Import SourceArt/Characters/*.fbx -> /Game/Exodus/Imported/Characters/<name>   (skeletal meshes + skeleton + physics)
+       Import SourceArt/Animations/<name>/*.fbx -> /Game/Exodus/Imported/Animations/<name>/<clip> (on <name>'s skeleton)
     2. Create greybox material instances (one colour per style) under /Game/Exodus/Materials.
     3. Create /Game/Exodus/Maps/L_VerticalSlice and fill it from Content/Exodus/Data/slice_layout.json:
        terrain, 600 greybox boxes, markers, triggers, spawners, companions, interactables, sky and sun.
@@ -23,6 +24,7 @@ ROOT = "/Game/Exodus"
 MAP = f"{ROOT}/Maps/L_VerticalSlice"
 PARTS_PATH = f"{ROOT}/Imported/Parts"
 CHARS_PATH = f"{ROOT}/Imported/Characters"
+ANIMS_PATH = f"{ROOT}/Imported/Animations"  # ExoAnimComponent loads <ANIMS_PATH>/<mesh name>/<clip>
 MAT_PATH = f"{ROOT}/Materials"
 
 STYLE_COLORS = {  # linear RGB, greybox palette (level bible 13: cool concrete complex, warm township)
@@ -78,6 +80,55 @@ def _fbx_task(fbx, dest, skeletal):
     return task
 
 
+def _anim_task(fbx, dest, skeleton):
+    ui = unreal.FbxImportUI()
+    ui.set_editor_property("import_mesh", False)
+    ui.set_editor_property("import_textures", False)
+    ui.set_editor_property("import_materials", False)
+    ui.set_editor_property("import_animations", True)
+    ui.set_editor_property("import_as_skeletal", True)
+    ui.set_editor_property("automated_import_should_detect_type", False)
+    ui.set_editor_property("mesh_type_to_import", unreal.FBXImportType.FBXIT_ANIMATION)
+    ui.set_editor_property("skeleton", skeleton)
+    data = ui.anim_sequence_import_data
+    data.set_editor_property("animation_length", unreal.FBXAnimationLengthImportType.FBXALIT_EXPORTED_TIME)
+    data.set_editor_property("import_bone_tracks", True)
+    data.set_editor_property("remove_redundant_keys", False)  # keeps the loops closing exactly
+    task = unreal.AssetImportTask()
+    task.set_editor_property("filename", str(fbx))
+    task.set_editor_property("destination_path", dest)
+    task.set_editor_property("destination_name", fbx.stem)
+    task.set_editor_property("automated", True)
+    task.set_editor_property("replace_existing", True)
+    task.set_editor_property("save", True)
+    task.set_editor_property("options", ui)
+    return task
+
+
+def import_animations(tools):
+    """Clips go onto the skeleton of the character imported just before; characters that failed to import are skipped."""
+    root = project_dir() / "SourceArt" / "Animations"
+    folders = sorted(d for d in root.glob("*") if d.is_dir()) if root.exists() else []
+    jobs = []
+    for d in folders:
+        mesh_path = f"{CHARS_PATH}/{d.name}"
+        mesh = unreal.load_asset(mesh_path) if unreal.EditorAssetLibrary.does_asset_exist(mesh_path) else None
+        skeleton = mesh.get_editor_property("skeleton") if mesh else None
+        if skeleton is None:
+            unreal.log_warning(f"[Exodus] No skeleton for {d.name}; its animations are skipped")
+            continue
+        jobs += [(f, f"{ANIMS_PATH}/{d.name}", skeleton) for f in sorted(d.glob("*.fbx"))]
+    with unreal.ScopedSlowTask(len(jobs), "Exodus: importing animations") as slow:
+        slow.make_dialog(False)
+        for fbx, dest, skeleton in jobs:
+            slow.enter_progress_frame(1, f"Importing {fbx.name}")
+            tools.import_asset_tasks([_anim_task(fbx, dest, skeleton)])
+    missing = [fbx.stem for fbx, dest, _s in jobs if not unreal.EditorAssetLibrary.does_asset_exist(f"{dest}/{fbx.stem}")]
+    if missing:
+        unreal.log_warning(f"[Exodus] Animations not imported (those characters hold their pose): {', '.join(missing)}")
+    log(f"Imported {len(jobs) - len(missing)} / {len(jobs)} animations")
+
+
 def import_art():
     art = project_dir() / "SourceArt"
     jobs = [(f, PARTS_PATH, False) for f in sorted((art / "Parts").glob("*.fbx"))]
@@ -94,6 +145,7 @@ def import_art():
     if missing:
         unreal.log_warning(f"[Exodus] Not imported (stand-in shapes will be used): {', '.join(missing)}")
     log(f"Imported {len(jobs) - len(missing)} / {len(jobs)} FBX files")
+    import_animations(tools)
 
 
 # --------------------------------------------------------------------------- 2. materials

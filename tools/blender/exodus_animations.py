@@ -8,6 +8,7 @@ checks it and exports it for the engine. Tested with Blender 4.2 (the `bpy` 4.2 
     blender -b -P tools/blender/exodus_animations.py -- build --group story-cast hollows-and-constructs
     blender -b -P tools/blender/exodus_animations.py -- validate assets/animations/story-cast/SK_CHR_TugBrennan_Anims.blend
     blender -b -P tools/blender/exodus_animations.py -- export assets/animations/story-cast/SK_CHR_TugBrennan_Anims.blend
+    blender -b -P tools/blender/exodus_animations.py -- export --compact <file>     # engine-ready, about 5x smaller
     blender -b -P tools/blender/exodus_animations.py -- list
 
 `build` writes assets/animations/<chapter>/<asset>_Anims.blend: the character's rig and LOD0 body for preview plus one
@@ -15,7 +16,7 @@ action per animation (A_<asset without SK_>_<Anim>). The character files themsel
 character never loses its animations (re-run `build` to refit them to a changed rig).
 
 Every animation is generated from the rig itself (bone lengths, height, proportion profile) and the character's
-style (survivor, soldier, Hollow, crawler, heavy, child, elder, limp), so the same code serves all 51 humanoids and
+style (survivor, soldier, Hollow, crawler, heavy, child, elder, limp), so the same code serves all 64 humanoids and
 every creature template (quadruped, hexapod, flyer, serpentine, cetacean, drone, hologram). Locomotion is in place:
 each cycle records its ground speed (`exo_speed` in cm/s) so the engine can scale the play rate to the actual speed.
 Character convention (from skeletons.py): the character faces −Y, up is +Z, its left is +X.
@@ -1029,9 +1030,12 @@ FBX_KW = dict(use_selection=True, object_types={"ARMATURE"}, apply_unit_scale=Tr
               add_leaf_bones=False, use_armature_deform_only=False, primary_bone_axis="Y", secondary_bone_axis="X",
               axis_forward="-Z", axis_up="Y", bake_anim=True, bake_anim_use_all_bones=True, bake_anim_use_nla_strips=False,
               bake_anim_use_all_actions=False, bake_anim_force_startend_keying=True, bake_anim_step=1.0, bake_anim_simplify_factor=0.0)
+# Compact: no tracks for bones the action never moves (the engine holds them in the bind pose) and redundant keys
+# simplified away. About 5x smaller; a round trip stays within 1 cm of the full export on every joint.
+FBX_COMPACT = dict(bake_anim_use_all_bones=False, bake_anim_simplify_factor=1.0)
 
 
-def export_file(path, out_root):
+def export_file(path, out_root, compact=False):
     bpy.ops.wm.open_mainfile(filepath=str(path))
     errors, _w, _i = validate_scene()
     if errors:
@@ -1051,7 +1055,7 @@ def export_file(path, out_root):
         arm.animation_data.action = act
         scene.frame_start, scene.frame_end = 0, int(act["exo_frames"])
         fbx = out_dir / f"{act.name}.fbx"
-        bpy.ops.export_scene.fbx(filepath=str(fbx), **FBX_KW)
+        bpy.ops.export_scene.fbx(filepath=str(fbx), **dict(FBX_KW, **(FBX_COMPACT if compact else {})))
         manifest["anims"][n] = {"asset": act.name, "loop": bool(act["exo_loop"]), "frames": int(act["exo_frames"]),
                                 "speed_cm_s": float(act["exo_speed"]), "locomotion": bool(act["exo_locomotion"])}
     (out_dir / f"{rig.asset}.anims.json").write_text(json.dumps(manifest, indent=1), encoding="utf-8")
@@ -1082,6 +1086,7 @@ def main(argv):
     ap.add_argument("--asset", nargs="+")
     ap.add_argument("--group", nargs="+", help="chapter folder(s) under assets/characters, e.g. story-cast")
     ap.add_argument("--all", action="store_true")
+    ap.add_argument("--compact", action="store_true", help="export: drop unanimated bone tracks and simplify keys")
     ap.add_argument("--out", default=str(repo_root()))
     args = ap.parse_args(argv)
     root = repo_root()
@@ -1106,7 +1111,7 @@ def main(argv):
         if args.command == "validate":
             ok = validate_file(f) and ok
         else:
-            export_file(f, args.out)
+            export_file(f, args.out, args.compact)
     return 0 if ok else 1
 
 

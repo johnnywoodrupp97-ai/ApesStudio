@@ -88,6 +88,7 @@
           "objective": "",
           "on_start": [
             {"do": "activate", "group": "M0_01"},
+            {"do": "anim", "companion": "Tug", "anim": "Wave", "seconds": 2},
             {"do": "say", "lines": [
               ["Tug", "Coffee's terrible. Drink it anyway."],
               ["Dana Marsh", "Night, Wrench."],

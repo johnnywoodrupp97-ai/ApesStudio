@@ -93,7 +93,7 @@ Creature-kit module families (e.g. `SK_CRE_FaunaKitGrazer_Heads_##`) are authore
 `validate` exits with code 1 if any file has errors, so it can run in CI.
 
 ## 12.5 Export
-Writes `<asset>.fbx` (LOD0 with the armature), `<asset>_LOD1–3.fbx`, and `<asset>.meta.json` (metadata, sockets with their bones, shape-key lists). Kit families drop the `_##` from file names; pattern-mask sheets export one PNG per mask. All 267 built files export (1,156 files for the 223 catalog assets). FBX settings: armature + mesh, all bones (including non-deform `ik_*`), no leaf bones, no animation, unit scale applied, tangent space on.
+Writes `<asset>.fbx` (LOD0 with the armature), `<asset>_LOD1–3.fbx`, and `<asset>.meta.json` (metadata, sockets with their bones, shape-key lists). Kit families drop the `_##` from file names; pattern-mask sheets export one PNG per mask. All 267 built files export (1,156 files for the 223 catalog assets). FBX settings: armature + mesh, all bones (including non-deform `ik_*`), no leaf bones, no animation, unit scale applied, tangent space on. Animations are exported separately, with matching settings, by the [Procedural Animation Toolkit](13-procedural-animation-toolkit.md).
 
 ## 12.6 Production tracking
 `data/art_tracker_characters.csv` lists every character asset (plus the 28 signature pieces) with type, tier, skeleton, size, LOD budgets, textures, facial set, capture flag, path, `status`, `owner` and `notes`. `status` is filled in by `tools/characters/build.py`: **Greybox built** when the file exists (every row today). Suggested statuses after greybox: *Concept → Sculpt → Retopo → UV/Texture → Rig & skin → Shape keys → LODs → Validated → In engine → Done*.

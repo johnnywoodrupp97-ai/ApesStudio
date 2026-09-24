@@ -7,6 +7,7 @@
 #include "ExoHollow.generated.h"
 
 class UStaticMeshComponent;
+class UExoAnimComponent;
 
 UCLASS()
 class APEX_PROJECT_API AExoHollow : public ACharacter
@@ -25,6 +26,8 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Exodus") bool bHorde = false;
 
 	UPROPERTY(VisibleAnywhere) TObjectPtr<UStaticMeshComponent> Stand;
+	/** Idle / Walk / Run by speed, plus Attack, HitReact and Death (tools/blender/exodus_animations.py). */
+	UPROPERTY(VisibleAnywhere) TObjectPtr<UExoAnimComponent> Anim;
 
 	/** Apply type stats, speed and visuals (call after setting HollowType / MeshAsset). */
 	void ApplyType();

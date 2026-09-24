@@ -3,6 +3,7 @@
 #include "ExoMarker.h"
 #include "ExoSpawner.h"
 #include "ExoCompanion.h"
+#include "ExoAnimComponent.h"
 #include "ExoInteractableActor.h"
 #include "ExoPlayerCharacter.h"
 #include "ExoVitalsComponent.h"
@@ -249,6 +250,20 @@ void UExoMissionSubsystem::RunAction(const TSharedPtr<FJsonObject>& A)
 			It->Activate();
 			if (M) It->TeleportTo(M->GetActorLocation() + FVector(0.f, 0.f, It->HeightCm * 0.5f + 5.f), M->GetActorRotation());
 			if (bHasFollow) It->bFollow = B;
+		}
+	}
+	else if (Do == TEXT("anim") && A->TryGetStringField(TEXT("companion"), S))
+	{
+		// Story staging: a companion plays a clip of its set once (Tug waves), then returns to Idle / walking.
+		FString Clip;
+		A->TryGetStringField(TEXT("anim"), Clip);
+		const float Seconds = A->TryGetNumberField(TEXT("seconds"), N) ? (float)N : 0.f;
+		for (TActorIterator<AExoCompanion> It(GetWorld()); It; ++It)
+		{
+			if (It->CompanionId == FName(*S) && !It->Anim->PlayOnce(FName(*Clip), Seconds))
+			{
+				UE_LOG(LogExodus, Warning, TEXT("anim: %s has no %s clip"), *S, *Clip);
+			}
 		}
 	}
 	else if (Do == TEXT("infect") && Player && A->TryGetNumberField(TEXT("percent"), N))

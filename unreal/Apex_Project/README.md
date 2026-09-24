@@ -18,7 +18,7 @@ Everything is code plus data. The C++ module holds the game systems. On the firs
 2. Right-click `Apex_Project.uproject` and choose **Generate Visual Studio project files**.
 3. Open `Apex_Project.sln`. Choose the configuration **Development Editor | Win64** and build (**Ctrl+Shift+B**). Or double-click the `.uproject` and click **Yes** when it offers to build the missing modules.
 4. Open `Apex_Project.uproject`. **The first start builds the slice by itself**, which takes a few minutes:
-   - It imports 9 parts and 14 characters from `SourceArt/` into `/Game/Exodus/Imported/`.
+   - It imports 9 parts, 14 characters and their 105 animations from `SourceArt/` into `/Game/Exodus/Imported/`.
    - It creates the greybox materials.
    - It places the terrain, 600 greybox blocks, 97 gameplay actors, the sky and the sun into `/Game/Exodus/Maps/L_VerticalSlice`.
    - It builds the navmesh, then saves the map.
@@ -80,13 +80,15 @@ You can also launch straight into a step: `UnrealEditor.exe D:\Apex_Project\Apex
 
 | Path | What it is |
 |---|---|
-| `Source/Apex_Project/` | The C++ game (UE 5.8, Enhanced Input set up in code, no Blueprints needed). It contains: the player (`ExoPlayerCharacter`), vitals and infection (`ExoVitalsComponent`), building (`ExoBuildComponent`, `ExoBlock`), Hollows and their AI (`ExoHollow`, `ExoHollowAI`), noise (`ExoNoiseSubsystem`), the data-driven missions (`ExoMissionSubsystem`), the day and night cycle, hordes and checkpoints (`ExoGameMode`), companions with needs (`ExoCompanion`), interactables, markers, spawners, the terrain and the HUD. The numbers come from game bible 22 (Balance & Tuning) |
+| `Source/Apex_Project/` | The C++ game (UE 5.8, Enhanced Input set up in code, no Blueprints needed). It contains: the player (`ExoPlayerCharacter`), vitals and infection (`ExoVitalsComponent`), building (`ExoBuildComponent`, `ExoBlock`), Hollows and their AI (`ExoHollow`, `ExoHollowAI`), noise (`ExoNoiseSubsystem`), the data-driven missions (`ExoMissionSubsystem`), the day and night cycle, hordes and checkpoints (`ExoGameMode`), companions with needs (`ExoCompanion`), character animation (`ExoAnimComponent`), interactables, markers, spawners, the terrain and the HUD. The numbers come from game bible 22 (Balance & Tuning) |
+| `Source/Apex_Project/Public/ExoAnimComponent.h` | Plays each character's animation set with no Animation Blueprint. Characters stand in Idle, or play Talk while their dialogue line or bark is on screen. When they move, it picks the gait closest to their speed (Walk, Jog or Sprint; Hollows Walk or Run) and scales its play rate so the feet match the ground. Attack, HitReact, Death and Wave play once on top. Hollows play their Death clip instead of ragdolling. Missions can stage a clip with `{"do": "anim", "companion": "Tug", "anim": "Wave", "seconds": 2}` |
+| `Content/Exodus/Data/animations.json` | Each slice character's clips: loop flag, length and ground speed. Written by `export_slice_art.py`, read at runtime |
 | `Content/Exodus/Data/missions.json` | Every mission step: its objective, the actions that run when it starts, and the event that completes it. Edit this file and press Play; no rebuild is needed |
 | `Content/Exodus/Data/slice_layout.json` | The generated map: terrain heights, greybox boxes and gameplay actors, in UE centimetres |
 | `Content/Python/exodus_ue/planner.py` | Builds `slice_layout.json` from the level bible: the Kestrel Valley terrain, the room layouts and markers of the Blender level exports (`SourceArt/levels/*.markers.json`), plus the hand-placed gameplay in `slice_extras.py`. Pure Python: `python3 Content/Python/exodus_ue/planner.py` |
-| `Content/Python/exodus_ue/validate.py` | Checks every marker, group, companion, trigger, interactable, part and kill target used in `missions.json` against the layout. Exits with code 1 on any error |
+| `Content/Python/exodus_ue/validate.py` | Checks every marker, group, companion, trigger, interactable, part, kill target and animation clip used in `missions.json` against the layout and `animations.json`, and that every character in the layout has an animation set. Exits with code 1 on any error |
 | `Content/Python/exodus_ue/exodus_setup.py`, `Content/Python/init_unreal.py` | The editor build (import, materials, map, navmesh, save) and the Exodus menu |
-| `SourceArt/Parts`, `SourceArt/Characters` | FBX files exported from the repo's Blender assets (LOD0; parts include their `UCX_` collision). To regenerate them: `blender -b -P unreal/Apex_Project/SourceArt/export_slice_art.py` |
+| `SourceArt/Parts`, `SourceArt/Characters`, `SourceArt/Animations` | FBX files exported from the repo's Blender assets (LOD0; parts include their `UCX_` collision; one compact FBX per animation clip, from `assets/animations/`, see [character bible 13](../../docs/character-bible/13-procedural-animation-toolkit.md)). To regenerate them: `blender -b -P unreal/Apex_Project/SourceArt/export_slice_art.py`, or add `-- anims` for the animations only |
 
 **Coordinates:** the level bible uses metres with +X east, +Y north and +Z up. The map uses UE centimetres with Y flipped: `UE = (x, −y, z) × 100`.
 
@@ -99,6 +101,6 @@ You can also launch straight into a step: `UnrealEditor.exe D:\Apex_Project\Apex
   - the mission data was cross-checked by `validate.py`.
 
   Expect a few compile or editor-API fixes on the first real build. `LogExodus` and the Python log say what failed.
-- The characters are rigged greybox meshes with no animations yet: they slide in their bind pose. If a mesh fails to import, a coloured cylinder stands in for it.
+- The characters are rigged greybox meshes with procedural greybox animations. The clips switch without blending, so gait changes pop, and there are no turn-in-place, starts or stops yet. If a mesh fails to import, a coloured cylinder stands in for it. If its animations fail to import, it holds its bind pose.
 - The set pieces are simplified: the skywalk collapse and the Pad 12 departure are teleports plus dialogue, and there is no crowd simulation, fuel-truck explosion or cinematics yet.
 - There is no audio or voice. Dialogue appears as subtitles.
