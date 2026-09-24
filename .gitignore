@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+# Blender backups and engine exports (regenerate with the toolkits: tools/blender/*.py export ...)
+*.blend1
+*.blend2
+export/

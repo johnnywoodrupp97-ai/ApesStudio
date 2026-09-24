@@ -1,0 +1,1012 @@
+{
+ "schema": "exodus.items/1",
+ "components": [
+  {
+   "id": "scrap_metal",
+   "name": "Scrap Metal",
+   "tier": "T0",
+   "made_at": "Grinding props, cars, wrecks",
+   "ingredients": {},
+   "dims_m": [
+    0.5,
+    0.1,
+    0.4
+   ],
+   "tris": 300,
+   "look": "Bent sheet with bolts and flaking paint; 4 random shape variants.",
+   "kind": "component",
+   "stack": 200
+  },
+  {
+   "id": "salvaged_wood",
+   "name": "Salvaged Wood",
+   "tier": "T0",
+   "made_at": "Grinding furniture, pallets, fences",
+   "ingredients": {},
+   "dims_m": [
+    1.0,
+    0.1,
+    0.15
+   ],
+   "tris": 200,
+   "look": "Bundle of planks tied with twine; nail holes.",
+   "kind": "component",
+   "stack": 100
+  },
+  {
+   "id": "duct_tape",
+   "name": "Duct Tape",
+   "tier": "T0",
+   "made_at": "Looting (stores, hangars)",
+   "ingredients": {},
+   "dims_m": [
+    0.12,
+    0.05,
+    0.12
+   ],
+   "tris": 250,
+   "look": "Silver roll, half used, torn edge.",
+   "kind": "component",
+   "stack": 50
+  },
+  {
+   "id": "wiring_bundle",
+   "name": "Wiring Bundle",
+   "tier": "T0",
+   "made_at": "Grinding electronics, vehicles",
+   "ingredients": {},
+   "dims_m": [
+    0.3,
+    0.1,
+    0.3
+   ],
+   "tris": 400,
+   "look": "Coiled mixed-color wires with zip ties.",
+   "kind": "component",
+   "stack": 100
+  },
+  {
+   "id": "fabric",
+   "name": "Fabric",
+   "tier": "T0",
+   "made_at": "Looting clothes, tents, seats; Tessari fiber later",
+   "ingredients": {},
+   "dims_m": [
+    0.4,
+    0.15,
+    0.3
+   ],
+   "tris": 250,
+   "look": "Folded canvas-and-cloth bundle.",
+   "kind": "component",
+   "stack": 100
+  },
+  {
+   "id": "steel_plate",
+   "name": "Steel Plate",
+   "tier": "T1",
+   "made_at": "Assembler",
+   "ingredients": {
+    "iron_ingot": 21
+   },
+   "dims_m": [
+    0.6,
+    0.05,
+    0.6
+   ],
+   "tris": 150,
+   "look": "Square plate with chamfered corners and a stamped part number.",
+   "kind": "component",
+   "stack": 200
+  },
+  {
+   "id": "interior_plate",
+   "name": "Interior Plate",
+   "tier": "T1",
+   "made_at": "Assembler",
+   "ingredients": {
+    "iron_ingot": 3
+   },
+   "dims_m": [
+    0.6,
+    0.02,
+    0.6
+   ],
+   "tris": 120,
+   "look": "Thin light-grey panel with a perforated edge.",
+   "kind": "component",
+   "stack": 200
+  },
+  {
+   "id": "construction_component",
+   "name": "Construction Component",
+   "tier": "T1",
+   "made_at": "Assembler",
+   "ingredients": {
+    "iron_ingot": 8
+   },
+   "dims_m": [
+    0.3,
+    0.2,
+    0.3
+   ],
+   "tris": 400,
+   "look": "Bracket-and-bolt kit in a small bundle.",
+   "kind": "component",
+   "stack": 200
+  },
+  {
+   "id": "metal_grid",
+   "name": "Metal Grid",
+   "tier": "T2",
+   "made_at": "Assembler",
+   "ingredients": {
+    "iron_ingot": 12,
+    "nickel_ingot": 5,
+    "cobalt_ingot": 3
+   },
+   "dims_m": [
+    0.6,
+    0.05,
+    0.6
+   ],
+   "tris": 500,
+   "look": "Lattice panel of cobalt-steel.",
+   "kind": "component",
+   "stack": 100
+  },
+  {
+   "id": "girder",
+   "name": "Girder",
+   "tier": "T1",
+   "made_at": "Assembler",
+   "ingredients": {
+    "iron_ingot": 6
+   },
+   "dims_m": [
+    1.2,
+    0.15,
+    0.15
+   ],
+   "tris": 200,
+   "look": "Short I-beam section.",
+   "kind": "component",
+   "stack": 100
+  },
+  {
+   "id": "small_tube",
+   "name": "Small Steel Tube",
+   "tier": "T1",
+   "made_at": "Assembler",
+   "ingredients": {
+    "iron_ingot": 5
+   },
+   "dims_m": [
+    0.8,
+    0.06,
+    0.06
+   ],
+   "tris": 150,
+   "look": "Thin pipe with threaded ends.",
+   "kind": "component",
+   "stack": 200
+  },
+  {
+   "id": "large_tube",
+   "name": "Large Steel Tube",
+   "tier": "T1",
+   "made_at": "Assembler",
+   "ingredients": {
+    "iron_ingot": 30
+   },
+   "dims_m": [
+    1.2,
+    0.25,
+    0.25
+   ],
+   "tris": 300,
+   "look": "Heavy pipe section with flanges.",
+   "kind": "component",
+   "stack": 50
+  },
+  {
+   "id": "glass_panel",
+   "name": "Glass Panel",
+   "tier": "T1",
+   "made_at": "Assembler",
+   "ingredients": {
+    "silicon_wafer": 15
+   },
+   "dims_m": [
+    0.6,
+    0.03,
+    0.6
+   ],
+   "tris": 100,
+   "look": "Bulletproof glass sheet with a protective film half peeled.",
+   "kind": "component",
+   "stack": 100
+  },
+  {
+   "id": "motor",
+   "name": "Motor",
+   "tier": "T1",
+   "made_at": "Assembler",
+   "ingredients": {
+    "iron_ingot": 20,
+    "nickel_ingot": 5
+   },
+   "dims_m": [
+    0.3,
+    0.3,
+    0.4
+   ],
+   "tris": 800,
+   "look": "Electric motor with a cooling-fin housing and shaft.",
+   "kind": "component",
+   "stack": 50
+  },
+  {
+   "id": "computer",
+   "name": "Computer",
+   "tier": "T1",
+   "made_at": "Assembler",
+   "ingredients": {
+    "iron_ingot": 0.5,
+    "silicon_wafer": 0.2
+   },
+   "dims_m": [
+    0.2,
+    0.03,
+    0.15
+   ],
+   "tris": 200,
+   "look": "Circuit board module with a heat spreader.",
+   "kind": "component",
+   "stack": 200
+  },
+  {
+   "id": "display",
+   "name": "Display",
+   "tier": "T1",
+   "made_at": "Assembler",
+   "ingredients": {
+    "iron_ingot": 1,
+    "silicon_wafer": 5
+   },
+   "dims_m": [
+    0.3,
+    0.03,
+    0.2
+   ],
+   "tris": 150,
+   "look": "Screen module; emissive test pattern when dropped.",
+   "kind": "component",
+   "stack": 100
+  },
+  {
+   "id": "power_cell",
+   "name": "Power Cell",
+   "tier": "T1",
+   "made_at": "Assembler",
+   "ingredients": {
+    "iron_ingot": 10,
+    "silicon_wafer": 1,
+    "nickel_ingot": 2
+   },
+   "dims_m": [
+    0.15,
+    0.3,
+    0.15
+   ],
+   "tris": 300,
+   "look": "Cylindrical cell with a charge LED.",
+   "kind": "component",
+   "stack": 100
+  },
+  {
+   "id": "solar_cell",
+   "name": "Solar Cell",
+   "tier": "T1",
+   "made_at": "Assembler",
+   "ingredients": {
+    "nickel_ingot": 3,
+    "silicon_wafer": 6
+   },
+   "dims_m": [
+    0.3,
+    0.02,
+    0.3
+   ],
+   "tris": 100,
+   "look": "Dark-blue cell wafer with a grid pattern.",
+   "kind": "component",
+   "stack": 100
+  },
+  {
+   "id": "radio_component",
+   "name": "Radio Component",
+   "tier": "T1",
+   "made_at": "Assembler",
+   "ingredients": {
+    "iron_ingot": 8,
+    "silicon_wafer": 1
+   },
+   "dims_m": [
+    0.2,
+    0.1,
+    0.15
+   ],
+   "tris": 350,
+   "look": "Transceiver board with a stubby antenna.",
+   "kind": "component",
+   "stack": 100
+  },
+  {
+   "id": "detector_component",
+   "name": "Detector Component",
+   "tier": "T2",
+   "made_at": "Assembler",
+   "ingredients": {
+    "iron_ingot": 5,
+    "nickel_ingot": 15
+   },
+   "dims_m": [
+    0.2,
+    0.15,
+    0.2
+   ],
+   "tris": 450,
+   "look": "Sensor head with a lens.",
+   "kind": "component",
+   "stack": 100
+  },
+  {
+   "id": "medical_component",
+   "name": "Medical Component",
+   "tier": "T2",
+   "made_at": "Assembler",
+   "ingredients": {
+    "iron_ingot": 60,
+    "nickel_ingot": 70,
+    "silver_ingot": 20
+   },
+   "dims_m": [
+    0.3,
+    0.15,
+    0.2
+   ],
+   "tris": 450,
+   "look": "Sealed white med-tech module with a red cross.",
+   "kind": "component",
+   "stack": 50
+  },
+  {
+   "id": "filter_mesh",
+   "name": "Filter Mesh",
+   "tier": "T2",
+   "made_at": "Assembler",
+   "ingredients": {
+    "nickel_ingot": 4,
+    "bio_plastic": 2
+   },
+   "dims_m": [
+    0.4,
+    0.05,
+    0.4
+   ],
+   "tris": 250,
+   "look": "Pleated filter cartridge; clean white.",
+   "kind": "component",
+   "stack": 100
+  },
+  {
+   "id": "bio_plastic",
+   "name": "Bio-Plastic",
+   "tier": "T2",
+   "made_at": "Refinery (from organics)",
+   "ingredients": {
+    "organics": 10
+   },
+   "dims_m": [
+    0.3,
+    0.1,
+    0.3
+   ],
+   "tris": 150,
+   "look": "Stack of translucent amber sheets.",
+   "kind": "component",
+   "stack": 200
+  },
+  {
+   "id": "thruster_component",
+   "name": "Thruster Component",
+   "tier": "T2",
+   "made_at": "Assembler",
+   "ingredients": {
+    "iron_ingot": 30,
+    "cobalt_ingot": 10,
+    "gold_ingot": 1,
+    "platinum_ingot": 0.4
+   },
+   "dims_m": [
+    0.3,
+    0.3,
+    0.4
+   ],
+   "tris": 700,
+   "look": "Nozzle-and-injector assembly.",
+   "kind": "component",
+   "stack": 50
+  },
+  {
+   "id": "reactor_component",
+   "name": "Reactor Component",
+   "tier": "T2",
+   "made_at": "Assembler",
+   "ingredients": {
+    "iron_ingot": 15,
+    "stone": 20,
+    "silver_ingot": 5
+   },
+   "dims_m": [
+    0.4,
+    0.4,
+    0.4
+   ],
+   "tris": 600,
+   "look": "Shielded canister with radiation stencils.",
+   "kind": "component",
+   "stack": 50
+  },
+  {
+   "id": "superconductor",
+   "name": "Superconductor",
+   "tier": "T3",
+   "made_at": "Assembler",
+   "ingredients": {
+    "iron_ingot": 10,
+    "gold_ingot": 2
+   },
+   "dims_m": [
+    0.4,
+    0.1,
+    0.1
+   ],
+   "tris": 300,
+   "look": "Coiled bar in a frosted sleeve (emissive blue edge).",
+   "kind": "component",
+   "stack": 50
+  },
+  {
+   "id": "explosives",
+   "name": "Explosives",
+   "tier": "T2",
+   "made_at": "Assembler",
+   "ingredients": {
+    "silicon_wafer": 0.5,
+    "magnesium_powder": 2
+   },
+   "dims_m": [
+    0.2,
+    0.15,
+    0.2
+   ],
+   "tris": 250,
+   "look": "Taped brick with a detonator port.",
+   "kind": "component",
+   "stack": 50
+  },
+  {
+   "id": "heat_shield_tile",
+   "name": "Heat Shield Tile",
+   "tier": "T1",
+   "made_at": "Looting (Township warehouse), later Assembler",
+   "ingredients": {
+    "silicon_wafer": 4,
+    "iron_ingot": 1
+   },
+   "dims_m": [
+    0.2,
+    0.05,
+    0.2
+   ],
+   "tris": 60,
+   "look": "Black hexagonal ablative tile.",
+   "kind": "component",
+   "stack": 200
+  },
+  {
+   "id": "sower_filament",
+   "name": "Sower Filament",
+   "tier": "T4",
+   "made_at": "Loom Node",
+   "ingredients": {
+    "resonance_crystal": 1,
+    "bloom_sample": 4
+   },
+   "dims_m": [
+    0.6,
+    0.05,
+    0.05
+   ],
+   "tris": 400,
+   "look": "Glowing teal fiber coil that slowly breathes (emissive pulse).",
+   "kind": "component",
+   "stack": 50
+  },
+  {
+   "id": "living_alloy",
+   "name": "Living Alloy",
+   "tier": "T5",
+   "made_at": "Loom Node (post-game)",
+   "ingredients": {
+    "sower_filament": 2,
+    "titanium_ingot": 10
+   },
+   "dims_m": [
+    0.4,
+    0.1,
+    0.4
+   ],
+   "tris": 500,
+   "look": "Metal plate with pulsing organic veins.",
+   "kind": "component",
+   "stack": 50
+  }
+ ],
+ "resources": [
+  {
+   "id": "iron_ore",
+   "name": "Iron Ore",
+   "tier": "T0",
+   "made_at": "Everywhere (rock, scrap)",
+   "ingredients": {},
+   "dims_m": [
+    0.3,
+    0.3,
+    0.3
+   ],
+   "tris": 200,
+   "look": "Rust-red rock chunk.",
+   "kind": "ore",
+   "stack": 1000
+  },
+  {
+   "id": "nickel_ore",
+   "name": "Nickel Ore",
+   "tier": "T1",
+   "made_at": "Asteroids, rocky worlds",
+   "ingredients": {},
+   "dims_m": [
+    0.3,
+    0.3,
+    0.3
+   ],
+   "tris": 200,
+   "look": "Silver-green rock chunk.",
+   "kind": "ore",
+   "stack": 1000
+  },
+  {
+   "id": "silicon_ore",
+   "name": "Silicon Ore",
+   "tier": "T1",
+   "made_at": "Deserts, the Moon",
+   "ingredients": {},
+   "dims_m": [
+    0.3,
+    0.3,
+    0.3
+   ],
+   "tris": 200,
+   "look": "Grey crystalline chunk.",
+   "kind": "ore",
+   "stack": 1000
+  },
+  {
+   "id": "cobalt_ore",
+   "name": "Cobalt Ore",
+   "tier": "T1",
+   "made_at": "Moon, volcanic worlds",
+   "ingredients": {},
+   "dims_m": [
+    0.3,
+    0.3,
+    0.3
+   ],
+   "tris": 200,
+   "look": "Deep-blue veined rock.",
+   "kind": "ore",
+   "stack": 1000
+  },
+  {
+   "id": "titanium_ore",
+   "name": "Titanium Ore",
+   "tier": "T2",
+   "made_at": "Moon, asteroids",
+   "ingredients": {},
+   "dims_m": [
+    0.3,
+    0.3,
+    0.3
+   ],
+   "tris": 200,
+   "look": "Pale grey metallic rock.",
+   "kind": "ore",
+   "stack": 1000
+  },
+  {
+   "id": "silver_ore",
+   "name": "Silver Ore",
+   "tier": "T2",
+   "made_at": "Mines (Silver Ridge), asteroids",
+   "ingredients": {},
+   "dims_m": [
+    0.3,
+    0.3,
+    0.3
+   ],
+   "tris": 200,
+   "look": "Bright-flecked rock.",
+   "kind": "ore",
+   "stack": 1000
+  },
+  {
+   "id": "gold_ore",
+   "name": "Gold Ore",
+   "tier": "T2",
+   "made_at": "Rare asteroids",
+   "ingredients": {},
+   "dims_m": [
+    0.3,
+    0.3,
+    0.3
+   ],
+   "tris": 200,
+   "look": "Gold-flecked quartz.",
+   "kind": "ore",
+   "stack": 1000
+  },
+  {
+   "id": "magnesium_ore",
+   "name": "Magnesium Ore",
+   "tier": "T2",
+   "made_at": "Rocky worlds",
+   "ingredients": {},
+   "dims_m": [
+    0.3,
+    0.3,
+    0.3
+   ],
+   "tris": 200,
+   "look": "White chalky rock.",
+   "kind": "ore",
+   "stack": 1000
+  },
+  {
+   "id": "uranium_ore",
+   "name": "Uranium Ore",
+   "tier": "T2",
+   "made_at": "Radioactive zones",
+   "ingredients": {},
+   "dims_m": [
+    0.3,
+    0.3,
+    0.3
+   ],
+   "tris": 200,
+   "look": "Dark rock with a faint green glow.",
+   "kind": "ore",
+   "stack": 1000
+  },
+  {
+   "id": "platinum_ore",
+   "name": "Platinum Ore",
+   "tier": "T3",
+   "made_at": "Rare asteroids",
+   "ingredients": {},
+   "dims_m": [
+    0.3,
+    0.3,
+    0.3
+   ],
+   "tris": 200,
+   "look": "Heavy silver-white nugget.",
+   "kind": "ore",
+   "stack": 1000
+  },
+  {
+   "id": "ice",
+   "name": "Ice",
+   "tier": "T0",
+   "made_at": "Poles, ice worlds, comets",
+   "ingredients": {},
+   "dims_m": [
+    0.3,
+    0.3,
+    0.3
+   ],
+   "tris": 150,
+   "look": "Translucent blue chunk (refraction material).",
+   "kind": "ore",
+   "stack": 1000
+  },
+  {
+   "id": "stone",
+   "name": "Stone",
+   "tier": "T0",
+   "made_at": "Everywhere",
+   "ingredients": {},
+   "dims_m": [
+    0.3,
+    0.3,
+    0.3
+   ],
+   "tris": 150,
+   "look": "Grey gravel chunk.",
+   "kind": "ore",
+   "stack": 1000
+  },
+  {
+   "id": "organics",
+   "name": "Organics",
+   "tier": "T0",
+   "made_at": "Plants, fauna, food waste",
+   "ingredients": {},
+   "dims_m": [
+    0.3,
+    0.2,
+    0.3
+   ],
+   "tris": 200,
+   "look": "Bundle of plant matter.",
+   "kind": "resource",
+   "stack": 500
+  },
+  {
+   "id": "bloom_sample",
+   "name": "Bloom Sample",
+   "tier": "T1",
+   "made_at": "Hollows, Bloom Hearts",
+   "ingredients": {},
+   "dims_m": [
+    0.15,
+    0.2,
+    0.15
+   ],
+   "tris": 250,
+   "look": "Sealed specimen jar with green growth (pulsing emissive). Handling without gloves adds infection.",
+   "kind": "resource",
+   "stack": 50
+  },
+  {
+   "id": "resonance_crystal",
+   "name": "Resonance Crystal",
+   "tier": "T3",
+   "made_at": "Sower ruins, Bloom Hearts",
+   "ingredients": {},
+   "dims_m": [
+    0.2,
+    0.35,
+    0.2
+   ],
+   "tris": 300,
+   "look": "Teal crystal with inner glyph light.",
+   "kind": "resource",
+   "stack": 50
+  },
+  {
+   "id": "he3_canister",
+   "name": "He-3 Canister",
+   "tier": "T3",
+   "made_at": "Moon, gas giants",
+   "ingredients": {},
+   "dims_m": [
+    0.3,
+    0.5,
+    0.3
+   ],
+   "tris": 400,
+   "look": "Insulated canister with a magenta band.",
+   "kind": "fuel",
+   "stack": 20
+  },
+  {
+   "id": "uranium_rod",
+   "name": "Uranium Fuel Rod",
+   "tier": "T2",
+   "made_at": "Refinery",
+   "ingredients": {
+    "uranium_ore": 100
+   },
+   "dims_m": [
+    0.1,
+    1.0,
+    0.1
+   ],
+   "tris": 150,
+   "look": "Sealed rod with a hazard band.",
+   "kind": "fuel",
+   "stack": 20
+  },
+  {
+   "id": "diesel_canister",
+   "name": "Fuel Canister",
+   "tier": "T0",
+   "made_at": "Looting; distilled ethanol later",
+   "ingredients": {},
+   "dims_m": [
+    0.3,
+    0.45,
+    0.15
+   ],
+   "tris": 300,
+   "look": "Red jerrycan.",
+   "kind": "fuel",
+   "stack": 10
+  },
+  {
+   "id": "iron_ingot",
+   "name": "Iron Ingot",
+   "tier": "T0",
+   "made_at": "Refinery / Scrap Recycler",
+   "ingredients": {
+    "iron_ore": 1.4
+   },
+   "dims_m": [
+    0.3,
+    0.08,
+    0.1
+   ],
+   "tris": 60,
+   "look": "Stamped ingot.",
+   "kind": "ingot",
+   "stack": 1000
+  },
+  {
+   "id": "nickel_ingot",
+   "name": "Nickel Ingot",
+   "tier": "T1",
+   "made_at": "Refinery",
+   "ingredients": {
+    "nickel_ore": 2.5
+   },
+   "dims_m": [
+    0.3,
+    0.08,
+    0.1
+   ],
+   "tris": 60,
+   "look": "Stamped ingot.",
+   "kind": "ingot",
+   "stack": 1000
+  },
+  {
+   "id": "silicon_wafer",
+   "name": "Silicon Wafer",
+   "tier": "T1",
+   "made_at": "Refinery",
+   "ingredients": {
+    "silicon_ore": 1.4
+   },
+   "dims_m": [
+    0.2,
+    0.01,
+    0.2
+   ],
+   "tris": 60,
+   "look": "Round wafer.",
+   "kind": "ingot",
+   "stack": 1000
+  },
+  {
+   "id": "cobalt_ingot",
+   "name": "Cobalt Ingot",
+   "tier": "T1",
+   "made_at": "Refinery",
+   "ingredients": {
+    "cobalt_ore": 3.3
+   },
+   "dims_m": [
+    0.3,
+    0.08,
+    0.1
+   ],
+   "tris": 60,
+   "look": "Blue-tinted ingot.",
+   "kind": "ingot",
+   "stack": 1000
+  },
+  {
+   "id": "titanium_ingot",
+   "name": "Titanium Ingot",
+   "tier": "T2",
+   "made_at": "Refinery",
+   "ingredients": {
+    "titanium_ore": 2.0
+   },
+   "dims_m": [
+    0.3,
+    0.08,
+    0.1
+   ],
+   "tris": 60,
+   "look": "Matte ingot.",
+   "kind": "ingot",
+   "stack": 1000
+  },
+  {
+   "id": "silver_ingot",
+   "name": "Silver Ingot",
+   "tier": "T2",
+   "made_at": "Refinery",
+   "ingredients": {
+    "silver_ore": 10
+   },
+   "dims_m": [
+    0.3,
+    0.08,
+    0.1
+   ],
+   "tris": 60,
+   "look": "Bright ingot.",
+   "kind": "ingot",
+   "stack": 1000
+  },
+  {
+   "id": "gold_ingot",
+   "name": "Gold Ingot",
+   "tier": "T2",
+   "made_at": "Refinery",
+   "ingredients": {
+    "gold_ore": 100
+   },
+   "dims_m": [
+    0.3,
+    0.08,
+    0.1
+   ],
+   "tris": 60,
+   "look": "Gold ingot.",
+   "kind": "ingot",
+   "stack": 1000
+  },
+  {
+   "id": "platinum_ingot",
+   "name": "Platinum Ingot",
+   "tier": "T3",
+   "made_at": "Refinery",
+   "ingredients": {
+    "platinum_ore": 200
+   },
+   "dims_m": [
+    0.3,
+    0.08,
+    0.1
+   ],
+   "tris": 60,
+   "look": "White-silver ingot.",
+   "kind": "ingot",
+   "stack": 1000
+  },
+  {
+   "id": "magnesium_powder",
+   "name": "Magnesium Powder",
+   "tier": "T2",
+   "made_at": "Refinery",
+   "ingredients": {
+    "magnesium_ore": 140
+   },
+   "dims_m": [
+    0.2,
+    0.15,
+    0.2
+   ],
+   "tris": 120,
+   "look": "Sealed powder pouch.",
+   "kind": "ingot",
+   "stack": 1000
+  }
+ ]
+}

@@ -1,0 +1,2040 @@
+{
+ "schema": "exodus.equipment/1",
+ "equipment": [
+  {
+   "id": "multitool",
+   "name": "Multitool",
+   "kind": "Tool",
+   "tier": "T0",
+   "dims_m": [
+    0.45,
+    0.25,
+    0.12
+   ],
+   "stats": {
+    "modes": "Weld · Grind · Scan · Mining Laser (Mk2) · Plasma Cutter (Mk3)",
+    "tiers": "Mk1–Mk4"
+   },
+   "tris_1p": 35000,
+   "tris_3p": 8000,
+   "tex": "2K set",
+   "bones": [
+    "root",
+    "trigger",
+    "mode_dial",
+    "emitter_head",
+    "canister"
+   ],
+   "sockets": [
+    "grip_R",
+    "support_L",
+    "emitter (VFX origin)",
+    "screen (mode display)"
+   ],
+   "moving": [
+    "Emitter head rotates to the selected mode (0.3 s)",
+    "Mode dial clicks",
+    "Gas canister gauge"
+   ],
+   "emissive": [
+    "Mode screen",
+    "Emitter glow (color per mode)"
+   ],
+   "vfx": [
+    "Weld arc",
+    "Grind sparks",
+    "Scan pulse",
+    "Mining beam"
+   ],
+   "notes": "The player's signature object: visible 95% of play. Four tier variants (Mk1–Mk4) share the skeleton; each tier adds parts (heat sinks, lens rings). Wear decals accumulate with play time.",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "hand_drill",
+   "name": "Hand Drill",
+   "kind": "Tool",
+   "tier": "T1",
+   "dims_m": [
+    0.6,
+    0.3,
+    0.2
+   ],
+   "stats": {
+    "mining_rate": "1× (Mk1) → 3× (Mk4)"
+   },
+   "tris_1p": 25000,
+   "tris_3p": 6000,
+   "tex": "2K set",
+   "bones": [
+    "root",
+    "trigger",
+    "bit"
+   ],
+   "sockets": [
+    "grip_R",
+    "support_L",
+    "bit_tip"
+   ],
+   "moving": [
+    "Drill bit spins"
+   ],
+   "emissive": [],
+   "vfx": [
+    "Rock debris",
+    "Dust"
+   ],
+   "notes": "Chunky two-handed drill; the bit has 4 upgrade variants.",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "harvester",
+   "name": "Harvester",
+   "kind": "Tool",
+   "tier": "T1",
+   "dims_m": [
+    0.5,
+    0.2,
+    0.12
+   ],
+   "stats": {
+    "gathers": "plants, alien flora, Bloom samples"
+   },
+   "tris_1p": 18000,
+   "tris_3p": 5000,
+   "tex": "2K set",
+   "bones": [
+    "root",
+    "trigger",
+    "blades"
+   ],
+   "sockets": [
+    "grip_R",
+    "blade_tip",
+    "sample_port"
+   ],
+   "moving": [
+    "Cutter blades scissor"
+   ],
+   "emissive": [],
+   "vfx": [],
+   "notes": "Sample canister on the side fills visibly (Bloom samples glow green).",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "binoculars",
+   "name": "Binoculars",
+   "kind": "Tool",
+   "tier": "T0",
+   "dims_m": [
+    0.18,
+    0.08,
+    0.14
+   ],
+   "stats": {
+    "zoom": "8×; Mk2 marks POIs"
+   },
+   "tris_1p": 8000,
+   "tris_3p": 2000,
+   "tex": "2K set",
+   "bones": [
+    "root",
+    "focus"
+   ],
+   "sockets": [
+    "grip_R",
+    "grip_L",
+    "view (camera)"
+   ],
+   "moving": [
+    "Focus wheel"
+   ],
+   "emissive": [],
+   "vfx": [],
+   "notes": "Open-world scouting tool: tag points of interest from distance. Scratched lenses (overlay when looking through).",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "adas_wrench",
+   "name": "Ada's Wrench",
+   "kind": "Melee",
+   "tier": "T0",
+   "dims_m": [
+    0.45,
+    0.04,
+    0.1
+   ],
+   "stats": {
+    "damage": 35,
+    "rpm": 70,
+    "noise_db": 20
+   },
+   "tris_1p": 6000,
+   "tris_3p": 1500,
+   "tex": "1K set",
+   "bones": [
+    "root"
+   ],
+   "sockets": [
+    "grip_R",
+    "impact_point"
+   ],
+   "moving": [],
+   "emissive": [],
+   "vfx": [],
+   "notes": "Story item; never breaks. Engraving on the handle: 'For the kid who fixes everything.' The engraving must be legible in the inspect animation.",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "fire_axe",
+   "name": "Fire Axe",
+   "kind": "Melee",
+   "tier": "T0",
+   "dims_m": [
+    0.9,
+    0.05,
+    0.3
+   ],
+   "stats": {
+    "damage": 60,
+    "rpm": 45,
+    "durability": 300
+   },
+   "tris_1p": 6000,
+   "tris_3p": 1500,
+   "tex": "1K set",
+   "bones": [
+    "root"
+   ],
+   "sockets": [
+    "grip_R",
+    "grip_L",
+    "impact_point"
+   ],
+   "moving": [],
+   "emissive": [],
+   "vfx": [],
+   "notes": "Red head with chipped paint; blood/Bloom grime overlay.",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "crowbar",
+   "name": "Crowbar",
+   "kind": "Melee",
+   "tier": "T0",
+   "dims_m": [
+    0.75,
+    0.03,
+    0.08
+   ],
+   "stats": {
+    "damage": 40,
+    "rpm": 60,
+    "utility": "pries doors and crates"
+   },
+   "tris_1p": 4000,
+   "tris_3p": 1000,
+   "tex": "1K set",
+   "bones": [
+    "root"
+   ],
+   "sockets": [
+    "grip_R",
+    "impact_point"
+   ],
+   "moving": [],
+   "emissive": [],
+   "vfx": [],
+   "notes": "",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "riot_baton",
+   "name": "Riot Baton",
+   "kind": "Melee",
+   "tier": "T1",
+   "dims_m": [
+    0.6,
+    0.04,
+    0.04
+   ],
+   "stats": {
+    "damage": 30,
+    "stun": "1.5 s (humans)"
+   },
+   "tris_1p": 5000,
+   "tris_3p": 1200,
+   "tex": "1K set",
+   "bones": [
+    "root"
+   ],
+   "sockets": [
+    "grip_R",
+    "impact_point"
+   ],
+   "moving": [],
+   "emissive": [
+    "Shock tip (blue)"
+   ],
+   "vfx": [
+    "Shock arc"
+   ],
+   "notes": "Directorate issue; non-lethal option vs humans.",
+   "art": "DIR",
+   "unlock": ""
+  },
+  {
+   "id": "sower_blade",
+   "name": "Sower Blade",
+   "kind": "Melee",
+   "tier": "T4",
+   "dims_m": [
+    0.9,
+    0.03,
+    0.12
+   ],
+   "stats": {
+    "damage": 110,
+    "rpm": 60,
+    "bonus": "Resonance damage"
+   },
+   "tris_1p": 15000,
+   "tris_3p": 3000,
+   "tex": "2K set",
+   "bones": [
+    "root"
+   ],
+   "sockets": [
+    "grip_R",
+    "impact_point"
+   ],
+   "moving": [],
+   "emissive": [
+    "Glyph edge (teal)"
+   ],
+   "vfx": [
+    "Resonance trail"
+   ],
+   "notes": "Grown blade of shell and crystal; the grip adapts to the hand (subtle shape key).",
+   "art": "SOW",
+   "unlock": ""
+  },
+  {
+   "id": "nailgun_rifle",
+   "name": "Nail-Gun Rifle",
+   "kind": "Improvised",
+   "tier": "T0",
+   "dims_m": [
+    0.8,
+    0.25,
+    0.08
+   ],
+   "stats": {
+    "damage": 22,
+    "rpm": 240,
+    "mag": 40,
+    "noise_db": 55
+   },
+   "tris_1p": 28000,
+   "tris_3p": 6000,
+   "tex": "2K set",
+   "bones": [
+    "root",
+    "trigger",
+    "mag",
+    "hose"
+   ],
+   "sockets": [
+    "grip_R (right-hand IK)",
+    "support_L (left-hand IK)",
+    "muzzle",
+    "eject",
+    "sight (ADS camera)",
+    "rail_light"
+   ],
+   "moving": [
+    "Nail strip feeds",
+    "Air hose sways"
+   ],
+   "emissive": [],
+   "vfx": [
+    "Nail tracer (thin)",
+    "Air puff"
+   ],
+   "notes": "Framing nailer bolted to a rifle stock and an air canister; duct-taped grip.",
+   "art": "SCR",
+   "unlock": ""
+  },
+  {
+   "id": "flare_gun",
+   "name": "Flare Gun",
+   "kind": "Improvised",
+   "tier": "T0",
+   "dims_m": [
+    0.25,
+    0.15,
+    0.05
+   ],
+   "stats": {
+    "damage": 15,
+    "effect": "lights area 30 s; draws Hollows"
+   },
+   "tris_1p": 12000,
+   "tris_3p": 2500,
+   "tex": "2K set",
+   "bones": [
+    "root",
+    "trigger",
+    "break_action"
+   ],
+   "sockets": [
+    "grip_R (right-hand IK)",
+    "support_L (left-hand IK)",
+    "muzzle",
+    "eject",
+    "sight (ADS camera)"
+   ],
+   "moving": [],
+   "emissive": [],
+   "vfx": [
+    "Flare trail and light"
+   ],
+   "notes": "Orange marine flare pistol.",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "pipe_shotgun",
+   "name": "Pipe Shotgun",
+   "kind": "Improvised",
+   "tier": "T0",
+   "dims_m": [
+    0.7,
+    0.15,
+    0.06
+   ],
+   "stats": {
+    "damage": "10 × 8",
+    "rpm": 30,
+    "mag": 1
+   },
+   "tris_1p": 18000,
+   "tris_3p": 4000,
+   "tex": "2K set",
+   "bones": [
+    "root",
+    "trigger",
+    "breech"
+   ],
+   "sockets": [
+    "grip_R (right-hand IK)",
+    "support_L (left-hand IK)",
+    "muzzle",
+    "eject",
+    "sight (ADS camera)",
+    "rail_light"
+   ],
+   "moving": [],
+   "emissive": [],
+   "vfx": [
+    "Muzzle flash",
+    "Smoke"
+   ],
+   "notes": "Plumbing pipe, hinge and a wood stock.",
+   "art": "SCR",
+   "unlock": ""
+  },
+  {
+   "id": "rivet_launcher",
+   "name": "Rivet Launcher",
+   "kind": "Improvised",
+   "tier": "T1",
+   "dims_m": [
+    0.9,
+    0.25,
+    0.1
+   ],
+   "stats": {
+    "damage": 45,
+    "rpm": 90,
+    "mag": 12,
+    "effect": "pins Hollows to walls"
+   },
+   "tris_1p": 30000,
+   "tris_3p": 6500,
+   "tex": "2K set",
+   "bones": [
+    "root",
+    "trigger",
+    "mag",
+    "piston"
+   ],
+   "sockets": [
+    "grip_R (right-hand IK)",
+    "support_L (left-hand IK)",
+    "muzzle",
+    "eject",
+    "sight (ADS camera)",
+    "rail_light"
+   ],
+   "moving": [
+    "Pneumatic piston cycles"
+   ],
+   "emissive": [],
+   "vfx": [
+    "Air blast"
+   ],
+   "notes": "Industrial riveter turned rifle.",
+   "art": "SCR",
+   "unlock": ""
+  },
+  {
+   "id": "pistol",
+   "name": "Pistol",
+   "kind": "Firearm",
+   "tier": "T1",
+   "dims_m": [
+    0.2,
+    0.14,
+    0.035
+   ],
+   "stats": {
+    "damage": 30,
+    "rpm": 300,
+    "mag": 15,
+    "noise_db": 140
+   },
+   "tris_1p": 25000,
+   "tris_3p": 5000,
+   "tex": "2K set",
+   "bones": [
+    "root",
+    "trigger",
+    "mag",
+    "slide",
+    "hammer"
+   ],
+   "sockets": [
+    "grip_R (right-hand IK)",
+    "support_L (left-hand IK)",
+    "muzzle",
+    "eject",
+    "sight (ADS camera)",
+    "rail_light"
+   ],
+   "moving": [
+    "Slide recoils 25 mm",
+    "Hammer",
+    "Mag drops"
+   ],
+   "emissive": [],
+   "vfx": [
+    "Muzzle flash",
+    "Shell ejection"
+   ],
+   "notes": "",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "smg",
+   "name": "SMG",
+   "kind": "Firearm",
+   "tier": "T1",
+   "dims_m": [
+    0.5,
+    0.2,
+    0.05
+   ],
+   "stats": {
+    "damage": 20,
+    "rpm": 850,
+    "mag": 30,
+    "noise_db": 135
+   },
+   "tris_1p": 30000,
+   "tris_3p": 6000,
+   "tex": "2K set",
+   "bones": [
+    "root",
+    "trigger",
+    "mag",
+    "bolt",
+    "stock"
+   ],
+   "sockets": [
+    "grip_R (right-hand IK)",
+    "support_L (left-hand IK)",
+    "muzzle",
+    "eject",
+    "sight (ADS camera)",
+    "rail_light"
+   ],
+   "moving": [
+    "Bolt cycles",
+    "Folding stock"
+   ],
+   "emissive": [],
+   "vfx": [
+    "Muzzle flash",
+    "Shell ejection"
+   ],
+   "notes": "",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "assault_rifle",
+   "name": "Assault Rifle",
+   "kind": "Firearm",
+   "tier": "T2",
+   "dims_m": [
+    0.9,
+    0.25,
+    0.06
+   ],
+   "stats": {
+    "damage": 28,
+    "rpm": 650,
+    "mag": 30,
+    "noise_db": 150
+   },
+   "tris_1p": 35000,
+   "tris_3p": 7000,
+   "tex": "2K set",
+   "bones": [
+    "root",
+    "trigger",
+    "mag",
+    "bolt",
+    "charging_handle",
+    "selector"
+   ],
+   "sockets": [
+    "grip_R (right-hand IK)",
+    "support_L (left-hand IK)",
+    "muzzle",
+    "eject",
+    "sight (ADS camera)",
+    "rail_light"
+   ],
+   "moving": [
+    "Bolt carrier cycles",
+    "Charging handle",
+    "Fire selector"
+   ],
+   "emissive": [],
+   "vfx": [
+    "Muzzle flash",
+    "Shell ejection"
+   ],
+   "notes": "Civilian and Directorate (white-gold, DIR) variants share the skeleton.",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "pump_shotgun",
+   "name": "Pump Shotgun",
+   "kind": "Firearm",
+   "tier": "T1",
+   "dims_m": [
+    1.0,
+    0.2,
+    0.06
+   ],
+   "stats": {
+    "damage": "12 × 8",
+    "rpm": 60,
+    "mag": 6,
+    "noise_db": 150
+   },
+   "tris_1p": 30000,
+   "tris_3p": 6000,
+   "tex": "2K set",
+   "bones": [
+    "root",
+    "trigger",
+    "pump",
+    "shell_gate"
+   ],
+   "sockets": [
+    "grip_R (right-hand IK)",
+    "support_L (left-hand IK)",
+    "muzzle",
+    "eject",
+    "sight (ADS camera)",
+    "rail_light"
+   ],
+   "moving": [
+    "Pump slides 90 mm",
+    "Shells load one by one"
+   ],
+   "emissive": [],
+   "vfx": [
+    "Muzzle flash",
+    "Shell ejection"
+   ],
+   "notes": "",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "marksman_rifle",
+   "name": "Marksman Rifle",
+   "kind": "Firearm",
+   "tier": "T2",
+   "dims_m": [
+    1.15,
+    0.25,
+    0.07
+   ],
+   "stats": {
+    "damage": 90,
+    "rpm": 60,
+    "mag": 10,
+    "noise_db": 155
+   },
+   "tris_1p": 38000,
+   "tris_3p": 7000,
+   "tex": "2K set",
+   "bones": [
+    "root",
+    "trigger",
+    "mag",
+    "bolt_handle",
+    "scope_turret"
+   ],
+   "sockets": [
+    "grip_R (right-hand IK)",
+    "support_L (left-hand IK)",
+    "muzzle",
+    "eject",
+    "sight (ADS camera)",
+    "rail_light",
+    "scope (render target)"
+   ],
+   "moving": [
+    "Bolt-action cycle",
+    "Scope turrets"
+   ],
+   "emissive": [],
+   "vfx": [
+    "Muzzle flash",
+    "Smoke"
+   ],
+   "notes": "Picture-in-picture scope render target.",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "flamethrower",
+   "name": "Flamethrower",
+   "kind": "Heavy",
+   "tier": "T2",
+   "dims_m": [
+    1.0,
+    0.3,
+    0.15
+   ],
+   "stats": {
+    "damage": "18 per tick",
+    "fuel": 100,
+    "bonus": "×2 vs Bloom",
+    "vacuum": "does not work"
+   },
+   "tris_1p": 35000,
+   "tris_3p": 7000,
+   "tex": "2K set",
+   "bones": [
+    "root",
+    "trigger",
+    "igniter",
+    "hose"
+   ],
+   "sockets": [
+    "grip_R",
+    "support_L",
+    "nozzle",
+    "pilot_light"
+   ],
+   "moving": [
+    "Igniter clicks",
+    "Fuel hose to back tank"
+   ],
+   "emissive": [
+    "Pilot light"
+   ],
+   "vfx": [
+    "Flame stream",
+    "Heat haze"
+   ],
+   "notes": "Back-tank is part of the 3P character attachment (SK_ back slot).",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "grenade_launcher",
+   "name": "Grenade Launcher",
+   "kind": "Heavy",
+   "tier": "T2",
+   "dims_m": [
+    0.8,
+    0.25,
+    0.12
+   ],
+   "stats": {
+    "damage": "120 splash",
+    "rpm": 60,
+    "mag": 6
+   },
+   "tris_1p": 32000,
+   "tris_3p": 6500,
+   "tex": "2K set",
+   "bones": [
+    "root",
+    "trigger",
+    "cylinder"
+   ],
+   "sockets": [
+    "grip_R (right-hand IK)",
+    "support_L (left-hand IK)",
+    "muzzle",
+    "eject",
+    "sight (ADS camera)",
+    "rail_light"
+   ],
+   "moving": [
+    "Revolver cylinder rotates 60° per shot"
+   ],
+   "emissive": [],
+   "vfx": [
+    "Launch puff"
+   ],
+   "notes": "",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "rocket_launcher",
+   "name": "Rocket Launcher",
+   "kind": "Heavy",
+   "tier": "T3",
+   "dims_m": [
+    1.2,
+    0.3,
+    0.15
+   ],
+   "stats": {
+    "damage": "400 splash",
+    "mag": 1
+   },
+   "tris_1p": 30000,
+   "tris_3p": 6000,
+   "tex": "2K set",
+   "bones": [
+    "root",
+    "trigger",
+    "sight_flip"
+   ],
+   "sockets": [
+    "grip_R",
+    "support_L",
+    "muzzle",
+    "backblast",
+    "sight"
+   ],
+   "moving": [
+    "Flip-up sight"
+   ],
+   "emissive": [],
+   "vfx": [
+    "Launch smoke",
+    "Backblast"
+   ],
+   "notes": "",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "arc_rifle",
+   "name": "Arc Rifle",
+   "kind": "Energy",
+   "tier": "T3",
+   "dims_m": [
+    0.9,
+    0.25,
+    0.1
+   ],
+   "stats": {
+    "damage": "45 + chain (3)",
+    "rpm": 90,
+    "mag": 20,
+    "bonus": "×2 vs drones and Wardens"
+   },
+   "tris_1p": 38000,
+   "tris_3p": 7500,
+   "tex": "2K set",
+   "bones": [
+    "root",
+    "trigger",
+    "mag",
+    "coils"
+   ],
+   "sockets": [
+    "grip_R (right-hand IK)",
+    "support_L (left-hand IK)",
+    "muzzle",
+    "eject",
+    "sight (ADS camera)",
+    "rail_light"
+   ],
+   "moving": [
+    "Capacitor coils rotate while charging"
+   ],
+   "emissive": [
+    "Coils (electric blue)",
+    "Charge meter"
+   ],
+   "vfx": [
+    "Lightning arcs"
+   ],
+   "notes": "",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "coil_gun",
+   "name": "Coil Gun",
+   "kind": "Energy",
+   "tier": "T3",
+   "dims_m": [
+    1.1,
+    0.2,
+    0.08
+   ],
+   "stats": {
+    "damage": 130,
+    "rpm": 45,
+    "mag": 8,
+    "effect": "pierces 3 targets"
+   },
+   "tris_1p": 36000,
+   "tris_3p": 7000,
+   "tex": "2K set",
+   "bones": [
+    "root",
+    "trigger",
+    "mag",
+    "rings"
+   ],
+   "sockets": [
+    "grip_R (right-hand IK)",
+    "support_L (left-hand IK)",
+    "muzzle",
+    "eject",
+    "sight (ADS camera)",
+    "rail_light"
+   ],
+   "moving": [
+    "Acceleration rings pulse"
+   ],
+   "emissive": [
+    "Rings"
+   ],
+   "vfx": [
+    "Tracer",
+    "Ring flash"
+   ],
+   "notes": "",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "laser_cutter",
+   "name": "Laser Cutter",
+   "kind": "Energy",
+   "tier": "T3",
+   "dims_m": [
+    0.7,
+    0.2,
+    0.1
+   ],
+   "stats": {
+    "damage": "30 per tick (beam)",
+    "effect": "also cuts blocks (salvage)"
+   },
+   "tris_1p": 30000,
+   "tris_3p": 6000,
+   "tex": "2K set",
+   "bones": [
+    "root",
+    "trigger",
+    "lens"
+   ],
+   "sockets": [
+    "grip_R",
+    "support_L",
+    "emitter"
+   ],
+   "moving": [],
+   "emissive": [
+    "Lens"
+   ],
+   "vfx": [
+    "Beam",
+    "Molten impact"
+   ],
+   "notes": "",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "resonance_lance",
+   "name": "Resonance Lance",
+   "kind": "Sower",
+   "tier": "T4",
+   "dims_m": [
+    1.3,
+    0.2,
+    0.12
+   ],
+   "stats": {
+    "damage": 220,
+    "rpm": 30,
+    "mag": 8,
+    "effect": "pierces Warden shields"
+   },
+   "tris_1p": 40000,
+   "tris_3p": 8000,
+   "tex": "2K set",
+   "bones": [
+    "root",
+    "trigger",
+    "petals"
+   ],
+   "sockets": [
+    "grip_R",
+    "support_L",
+    "emitter"
+   ],
+   "moving": [
+    "Petals open to fire"
+   ],
+   "emissive": [
+    "Glyph channels"
+   ],
+   "vfx": [
+    "Resonance beam",
+    "Ripple"
+   ],
+   "notes": "",
+   "art": "SOW",
+   "unlock": ""
+  },
+  {
+   "id": "seed_spitter",
+   "name": "Seed-Spitter",
+   "kind": "Sower",
+   "tier": "T4",
+   "dims_m": [
+    0.8,
+    0.25,
+    0.12
+   ],
+   "stats": {
+    "damage": "60 + growth",
+    "effect": "seeds turn Bloom against itself (roots Hollows in place)"
+   },
+   "tris_1p": 36000,
+   "tris_3p": 7000,
+   "tex": "2K set",
+   "bones": [
+    "root",
+    "trigger",
+    "pod"
+   ],
+   "sockets": [
+    "grip_R",
+    "support_L",
+    "muzzle"
+   ],
+   "moving": [
+    "Seed pod pulses"
+   ],
+   "emissive": [
+    "Pod glow"
+   ],
+   "vfx": [
+    "Seed projectile",
+    "Root burst"
+   ],
+   "notes": "",
+   "art": "SOW",
+   "unlock": ""
+  },
+  {
+   "id": "noise_maker",
+   "name": "Noise Maker",
+   "kind": "Throwable",
+   "tier": "T0",
+   "dims_m": [
+    0.1,
+    0.1,
+    0.1
+   ],
+   "stats": {
+    "effect": "lures Hollows for 12 s"
+   },
+   "tris_1p": 3000,
+   "tris_3p": 800,
+   "tex": "512 set",
+   "bones": [],
+   "sockets": [
+    "grip_R",
+    "audio"
+   ],
+   "moving": [],
+   "emissive": [
+    "Blinking LED"
+   ],
+   "vfx": [],
+   "notes": "Wind-up alarm clock taped to a can.",
+   "art": "SCR",
+   "unlock": ""
+  },
+  {
+   "id": "frag_grenade",
+   "name": "Frag Grenade",
+   "kind": "Throwable",
+   "tier": "T1",
+   "dims_m": [
+    0.07,
+    0.11,
+    0.07
+   ],
+   "stats": {
+    "damage": "150 splash"
+   },
+   "tris_1p": 3000,
+   "tris_3p": 800,
+   "tex": "512 set",
+   "bones": [
+    "root",
+    "pin",
+    "spoon"
+   ],
+   "sockets": [
+    "grip_R"
+   ],
+   "moving": [
+    "Pin pulls",
+    "Spoon flies"
+   ],
+   "emissive": [],
+   "vfx": [
+    "Explosion"
+   ],
+   "notes": "",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "molotov",
+   "name": "Molotov",
+   "kind": "Throwable",
+   "tier": "T0",
+   "dims_m": [
+    0.08,
+    0.3,
+    0.08
+   ],
+   "stats": {
+    "damage": "burn 10 s",
+    "bonus": "×2 vs Bloom"
+   },
+   "tris_1p": 3000,
+   "tris_3p": 800,
+   "tex": "512 set",
+   "bones": [],
+   "sockets": [
+    "grip_R",
+    "wick"
+   ],
+   "moving": [],
+   "emissive": [],
+   "vfx": [
+    "Wick flame",
+    "Fire pool"
+   ],
+   "notes": "",
+   "art": "SCR",
+   "unlock": ""
+  },
+  {
+   "id": "emp_grenade",
+   "name": "EMP Grenade",
+   "kind": "Throwable",
+   "tier": "T2",
+   "dims_m": [
+    0.08,
+    0.1,
+    0.08
+   ],
+   "stats": {
+    "effect": "disables drones and electronics 8 s"
+   },
+   "tris_1p": 3500,
+   "tris_3p": 900,
+   "tex": "512 set",
+   "bones": [],
+   "sockets": [
+    "grip_R"
+   ],
+   "moving": [],
+   "emissive": [
+    "Charge ring"
+   ],
+   "vfx": [
+    "EMP dome"
+   ],
+   "notes": "",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "spore_bomb",
+   "name": "Spore Bomb",
+   "kind": "Throwable",
+   "tier": "T2",
+   "dims_m": [
+    0.1,
+    0.12,
+    0.1
+   ],
+   "stats": {
+    "effect": "calms Hollows (Choir tech); infects the unprotected"
+   },
+   "tris_1p": 4000,
+   "tris_3p": 900,
+   "tex": "512 set",
+   "bones": [],
+   "sockets": [
+    "grip_R"
+   ],
+   "moving": [],
+   "emissive": [
+    "Pulsing green"
+   ],
+   "vfx": [
+    "Spore cloud"
+   ],
+   "notes": "Choir-made: a stitched cloth pouch around a glass bulb.",
+   "art": "SOW",
+   "unlock": ""
+  },
+  {
+   "id": "bandage",
+   "name": "Bandage",
+   "kind": "Consumable",
+   "tier": "T0",
+   "dims_m": [
+    0.08,
+    0.05,
+    0.08
+   ],
+   "stats": {
+    "heal": 15
+   },
+   "tris_1p": 2000,
+   "tris_3p": 400,
+   "tex": "512 set",
+   "bones": [],
+   "sockets": [
+    "grip_R"
+   ],
+   "moving": [],
+   "emissive": [],
+   "vfx": [],
+   "notes": "",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "medkit",
+   "name": "Medkit",
+   "kind": "Consumable",
+   "tier": "T1",
+   "dims_m": [
+    0.3,
+    0.1,
+    0.2
+   ],
+   "stats": {
+    "heal": 60
+   },
+   "tris_1p": 5000,
+   "tris_3p": 1000,
+   "tex": "512 set",
+   "bones": [],
+   "sockets": [
+    "grip_R",
+    "grip_L"
+   ],
+   "moving": [
+    "Lid opens"
+   ],
+   "emissive": [],
+   "vfx": [],
+   "notes": "",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "suppressant",
+   "name": "Suppressant Injector",
+   "kind": "Consumable",
+   "tier": "T0",
+   "dims_m": [
+    0.15,
+    0.03,
+    0.03
+   ],
+   "stats": {
+    "infection": "−10%, halts 20 min"
+   },
+   "tris_1p": 3000,
+   "tris_3p": 500,
+   "tex": "512 set",
+   "bones": [
+    "root",
+    "plunger"
+   ],
+   "sockets": [
+    "grip_R",
+    "needle"
+   ],
+   "moving": [
+    "Plunger"
+   ],
+   "emissive": [
+    "Green fluid"
+   ],
+   "vfx": [],
+   "notes": "Auto-injector pen; the injection animation into the forearm is iconic (first seen M0.02).",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "antiviral",
+   "name": "Antiviral Cocktail",
+   "kind": "Consumable",
+   "tier": "T2",
+   "dims_m": [
+    0.15,
+    0.03,
+    0.03
+   ],
+   "stats": {
+    "infection": "−40%"
+   },
+   "tris_1p": 3000,
+   "tris_3p": 500,
+   "tex": "512 set",
+   "bones": [
+    "root",
+    "plunger"
+   ],
+   "sockets": [
+    "grip_R",
+    "needle"
+   ],
+   "moving": [],
+   "emissive": [
+    "Amber fluid"
+   ],
+   "vfx": [],
+   "notes": "",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "null_serum",
+   "name": "Null Serum",
+   "kind": "Consumable",
+   "tier": "T3",
+   "dims_m": [
+    0.15,
+    0.03,
+    0.03
+   ],
+   "stats": {
+    "infection": "cures; 30 min immunity"
+   },
+   "tris_1p": 3000,
+   "tris_3p": 500,
+   "tex": "512 set",
+   "bones": [],
+   "sockets": [
+    "grip_R",
+    "needle"
+   ],
+   "moving": [],
+   "emissive": [
+    "Pale gold fluid"
+   ],
+   "vfx": [],
+   "notes": "Made with Lily's consent; label hand-written by Mara.",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "loom_serum",
+   "name": "Loom Serum",
+   "kind": "Consumable",
+   "tier": "T4",
+   "dims_m": [
+    0.15,
+    0.03,
+    0.03
+   ],
+   "stats": {
+    "infection": "cures; permanent +resistance"
+   },
+   "tris_1p": 4000,
+   "tris_3p": 600,
+   "tex": "512 set",
+   "bones": [],
+   "sockets": [
+    "grip_R",
+    "needle"
+   ],
+   "moving": [],
+   "emissive": [
+    "Teal glyph light"
+   ],
+   "vfx": [],
+   "notes": "",
+   "art": "SOW",
+   "unlock": ""
+  },
+  {
+   "id": "ration_can",
+   "name": "Ration Can",
+   "kind": "Consumable",
+   "tier": "T0",
+   "dims_m": [
+    0.08,
+    0.11,
+    0.08
+   ],
+   "stats": {
+    "hunger": 25
+   },
+   "tris_1p": 1500,
+   "tris_3p": 300,
+   "tex": "512 set",
+   "bones": [],
+   "sockets": [
+    "grip_R"
+   ],
+   "moving": [],
+   "emissive": [],
+   "vfx": [],
+   "notes": "",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "water_bottle",
+   "name": "Water Bottle",
+   "kind": "Consumable",
+   "tier": "T0",
+   "dims_m": [
+    0.07,
+    0.22,
+    0.07
+   ],
+   "stats": {
+    "thirst": 30
+   },
+   "tris_1p": 1500,
+   "tris_3p": 300,
+   "tex": "512 set",
+   "bones": [],
+   "sockets": [
+    "grip_R"
+   ],
+   "moving": [],
+   "emissive": [],
+   "vfx": [],
+   "notes": "Refillable; clean/dirty fill states.",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "o2_bottle",
+   "name": "O₂ Bottle",
+   "kind": "Consumable",
+   "tier": "T1",
+   "dims_m": [
+    0.12,
+    0.45,
+    0.12
+   ],
+   "stats": {
+    "o2": "+100 suit O₂"
+   },
+   "tris_1p": 3000,
+   "tris_3p": 600,
+   "tex": "512 set",
+   "bones": [],
+   "sockets": [
+    "grip_R",
+    "valve"
+   ],
+   "moving": [],
+   "emissive": [],
+   "vfx": [],
+   "notes": "",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "h2_bottle",
+   "name": "H₂ Bottle",
+   "kind": "Consumable",
+   "tier": "T2",
+   "dims_m": [
+    0.12,
+    0.45,
+    0.12
+   ],
+   "stats": {
+    "h2": "+100 jetpack fuel"
+   },
+   "tris_1p": 3000,
+   "tris_3p": 600,
+   "tex": "512 set",
+   "bones": [],
+   "sockets": [
+    "grip_R",
+    "valve"
+   ],
+   "moving": [],
+   "emissive": [],
+   "vfx": [],
+   "notes": "",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "suit_coveralls",
+   "name": "Work Coveralls",
+   "kind": "Suit",
+   "tier": "T0",
+   "dims_m": [
+    0.6,
+    1.8,
+    0.35
+   ],
+   "stats": {
+    "protection": "none; −10% infection from scratches"
+   },
+   "tris_1p": null,
+   "tris_3p": 30000,
+   "tex": "2K body set",
+   "bones": [
+    "UE mannequin-compatible body skeleton"
+   ],
+   "sockets": [
+    "helmet (none)",
+    "backpack",
+    "tool_belt"
+   ],
+   "moving": [],
+   "emissive": [],
+   "vfx": [],
+   "notes": "Kestrel ground-crew coveralls with name tape 'WRENCH'. Unisex body with morph targets.",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "suit_hazmat",
+   "name": "Hazmat Suit",
+   "kind": "Suit",
+   "tier": "T1",
+   "dims_m": [
+    0.65,
+    1.85,
+    0.4
+   ],
+   "stats": {
+    "protection": "spores filtered; no vacuum"
+   },
+   "tris_1p": null,
+   "tris_3p": 40000,
+   "tex": "2K body set",
+   "bones": [],
+   "sockets": [
+    "helmet",
+    "backpack",
+    "filter_L",
+    "filter_R"
+   ],
+   "moving": [],
+   "emissive": [],
+   "vfx": [],
+   "notes": "Yellow CBRN suit with a clear hood (refraction + condensation).",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "suit_eva",
+   "name": "EVA Suit",
+   "kind": "Suit",
+   "tier": "T2",
+   "dims_m": [
+    0.75,
+    1.9,
+    0.5
+   ],
+   "stats": {
+    "protection": "vacuum, spores; 10 min O₂; jetpack"
+   },
+   "tris_1p": null,
+   "tris_3p": 55000,
+   "tex": "4K body set",
+   "bones": [],
+   "sockets": [
+    "helmet",
+    "jetpack",
+    "module_slots ×4",
+    "helmet_light",
+    "wrist_pad"
+   ],
+   "moving": [],
+   "emissive": [
+    "Helmet HUD",
+    "Wrist pad",
+    "Status lights"
+   ],
+   "vfx": [],
+   "notes": "Kestrel white-and-orange; mag-boots integrated.",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "suit_hardsuit",
+   "name": "Engineer Hardsuit",
+   "kind": "Suit",
+   "tier": "T3",
+   "dims_m": [
+    0.8,
+    1.95,
+    0.55
+   ],
+   "stats": {
+    "protection": "vacuum, spores, radiation; armor 40%"
+   },
+   "tris_1p": null,
+   "tris_3p": 65000,
+   "tex": "4K body set",
+   "bones": [],
+   "sockets": [
+    "helmet",
+    "jetpack",
+    "module_slots ×6",
+    "shoulder_lamp"
+   ],
+   "moving": [],
+   "emissive": [
+    "Helmet HUD",
+    "Seam lights"
+   ],
+   "vfx": [],
+   "notes": "Armored plates over the EVA undersuit; tool-mount shoulder.",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "suit_sower",
+   "name": "Sower-Woven Suit",
+   "kind": "Suit",
+   "tier": "T4",
+   "dims_m": [
+    0.75,
+    1.95,
+    0.5
+   ],
+   "stats": {
+    "protection": "all hazards; slow self-repair; Hollows ignore at distance"
+   },
+   "tris_1p": null,
+   "tris_3p": 60000,
+   "tex": "4K body set",
+   "bones": [],
+   "sockets": [
+    "helmet",
+    "module_slots ×6"
+   ],
+   "moving": [],
+   "emissive": [
+    "Glyph veins"
+   ],
+   "vfx": [],
+   "notes": "Grown over the Hardsuit: shell plates and filament weave.",
+   "art": "SOW",
+   "unlock": ""
+  },
+  {
+   "id": "mod_jetpack",
+   "name": "Jetpack Module",
+   "kind": "Suit Module",
+   "tier": "T2",
+   "dims_m": [
+    0.45,
+    0.6,
+    0.25
+   ],
+   "stats": {
+    "thrust": "6-DOF; limited above 1 g"
+   },
+   "tris_1p": null,
+   "tris_3p": 12000,
+   "tex": "2K set",
+   "bones": [],
+   "sockets": [
+    "back_attach",
+    "nozzles ×4 (VFX)"
+   ],
+   "moving": [],
+   "emissive": [],
+   "vfx": [
+    "Thruster puffs"
+   ],
+   "notes": "",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "mod_o2_tank",
+   "name": "Extended O₂ Tank",
+   "kind": "Suit Module",
+   "tier": "T2",
+   "dims_m": [
+    0.3,
+    0.5,
+    0.2
+   ],
+   "stats": {
+    "o2": "+10 min"
+   },
+   "tris_1p": null,
+   "tris_3p": 4000,
+   "tex": "1K set",
+   "bones": [],
+   "sockets": [
+    "back_attach"
+   ],
+   "moving": [],
+   "emissive": [],
+   "vfx": [],
+   "notes": "",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "mod_armor",
+   "name": "Armor Plates",
+   "kind": "Suit Module",
+   "tier": "T2",
+   "dims_m": [
+    0.5,
+    0.6,
+    0.3
+   ],
+   "stats": {
+    "armor": "+20%"
+   },
+   "tris_1p": null,
+   "tris_3p": 8000,
+   "tex": "1K set",
+   "bones": [],
+   "sockets": [
+    "chest_attach",
+    "shoulder_attach ×2"
+   ],
+   "moving": [],
+   "emissive": [],
+   "vfx": [],
+   "notes": "",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "mod_spore_filter",
+   "name": "Spore Filter",
+   "kind": "Suit Module",
+   "tier": "T1",
+   "dims_m": [
+    0.2,
+    0.15,
+    0.15
+   ],
+   "stats": {
+    "spores": "−80% exposure"
+   },
+   "tris_1p": null,
+   "tris_3p": 3000,
+   "tex": "1K set",
+   "bones": [],
+   "sockets": [
+    "helmet_attach"
+   ],
+   "moving": [],
+   "emissive": [],
+   "vfx": [],
+   "notes": "",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "mod_thermal",
+   "name": "Thermal Lining",
+   "kind": "Suit Module",
+   "tier": "T2",
+   "dims_m": [
+    0.1,
+    0.1,
+    0.1
+   ],
+   "stats": {
+    "temperature": "±40 °C comfort band"
+   },
+   "tris_1p": null,
+   "tris_3p": 500,
+   "tex": "512 set",
+   "bones": [],
+   "sockets": [],
+   "moving": [],
+   "emissive": [],
+   "vfx": [],
+   "notes": "Mostly a material swap on the undersuit (emissive heating lines).",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "mod_scanner",
+   "name": "Scanner Booster",
+   "kind": "Suit Module",
+   "tier": "T2",
+   "dims_m": [
+    0.15,
+    0.25,
+    0.1
+   ],
+   "stats": {
+    "scan_range": "×2"
+   },
+   "tris_1p": null,
+   "tris_3p": 3000,
+   "tex": "1K set",
+   "bones": [],
+   "sockets": [
+    "shoulder_attach"
+   ],
+   "moving": [
+    "Dish spins"
+   ],
+   "emissive": [],
+   "vfx": [],
+   "notes": "",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "mod_stealth",
+   "name": "Stealth Dampers",
+   "kind": "Suit Module",
+   "tier": "T3",
+   "dims_m": [
+    0.2,
+    0.2,
+    0.15
+   ],
+   "stats": {
+    "noise": "−40% movement noise"
+   },
+   "tris_1p": null,
+   "tris_3p": 3000,
+   "tex": "1K set",
+   "bones": [],
+   "sockets": [
+    "boot_attach ×2"
+   ],
+   "moving": [],
+   "emissive": [],
+   "vfx": [],
+   "notes": "",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "drone_construction",
+   "name": "Construction Drone",
+   "kind": "Drone",
+   "tier": "T2",
+   "dims_m": [
+    0.8,
+    0.4,
+    0.8
+   ],
+   "stats": {
+    "role": "welds projections, repairs"
+   },
+   "tris_1p": null,
+   "tris_3p": 12000,
+   "tex": "2K set",
+   "bones": [
+    "root",
+    "rotor ×4",
+    "arm"
+   ],
+   "sockets": [
+    "weld_tip",
+    "light"
+   ],
+   "moving": [
+    "Rotors ×4",
+    "Welding arm"
+   ],
+   "emissive": [
+    "Status ring"
+   ],
+   "vfx": [
+    "Weld sparks"
+   ],
+   "notes": "",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "drone_mining",
+   "name": "Mining Drone",
+   "kind": "Drone",
+   "tier": "T2",
+   "dims_m": [
+    1.0,
+    0.5,
+    1.0
+   ],
+   "stats": {
+    "role": "mines ore, returns to the Drone Bay"
+   },
+   "tris_1p": null,
+   "tris_3p": 12000,
+   "tex": "2K set",
+   "bones": [
+    "root",
+    "rotor ×4",
+    "drill"
+   ],
+   "sockets": [
+    "drill_tip",
+    "cargo"
+   ],
+   "moving": [
+    "Rotors ×4",
+    "Drill"
+   ],
+   "emissive": [],
+   "vfx": [
+    "Debris"
+   ],
+   "notes": "",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "drone_defense",
+   "name": "Defense Drone",
+   "kind": "Drone",
+   "tier": "T3",
+   "dims_m": [
+    0.7,
+    0.35,
+    0.7
+   ],
+   "stats": {
+    "role": "patrols; small gun"
+   },
+   "tris_1p": null,
+   "tris_3p": 12000,
+   "tex": "2K set",
+   "bones": [
+    "root",
+    "rotor ×4",
+    "gun_yaw",
+    "gun_pitch"
+   ],
+   "sockets": [
+    "muzzle",
+    "light"
+   ],
+   "moving": [
+    "Rotors ×4",
+    "Gun turret"
+   ],
+   "emissive": [
+    "Targeting laser"
+   ],
+   "vfx": [
+    "Muzzle flash"
+   ],
+   "notes": "",
+   "art": "IND",
+   "unlock": ""
+  },
+  {
+   "id": "drone_scout",
+   "name": "Scout Drone",
+   "kind": "Drone",
+   "tier": "T2",
+   "dims_m": [
+    0.4,
+    0.15,
+    0.4
+   ],
+   "stats": {
+    "role": "remote exploration and signal triangulation (open world)"
+   },
+   "tris_1p": null,
+   "tris_3p": 8000,
+   "tex": "1K set",
+   "bones": [
+    "root",
+    "rotor ×4",
+    "camera"
+   ],
+   "sockets": [
+    "camera",
+    "light"
+   ],
+   "moving": [
+    "Rotors ×4",
+    "Camera gimbal"
+   ],
+   "emissive": [],
+   "vfx": [],
+   "notes": "",
+   "art": "IND",
+   "unlock": ""
+  }
+ ]
+}
