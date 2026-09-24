@@ -526,7 +526,7 @@ def scaffold_level(lv, data, index, out_root, force=False, maps=True):
     txt.write(f"{lv['id']} {lv['name']} — {lv['type']} · {lv['act']}\n\n{lv['summary']}\n\nGoals: {lv['goals']}\nEncounters: {lv['encounters']}\n"
               f"Set pieces: {lv['setpieces']}\nLandmarks: {lv['landmarks']}\nBudget: {lv['budget']}\nRequired markers: {lv['markers']}\nNotes: {lv['notes']}\n")
     target.parent.mkdir(parents=True, exist_ok=True)
-    bpy.ops.wm.save_as_mainfile(filepath=str(target), check_existing=False)
+    bpy.ops.wm.save_as_mainfile(filepath=str(target), check_existing=False, compress=True)
     print(f"OK    {lv['asset']} -> {target}" + (f" (+{len(extra)} face-map templates)" if extra else ""))
     return target
 
@@ -631,7 +631,7 @@ def scaffold_gym(data, out_root, force=False):
     blk.objects.link(floor)
     root["size"] = json.dumps({"w": lane_w + 40, "d": y + 20})
     target.parent.mkdir(parents=True, exist_ok=True)
-    bpy.ops.wm.save_as_mainfile(filepath=str(target), check_existing=False)
+    bpy.ops.wm.save_as_mainfile(filepath=str(target), check_existing=False, compress=True)
     print(f"OK    LVL_MetricsGym -> {target}")
     return target
 
@@ -671,7 +671,7 @@ def scaffold_kit(kit, out_root, force=False):
         label(p["name"], (x + off[0], -3, 0.02), 0.5, ref, f"REF_Label_{name}")
         left = x + off[0] + w / 2 + 3
     target.parent.mkdir(parents=True, exist_ok=True)
-    bpy.ops.wm.save_as_mainfile(filepath=str(target), check_existing=False)
+    bpy.ops.wm.save_as_mainfile(filepath=str(target), check_existing=False, compress=True)
     print(f"OK    {kit['code']} ({len(kit['pieces'])} pieces) -> {target}")
     return target
 

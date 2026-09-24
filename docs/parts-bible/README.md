@@ -15,7 +15,7 @@
 
 ## How to use this bible
 - **Designers:** the [Master Parts List](01-master-parts-list.md) is the full catalog; each category chapter has a detail card per part with size, mass, integrity, power, recipe, tier and unlock.
-- **3D artists:** each card lists every Blender asset with exact dimensions, triangle budgets for LOD0–3, construction stages, collision limits, required sockets, moving-part pivots, emissives, VFX and modeling notes. Read [00 — Blender Modeling Standards](00-blender-modeling-standards.md) first, then generate your starter file with the [Blender toolkit](20-blender-toolkit.md).
+- **3D artists:** each card lists every Blender asset with exact dimensions, triangle budgets for LOD0–3, construction stages, collision limits, required sockets, moving-part pivots, emissives, VFX and modeling notes. Read [00 — Blender Modeling Standards](00-blender-modeling-standards.md) first. **Every asset is already built as a validated greybox** in `assets/parts/` and `assets/props/` (see the [Blender toolkit](20-blender-toolkit.md)): open the file and replace the greybox with final art.
 - **Producers:** `data/art_tracker_parts.csv` and `data/art_tracker_props.csv` are ready-made art backlogs (one row per asset, with status and owner columns).
 - **Engineers:** `data/parts.json` is the machine-readable registry (it matches the data-driven design in game bible chapter 13); `data/components.json` and `data/equipment.json` cover items.
 
@@ -43,7 +43,12 @@
 | 17 | [Components & Resources](17-components-and-resources.md) | Crafting components, ores, ingots and fuels, each with a prop spec |
 | 18 | [Handheld Equipment, Suits & Drones](18-handheld-equipment-and-suits.md) | Tools, every weapon, throwables, consumables, suits, suit modules, drones |
 | 19 | [Materials, Art Sets & Faction Skins](19-materials-and-art-sets.md) | Art-set palettes, trim sheets, faction skins, master materials |
-| 20 | [Blender Toolkit & Art Pipeline](20-blender-toolkit.md) | Scaffold, validate and export commands; production tracking; adding parts |
+| 20 | [Blender Toolkit & Art Pipeline](20-blender-toolkit.md) | Build (full greybox of all 601 assets), scaffold, validate and export commands; what each file contains; production tracking; replacing greybox with final art |
+
+## Built assets
+All 601 assets are built in Blender and pass validation: `assets/parts/<category>/` (446 block files) and `assets/props/` (155 prop files). Each greybox is at final size and budget, with LOD0–3, collision, sockets, mounts, construction stages, moving parts and, for weapons, suits and drones, rigs. Rebuild them with `blender -b -P tools/blender/exodus_parts.py -- build --all --force`.
+
+![Greybox block parts](images/greybox-blocks.jpg)
 
 ## Source of truth
 Chapters 01–18 and everything in `data/` are **generated** from `tools/parts/catalog/` by `python3 tools/parts/build.py`. Change the catalog, not the generated files. Chapters 00, 19 and 20 and this README are hand-written; the counts table above is refreshed by the build.

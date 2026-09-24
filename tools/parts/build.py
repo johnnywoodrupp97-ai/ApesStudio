@@ -510,6 +510,15 @@ def equipment_doc():
 
 
 # --------------------------------------------------------------------------- csv / json
+def art_status(*blend_paths):
+    """'Greybox built' once `exodus_parts.py build` has produced every file for the row."""
+    return "Greybox built" if all((ROOT / b).exists() for b in blend_paths) else "Not started"
+
+
+def prop_status(folder, *assets):
+    return art_status(*(f"assets/props/{folder}/{a}.blend" for a in assets))
+
+
 def write_csvs(parts):
     DATA.mkdir(parents=True, exist_ok=True)
     cols = ["asset", "part_id", "registry_id", "part_name", "variant", "category", "group", "grid", "size_cells_WxHxD",
@@ -532,26 +541,29 @@ def write_csvs(parts):
                     " ".join(p["mount_faces"]), " ".join(p["airtight_faces"]),
                     " ".join(socket_names(p["sockets"])), " | ".join(p["moving_parts"]),
                     " | ".join(p["emissive"]), a["debris_set"], a["blend_path"], a["export_path"],
-                    "Not started", "", p["modeling_notes"],
+                    art_status(a["blend_path"]), "", p["modeling_notes"],
                 ])
     with open(DATA / "art_tracker_props.csv", "w", newline="", encoding="utf-8") as fh:
         w = csv.writer(fh)
         w.writerow(["asset", "item_id", "name", "type", "tier", "dims_m", "tris_lod0_or_1p", "tris_3p", "textures", "status", "owner", "notes"])
         for c in COMPONENTS:
             w.writerow([f"SM_CMP_{pascal(c['name'])}", c["id"], c["name"], "Component", c["tier"],
-                        "x".join(f"{v:.2f}" for v in c["dims_m"]), c["tris"], "", "512 / prop atlas", "Not started", "", c["look"]])
+                        "x".join(f"{v:.2f}" for v in c["dims_m"]), c["tris"], "", "512 / prop atlas",
+                        prop_status("components", f"SM_CMP_{pascal(c['name'])}"), "", c["look"]])
         for c in RESOURCES:
             w.writerow([f"SM_RES_{pascal(c['name'])}", c["id"], c["name"], c["kind"].title(), c["tier"],
-                        "x".join(f"{v:.2f}" for v in c["dims_m"]), c["tris"], "", "512 / prop atlas", "Not started", "", c["look"]])
+                        "x".join(f"{v:.2f}" for v in c["dims_m"]), c["tris"], "", "512 / prop atlas",
+                        prop_status("resources", f"SM_RES_{pascal(c['name'])}"), "", c["look"]])
         for e in EQUIPMENT:
             if e["kind"] == "Suit":
-                name = f"SK_SUIT_{pascal(e['name'])}"
+                files = [f"SK_SUIT_{pascal(e['name'])}"]
             elif e["kind"] in ("Suit Module", "Drone"):
-                name = f"SK_EQP_{pascal(e['name'])}" if e["bones"] else f"SM_EQP_{pascal(e['name'])}"
+                files = [f"SK_EQP_{pascal(e['name'])}" if e["bones"] else f"SM_EQP_{pascal(e['name'])}"]
             else:
-                name = f"SK_EQP_{pascal(e['name'])}_1P + SM_EQP_{pascal(e['name'])}_3P"
-            w.writerow([name, e["id"], e["name"], e["kind"], e["tier"], "x".join(f"{v:.2f}" for v in e["dims_m"]),
-                        e["tris_1p"] or "", e["tris_3p"] or "", e["tex"], "Not started", "", e["notes"]])
+                files = [f"SK_EQP_{pascal(e['name'])}_1P", f"SM_EQP_{pascal(e['name'])}_3P"]
+            folder = "equipment/" + re.sub(r"[^a-z0-9]+", "-", e["kind"].lower()).strip("-")
+            w.writerow([" + ".join(files), e["id"], e["name"], e["kind"], e["tier"], "x".join(f"{v:.2f}" for v in e["dims_m"]),
+                        e["tris_1p"] or "", e["tris_3p"] or "", e["tex"], prop_status(folder, *files), "", e["notes"]])
 
 
 def write_json(parts):
