@@ -1,0 +1,9 @@
+Binaries/
+Intermediate/
+Saved/
+DerivedDataCache/
+.vs/
+*.sln
+Content/Exodus/Imported/
+Content/Exodus/Maps/
+Content/Exodus/Materials/

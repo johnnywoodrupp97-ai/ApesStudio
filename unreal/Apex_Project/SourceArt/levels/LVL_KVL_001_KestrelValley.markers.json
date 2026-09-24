@@ -1,0 +1,670 @@
+{
+ "exodus_level_version": "1.0",
+ "kind": "level",
+ "level_id": "KVL-001",
+ "level_name": "Kestrel Valley",
+ "type": "Open Region",
+ "size": {
+  "w": 8000,
+  "d": 8000,
+  "h": 700,
+  "area_km2": 64
+ },
+ "budget": {
+  "cell_m": 256,
+  "loading_range_m": 768,
+  "blockout_tris": 50000,
+  "per": "cell",
+  "memory_mb": 60,
+  "draw_calls": 400,
+  "shadow_lights": 4,
+  "cells": 1024
+ },
+ "required_markers": [
+  "PS_Main",
+  "SPL_Route93",
+  "VOL_NoBuild_Complex",
+  "VOL_Weather_Global",
+  "VOL_LandingZone_JackrabbitFlats"
+ ],
+ "spaces": [
+  "Valley floor",
+  "Mountain rim",
+  "Route 93"
+ ],
+ "bounds_min": [
+  -4000.0,
+  -4000.0,
+  -47.54052023118572
+ ],
+ "bounds_max": [
+  4000.0,
+  4000.0,
+  700.0
+ ],
+ "planet_radius_m": 60000.0,
+ "markers": [
+  {
+   "name": "POI_Level_KES_001",
+   "type": "EMPTY",
+   "location": [
+    1300.0,
+    900.0,
+    20.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "level_id": "KES-001",
+    "level_name": "Mission Control 2068"
+   }
+  },
+  {
+   "name": "POI_Level_KES_002",
+   "type": "EMPTY",
+   "location": [
+    700.0,
+    500.0,
+    20.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "level_id": "KES-002",
+    "level_name": "Hangar 4"
+   }
+  },
+  {
+   "name": "POI_Level_KES_003",
+   "type": "EMPTY",
+   "location": [
+    600.0,
+    600.0,
+    20.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "level_id": "KES-003",
+    "level_name": "Service Corridors"
+   }
+  },
+  {
+   "name": "POI_Level_KES_004",
+   "type": "EMPTY",
+   "location": [
+    1250.0,
+    600.0,
+    20.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "level_id": "KES-004",
+    "level_name": "Terminal B"
+   }
+  },
+  {
+   "name": "POI_Level_KES_005",
+   "type": "EMPTY",
+   "location": [
+    900.0,
+    -300.0,
+    20.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "level_id": "KES-005",
+    "level_name": "Pad 12"
+   }
+  },
+  {
+   "name": "POI_Level_KES_006",
+   "type": "EMPTY",
+   "location": [
+    -1150.0,
+    300.0,
+    20.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "level_id": "KES-006",
+    "level_name": "Kestrel Elementary"
+   }
+  },
+  {
+   "name": "POI_Level_KES_007",
+   "type": "EMPTY",
+   "location": [
+    -200.0,
+    -1400.0,
+    20.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "level_id": "KES-007",
+    "level_name": "Ark Transport Crash Site"
+   }
+  },
+  {
+   "name": "POI_Level_KES_008",
+   "type": "EMPTY",
+   "location": [
+    900.0,
+    900.0,
+    20.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "level_id": "KES-008",
+    "level_name": "The Vault"
+   }
+  },
+  {
+   "name": "POI_Level_KES_009",
+   "type": "EMPTY",
+   "location": [
+    1300.0,
+    900.0,
+    20.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "level_id": "KES-009",
+    "level_name": "Mission Control Tower"
+   }
+  },
+  {
+   "name": "POI_Level_KES_010",
+   "type": "EMPTY",
+   "location": [
+    400.0,
+    -200.0,
+    20.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "level_id": "KES-010",
+    "level_name": "Fuel Farm"
+   }
+  },
+  {
+   "name": "POI_Level_KES_011",
+   "type": "EMPTY",
+   "location": [
+    -600.0,
+    350.0,
+    20.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "level_id": "KES-011",
+    "level_name": "Township Warehouse"
+   }
+  },
+  {
+   "name": "POI_Level_KES_012",
+   "type": "EMPTY",
+   "location": [
+    1900.0,
+    -900.0,
+    20.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "level_id": "KES-012",
+    "level_name": "Crashed Ark Shuttle"
+   }
+  },
+  {
+   "name": "POI_Level_KES_013",
+   "type": "EMPTY",
+   "location": [
+    1500.0,
+    -200.0,
+    20.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "level_id": "KES-013",
+    "level_name": "Pad 39-K"
+   }
+  },
+  {
+   "name": "PS_Main",
+   "type": "EMPTY",
+   "location": [
+    0.0,
+    0.0,
+    0.10000000149011612
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {}
+  },
+  {
+   "name": "SPL_Route93",
+   "type": "CURVE",
+   "location": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {},
+   "points": [
+    [
+     -2000.0,
+     -4000.0,
+     0.0
+    ],
+    [
+     -2000.0,
+     4000.0,
+     0.0
+    ]
+   ]
+  },
+  {
+   "name": "VOL_District_FortCalder",
+   "type": "MESH",
+   "location": [
+    200.0,
+    -2900.0,
+    102.45948028564453
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "level_id": "KVL-009"
+   },
+   "size": [
+    1400.0,
+    1400.0,
+    300.0
+   ]
+  },
+  {
+   "name": "VOL_District_GhostTowns",
+   "type": "MESH",
+   "location": [
+    1700.0,
+    -1100.0,
+    102.45948028564453
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "level_id": "KVL-011"
+   },
+   "size": [
+    500.0,
+    500.0,
+    300.0
+   ]
+  },
+  {
+   "name": "VOL_District_HollisDam",
+   "type": "MESH",
+   "location": [
+    300.0,
+    3100.0,
+    102.45948028564453
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "level_id": "KVL-006"
+   },
+   "size": [
+    1600.0,
+    1600.0,
+    300.0
+   ]
+  },
+  {
+   "name": "VOL_District_JackrabbitFlats",
+   "type": "MESH",
+   "location": [
+    -2400.0,
+    -2400.0,
+    102.45948028564453
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "level_id": "KVL-005"
+   },
+   "size": [
+    2000.0,
+    2000.0,
+    300.0
+   ]
+  },
+  {
+   "name": "VOL_District_KestrelComplex",
+   "type": "MESH",
+   "location": [
+    1000.0,
+    300.0,
+    102.45948028564453
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "level_id": "KVL-002"
+   },
+   "size": [
+    2200.0,
+    2200.0,
+    300.0
+   ]
+  },
+  {
+   "name": "VOL_District_KestrelTownship",
+   "type": "MESH",
+   "location": [
+    -900.0,
+    100.0,
+    102.45948028564453
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "level_id": "KVL-003"
+   },
+   "size": [
+    1400.0,
+    1400.0,
+    300.0
+   ]
+  },
+  {
+   "name": "VOL_District_Prospect",
+   "type": "MESH",
+   "location": [
+    -3150.0,
+    900.0,
+    102.45948028564453
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "level_id": "KVL-010"
+   },
+   "size": [
+    1600.0,
+    1600.0,
+    300.0
+   ]
+  },
+  {
+   "name": "VOL_District_RedMesa",
+   "type": "MESH",
+   "location": [
+    2700.0,
+    -2100.0,
+    102.45948028564453
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "level_id": "KVL-008"
+   },
+   "size": [
+    1000.0,
+    1000.0,
+    300.0
+   ]
+  },
+  {
+   "name": "VOL_District_Route93",
+   "type": "MESH",
+   "location": [
+    -2000.0,
+    1900.0,
+    102.45948028564453
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "level_id": "KVL-004"
+   },
+   "size": [
+    1200.0,
+    1200.0,
+    300.0
+   ]
+  },
+  {
+   "name": "VOL_District_SilverRidge",
+   "type": "MESH",
+   "location": [
+    2800.0,
+    2600.0,
+    102.45948028564453
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "level_id": "KVL-007"
+   },
+   "size": [
+    1600.0,
+    1600.0,
+    300.0
+   ]
+  },
+  {
+   "name": "VOL_LandingZone_JackrabbitFlats",
+   "type": "MESH",
+   "location": [
+    -2400.0,
+    -2400.0,
+    10.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {},
+   "size": [
+    60.0,
+    60.0,
+    20.0
+   ]
+  },
+  {
+   "name": "VOL_NoBuild_Complex",
+   "type": "MESH",
+   "location": [
+    1000.0,
+    300.0,
+    60.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {},
+   "size": [
+    300.0,
+    300.0,
+    120.0
+   ]
+  },
+  {
+   "name": "VOL_Room_MountainRim",
+   "type": "MESH",
+   "location": [
+    0.0,
+    0.0,
+    350.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "Impassable ring (visual boundary); flyable over from Act II"
+   },
+   "size": [
+    8000.0,
+    8000.0,
+    700.0
+   ]
+  },
+  {
+   "name": "VOL_Room_Route93",
+   "type": "MESH",
+   "location": [
+    -2000.0,
+    0.0,
+    0.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "North\u2013south highway along x = \u22122 km, with spurs to the Township and Complex"
+   },
+   "size": [
+    8.0,
+    8000.0,
+    0.0
+   ]
+  },
+  {
+   "name": "VOL_Room_ValleyFloor",
+   "type": "MESH",
+   "location": [
+    0.0,
+    0.0,
+    25.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "High-desert basin, dry washes, sagebrush"
+   },
+   "size": [
+    6000.0,
+    6000.0,
+    50.0
+   ]
+  },
+  {
+   "name": "VOL_Weather_Global",
+   "type": "MESH",
+   "location": [
+    0.0,
+    0.0,
+    326.229736328125
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {},
+   "size": [
+    8000.0,
+    8000.0,
+    747.54052734375
+   ]
+  }
+ ]
+}

@@ -1,0 +1,180 @@
+{
+ "exodus_level_version": "1.0",
+ "kind": "level",
+ "level_id": "KES-005",
+ "level_name": "Pad 12",
+ "type": "Set Piece",
+ "size": {
+  "w": 200,
+  "d": 150,
+  "h": 40
+ },
+ "budget": {
+  "blockout_tris": 150000,
+  "per": "level",
+  "memory_mb": 350,
+  "draw_calls": 2500,
+  "shadow_lights": 16
+ },
+ "required_markers": [
+  "PS_M0_03_Fence",
+  "CAM_C02_Ramp",
+  "TRG_M0_03_Standoff"
+ ],
+ "spaces": [
+  "Crowd fence line",
+  "Trooper gate",
+  "Seraph pad",
+  "Retreat road"
+ ],
+ "bounds_min": [
+  -100.0,
+  -75.0,
+  0.0
+ ],
+ "bounds_max": [
+  100.0,
+  75.0,
+  40.0
+ ],
+ "markers": [
+  {
+   "name": "CAM_C02_Ramp",
+   "type": "CAMERA",
+   "location": [
+    -12.0,
+    -47.0,
+    6.0
+   ],
+   "rotation_euler": [
+    1.3393189907073975,
+    7.960284165164921e-08,
+    -0.7853982448577881
+   ],
+   "props": {}
+  },
+  {
+   "name": "PS_M0_03_Fence",
+   "type": "EMPTY",
+   "location": [
+    0.0,
+    -40.0,
+    0.10000000149011612
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {}
+  },
+  {
+   "name": "TRG_M0_03_Standoff",
+   "type": "MESH",
+   "location": [
+    0.0,
+    20.0,
+    1.5
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {},
+   "size": [
+    4.0,
+    4.0,
+    3.0
+   ]
+  },
+  {
+   "name": "VOL_Room_CrowdFenceLine",
+   "type": "MESH",
+   "location": [
+    0.0,
+    -40.0,
+    2.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "200 civilians"
+   },
+   "size": [
+    120.0,
+    10.0,
+    4.0
+   ]
+  },
+  {
+   "name": "VOL_Room_RetreatRoad",
+   "type": "MESH",
+   "location": [
+    -80.0,
+    -44.0,
+    0.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "Back to Hangar 4 (leaves the level at the south edge)"
+   },
+   "size": [
+    8.0,
+    60.0,
+    0.0
+   ]
+  },
+  {
+   "name": "VOL_Room_SeraphPad",
+   "type": "MESH",
+   "location": [
+    0.0,
+    20.0,
+    10.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "Shuttle with ramp down"
+   },
+   "size": [
+    50.0,
+    50.0,
+    20.0
+   ]
+  },
+  {
+   "name": "VOL_Room_TrooperGate",
+   "type": "MESH",
+   "location": [
+    0.0,
+    -35.0,
+    2.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "Directorate troopers"
+   },
+   "size": [
+    12.0,
+    6.0,
+    4.0
+   ]
+  }
+ ]
+}

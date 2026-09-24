@@ -1,0 +1,388 @@
+{
+ "exodus_level_version": "1.0",
+ "kind": "level",
+ "level_id": "KES-006",
+ "level_name": "Kestrel Elementary",
+ "type": "Interior",
+ "size": {
+  "w": 70,
+  "d": 50,
+  "h": 10
+ },
+ "budget": {
+  "blockout_tris": 200000,
+  "per": "level",
+  "memory_mb": 400,
+  "draw_calls": 3000,
+  "shadow_lights": 16
+ },
+ "required_markers": [
+  "PS_M1_02",
+  "SP_MsAlvarez",
+  "TRG_M1_02_Vents",
+  "TRG_M1_02_FireAlarm",
+  "CAM_M1_02_Gym"
+ ],
+ "spaces": [
+  "Classroom wing (1F)",
+  "Library",
+  "Office",
+  "Hallways",
+  "Cafeteria",
+  "Gym",
+  "Vent network"
+ ],
+ "bounds_min": [
+  -35.0,
+  -25.0,
+  0.0
+ ],
+ "bounds_max": [
+  35.0,
+  25.0,
+  10.0
+ ],
+ "markers": [
+  {
+   "name": "CAM_M1_02_Gym",
+   "type": "CAMERA",
+   "location": [
+    -27.0,
+    -24.0,
+    6.0
+   ],
+   "rotation_euler": [
+    1.3393189907073975,
+    7.960284165164921e-08,
+    -0.7853982448577881
+   ],
+   "props": {}
+  },
+  {
+   "name": "DOOR_Cafeteria_Gym",
+   "type": "EMPTY",
+   "location": [
+    0.0,
+    -10.0,
+    0.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "connection": "double door"
+   }
+  },
+  {
+   "name": "DOOR_Hallways_Cafeteria",
+   "type": "EMPTY",
+   "location": [
+    7.5,
+    -1.5,
+    0.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "connection": "double door"
+   }
+  },
+  {
+   "name": "DOOR_Hallways_ClassroomWing1F",
+   "type": "EMPTY",
+   "location": [
+    -7.5,
+    10.0,
+    0.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "connection": "door"
+   }
+  },
+  {
+   "name": "DOOR_Hallways_Library",
+   "type": "EMPTY",
+   "location": [
+    9.0,
+    10.0,
+    0.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "connection": "door"
+   }
+  },
+  {
+   "name": "DOOR_Hallways_Office",
+   "type": "EMPTY",
+   "location": [
+    14.0,
+    5.0,
+    0.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "connection": "door"
+   }
+  },
+  {
+   "name": "DOOR_Hallways_VentNetwork",
+   "type": "EMPTY",
+   "location": [
+    0.0,
+    2.5,
+    2.0999999046325684
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "connection": "vent grille"
+   }
+  },
+  {
+   "name": "PS_M1_02",
+   "type": "EMPTY",
+   "location": [
+    -15.0,
+    15.0,
+    0.10000000149011612
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {}
+  },
+  {
+   "name": "SP_MsAlvarez",
+   "type": "EMPTY",
+   "location": [
+    21.0,
+    18.0,
+    0.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {}
+  },
+  {
+   "name": "TRG_M1_02_FireAlarm",
+   "type": "MESH",
+   "location": [
+    0.0,
+    5.0,
+    1.5
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {},
+   "size": [
+    4.0,
+    4.0,
+    3.0
+   ]
+  },
+  {
+   "name": "TRG_M1_02_Vents",
+   "type": "MESH",
+   "location": [
+    28.0,
+    5.0,
+    1.5
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {},
+   "size": [
+    4.0,
+    4.0,
+    3.0
+   ]
+  },
+  {
+   "name": "VOL_Room_Cafeteria",
+   "type": "MESH",
+   "location": [
+    15.0,
+    -8.0,
+    2.25
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "Fortified by the teacher"
+   },
+   "size": [
+    24.0,
+    16.0,
+    4.5
+   ]
+  },
+  {
+   "name": "VOL_Room_ClassroomWing1F",
+   "type": "MESH",
+   "location": [
+    -15.0,
+    15.0,
+    2.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "Barricaded classes, drawings"
+   },
+   "size": [
+    40.0,
+    12.0,
+    4.0
+   ]
+  },
+  {
+   "name": "VOL_Room_Gym",
+   "type": "MESH",
+   "location": [
+    -15.0,
+    -12.0,
+    4.5
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "The horde set piece"
+   },
+   "size": [
+    30.0,
+    20.0,
+    9.0
+   ]
+  },
+  {
+   "name": "VOL_Room_Hallways",
+   "type": "MESH",
+   "location": [
+    0.0,
+    5.0,
+    2.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "Main route"
+   },
+   "size": [
+    60.0,
+    4.0,
+    4.0
+   ]
+  },
+  {
+   "name": "VOL_Room_Library",
+   "type": "MESH",
+   "location": [
+    18.0,
+    15.0,
+    2.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "Juice-box trail"
+   },
+   "size": [
+    16.0,
+    12.0,
+    4.0
+   ]
+  },
+  {
+   "name": "VOL_Room_Office",
+   "type": "MESH",
+   "location": [
+    28.0,
+    5.0,
+    2.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "Ms. Alvarez's radio"
+   },
+   "size": [
+    12.0,
+    10.0,
+    4.0
+   ]
+  },
+  {
+   "name": "VOL_Room_VentNetwork",
+   "type": "MESH",
+   "location": [
+    0.0,
+    0.0,
+    4.799999713897705
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "props": {
+    "purpose": "Crawl ducts above everything (Lily's route)"
+   },
+   "size": [
+    60.0,
+    40.0,
+    1.2000000476837158
+   ]
+  }
+ ]
+}
